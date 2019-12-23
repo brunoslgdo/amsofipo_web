@@ -4,4 +4,17 @@
 
 // layout
 @import 'layout/reset';
+@import 'layout/sizes';
 @import 'layout/model-box';
+
+// classes
+@import 'classes/generics';
+
+// components
+@import 'components/header';
+@import 'components/home-slider';
+@import 'components/home-indicadores';
+@import 'components/home-inclusion';
+@import 'components/home-contacto';
+@import 'components/footer';
+@import 'components/menu';
