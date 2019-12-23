@@ -1,31 +1,40 @@
-@font-face {
-    font-family: 'Gotham';
-    src: url('Gotham-Bold.woff2') format('woff2'),
-        url('Gotham-Bold.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
+$fontSize: (
+    
+    biggest: 4rem, 
+    bigger: 3.2rem,
+    big: 2.4rem,
+    normal: 1.6rem,
+    small: 1.2rem,
+    smaller: 0.8rem 
+);
+
+:root {
+
+    @each $fontSizeName, $fontSizeValue in $fontSize {
+        --#{$fontSizeName}: #{$fontSizeValue};
+    }
+
+    --font-family: 'Open Sans';
+
 }
 
-@font-face {
-    font-family: 'Muli';
-    src: url('Muli-Bold.woff2') format('woff2'),
-        url('Muli-Bold.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
+@each $fontSizeName, $fontSizeValue in $fontSize {
+    
+    .#{$fontSizeName} {
+        font-size: var(--#{$fontSizeName});
+    }
+
 }
 
-@font-face {
-    font-family: 'Gotham';
-    src: url('Gotham-Medium.woff2') format('woff2'),
-        url('Gotham-Medium.woff') format('woff');
-    font-weight: 500;
-    font-style: normal;
+.heading,
+.body {
+    font-family: var(--font-family);
 }
 
-@font-face {
-    font-family: 'Gotham';
-    src: url('Gotham-Black.woff2') format('woff2'),
-        url('Gotham-Black.woff') format('woff');
-    font-weight: 500;
-    font-style: normal;
+.heading {
+    font-weight: 800;
+}
+
+.body {
+    font-weight: 400;
 }
