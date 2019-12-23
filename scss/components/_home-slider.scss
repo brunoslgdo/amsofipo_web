@@ -1,0 +1,141 @@
+.carrousel {
+
+	ul {
+		list-style: none;
+	}
+
+    &__slide {
+		background-color: var(--colorFirst);
+		position: relative;
+		height: 80vh;
+  	}
+
+	&__image {
+		object-fit: cover;
+		position: absolute;
+		width: 100%;
+		height: 100%; 
+	}
+
+	&__caption {
+		
+		margin: auto;
+		padding-left: var(--sm); 
+		padding-right: var(--sm); 
+		position: absolute;
+		top: 50%;
+		right: 0;
+		left: 0;
+		transform: translateY(-50%);
+
+		div {
+			padding: 0 6rem;
+
+			@media only screen and (min-width: 1024px) {
+				padding: 0 12rem;
+			}
+		}
+	}
+
+	&__text {
+		color: var(--colorText);
+		font-family: 'Open Sans';
+		font-size: var(--lg);
+		font-weight: 800;
+		line-height: 1;
+		margin-bottom: var(--lg);
+		text-shadow: 0 0.1rem 0.1rem rgba(0, 0, 0, 0.6);
+		max-width: 40rem;
+
+		@media only screen and (min-width: 568px) {
+			font-size: var(--xl);
+		}
+	}
+
+	&__navigation {
+
+		// background-color: teal;
+		margin: auto;
+		padding-left: var(--sm); 
+		padding-right: var(--sm); 
+		position: absolute;
+		top: 50%;
+		right: 0;
+		left: 0;
+		transform: translateY(-50%);
+
+		div {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			// background-color: purple;
+			max-width: 192rem;
+		}
+
+	}
+
+	.carrousel__prev,
+	.carrousel__next {
+	  display: block;
+	  background-color: rgba(0, 0, 0, 0.2);
+	  position: relative;
+	  height: 6rem;
+	  width: 4rem; }
+	
+	.carrousel__prev::after,
+	.carrousel__next::after {
+	  color: var(--colorText);
+	  font-size: 4rem;
+	  position: absolute;
+	  right: 0;
+	  left: 0;
+	  text-align: center; }
+	
+	.carrousel__prev::after {
+	  content: "\276C"; }
+	
+	.carrousel__next::after {
+	  content: "\276D"; }
+
+}
+  
+
+  
+  
+
+  
+  .custom-controls-container {
+    display: block;
+    margin: auto;
+    position: absolute;
+    bottom: 15%;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    text-align: center; }
+  
+  .flex-control-paging a {
+    cursor: pointer;
+    display: block;
+    background-color: var(--body-bg);
+    border-radius: 50%;
+    text-indent: -9999rem;
+    width: 1.2rem;
+    height: 1.2rem;
+    transition: background-color 0.3s ease-in; }
+  
+  .flex-control-paging li a:hover {
+    background-color: var(--first-color); }
+  
+  .flex-control-paging li a.flex-active {
+    background-color: var(--first-color);
+    cursor: default; }
+  
+  .flex-control-nav li {
+    margin-right: 1rem;
+    display: inline-block;
+    zoom: 1; }
+  
+  .flex-control-nav li:last-child {
+    margin-right: 0; }
+  
