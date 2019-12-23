@@ -1,0 +1,22 @@
+$colors: (
+
+    colorFirst: #219C8A,
+    colorFirstAlt: #00C8AC,
+    colorText: #ffffff,
+    colorBody: #353535,
+    colorBodyAlt: #595858,
+
+);
+
+:root {
+
+    @each $colorsName, $colorsValue in $colors {
+        --#{$colorsName}: #{$colorsValue};
+    }
+}
+        
+@each $colorsName, $colorsValue in $colors {
+    .#{$colorsName} { 
+        color: var(--#{$colorsName});
+    }
+}
