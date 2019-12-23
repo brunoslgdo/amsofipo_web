@@ -1,0 +1,45 @@
+.home-indicadores {
+
+    &__row {
+        padding-top: 16rem;
+        padding-bottom: 16rem;
+    }
+
+    &__row {
+        background-image: url('../img/home/indicadores.png');
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+    }
+
+    &__table {
+        
+        background-color: rgba(0,0,0,0.6);
+        border-collapse: collapse;
+        max-width: 48rem;
+        
+        th,
+        td {
+            padding: var(--xs);
+           
+        }
+        
+        th {
+            background-color: rgba(0,0,0,0.6);
+        }
+
+        td {
+            vertical-align: center;
+            // width: 33.33%;
+        }
+
+        td:first-child {
+            text-align: center;
+        }
+    
+    }
+
+    &__icon {
+        width: var(--lg);
+    }
+}
