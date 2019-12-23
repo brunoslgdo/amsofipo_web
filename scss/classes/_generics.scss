@@ -1,0 +1,21 @@
+// image responsive
+.image-responsive {
+    height: auto;
+    max-width: 100%;
+}
+
+// uppercase
+.uppercase {
+    text-transform: uppercase;
+}
+
+// button
+    .button {
+        text-decoration: none;
+        background-color: var(--colorFirst);
+        border-radius: var(--xs);
+        color: var(--colorText);
+        font-family: 'Open Sans';
+        font-size: var(--normal);
+        padding: var(--xs) var(--md);
+    }
