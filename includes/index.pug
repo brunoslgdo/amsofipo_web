@@ -6,7 +6,10 @@ html(lang="es")
         meta(http-equiv="X-UA-Compatible", content="ie=edge")
         title AMSOFIPO
         link(href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800&display=swap", rel="stylesheet")
-        link(href="css/styles.css?=v1", rel="stylesheet")
+        link(href="css/styles.css?=v2", rel="stylesheet")
+        link(href="css/flexslider.css", rel="stylesheet")
+        script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js")
+        script(src="flex-slider/jquery.flexslider.js")
     body
 
         include components/header
@@ -16,3 +19,5 @@ html(lang="es")
         include components/home-contacto
         include components/footer
         include components/menu
+
+        script(src="js/slider.js")
