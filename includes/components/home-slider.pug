@@ -1,12 +1,33 @@
-.carrousel
-    ul.carrousel__sliders
-        li.carrousel__slide
-            img(src="img/home-slider/home-siler-01.png", class="carrousel__image", alt="slide")
-            .carrousel__caption
-                div
-                    p.carrousel__text Solicita tu crédito y comienza a crecer
-                    a(class="button", href="#") Leer más       
-    .carrousel__navigation
-        div
-            a(class="carrousel__prev", href="#")
-            a(class="carrousel__next", href="#")
+<div class="flexslider">
+    <ul class="slides">
+        <li><img class="slides__image" src="img/home-slider/home-siler-01.png" alt="slider" />
+            <div class="slides__container">
+                <p class="slides__text">Solicita tu crédito y comienza a crecer</p>
+                <br><a class="button" href="#">Leer más</a>
+            </div>
+        </li>
+        <li><img class="slides__image slide__image" src="img/home-slider/home-siler-02.png" alt="slider" />
+            <div class="slides__container">
+                <p class="slides__text">Solicita tu crédito y comienza a crecer</p>
+                <br><a class="button" href="#">Leer más</a>
+            </div>
+        </li>
+        <li><img class="slides__image" src="img/home-slider/home-siler-03.png" alt="slider" />
+            <div class="slides__container">
+                <p class="slides__text">Solicita tu crédito y comienza a crecer</p>
+                <br><a class="button" href="#">Leer más</a>
+            </div>
+        </li>
+        <li><img class="slides__image" src="img/home-slider/home-siler-04.png" alt="slider" />
+            <div class="slides__container">
+                <p class="slides__text">Solicita tu crédito y comienza a crecer</p>
+                <br><a class="button" href="#">Leer más</a>
+            </div>
+        </li>
+    </ul>
+    <div class="custom-navigation">
+        <a class="flex-prev" href="#"></a>
+        <a class="flex-next" href="#"></a>
+    </div>
+    <div class="custom-controls-container"></div>
+</div>
