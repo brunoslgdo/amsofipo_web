@@ -6,56 +6,75 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
     <title>AMSOFIPO</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800&amp;display=swap" rel="stylesheet"/>
-    <link href="css/styles.css?=v1" rel="stylesheet"/>
+    <link href="css/styles.css?=v2" rel="stylesheet"/>
+    <link href="css/flexslider.css" rel="stylesheet"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+    <script src="flex-slider/jquery.flexslider.js"></script>
   </head>
   <body>
     <div class="header__row">
       <div class="header__wrap">
         <div class="header__box"><a href="#navegacion"><img class="header__icon-menu" src="img/icons/menu.png" alt="icon"/></a><img class="header__logo" src="img/logos/amsofipo-logo.png" alt="amsofipo logo"/></div>
-        <div class="header__box"><img class="header__icon-search" src="img/icons/search.png" alt="amsofipo logo"/>
-          <p class="body normal uppercase colorBodyAlt header__right-menu">contacto</p>
-        </div>
+        <div class="header__box"><img class="header__icon-search" src="img/icons/search.png" alt="amsofipo logo"/><a class="body normal uppercase colorBodyAlt header__right-menu" href="#home-contacto">contacto</a></div>
       </div>
-    </div>
-    <div class="carrousel">
-      <ul class="carrousel__sliders">
-        <li class="carrousel__slide"><img class="carrousel__image" src="img/home-slider/home-siler-01.png" alt="slide"/>
-          <div class="carrousel__caption">
-            <div>
-              <p class="carrousel__text">Solicita tu crédito y comienza a crecer</p><a class="button" href="#">Leer más       </a>
-            </div>
-          </div>
-        </li>
-      </ul>
-      <div class="carrousel__navigation">
-        <div><a class="carrousel__prev" href="#"></a><a class="carrousel__next" href="#"></a></div>
-      </div>
-    </div>
+    </div><div class="flexslider">
+<ul class="slides">
+<li><img class="slides__image" src="img/home-slider/home-siler-01.png" alt="slider" />
+<div class="slides__container">
+<p class="slides__text">Solicita tu crédito y comienza a crecer</p>
+<br><a class="button" href="#">Leer más</a>
+</div>
+</li>
+<li><img class="slides__image slide__image" src="img/home-slider/home-siler-02.png" alt="slider" />
+<div class="slides__container">
+<p class="slides__text">Solicita tu crédito y comienza a crecer</p>
+<br><a class="button" href="#">Leer más</a>
+</div>
+</li>
+<li><img class="slides__image" src="img/home-slider/home-siler-03.png" alt="slider" />
+<div class="slides__container">
+<p class="slides__text">Solicita tu crédito y comienza a crecer</p>
+<br><a class="button" href="#">Leer más</a>
+</div>
+</li>
+<li><img class="slides__image" src="img/home-slider/home-siler-04.png" alt="slider" />
+<div class="slides__container">
+<p class="slides__text">Solicita tu crédito y comienza a crecer</p>
+<br><a class="button" href="#">Leer más</a>
+</div>
+</li>
+</ul>
+<div class="custom-navigation">
+<a class="flex-prev" href="#"></a>
+<a class="flex-next" href="#"></a>
+</div>
+<div class="custom-controls-container"></div>
+</div>
     <div class="home-indicadores__row">
       <div class="home-indicadores__wrap">
         <table class="home-indicadores__table">
           <tr>
-            <th class="body normal colorText uppercase" colspan="3"><strong>indicadores de inclusión marzo 2019</strong></th>
+            <th class="body normal colorText uppercase" colspan="3"><strong>indicadores de inclusión junio 2019</strong></th>
           </tr>
           <tr>
             <td><img class="home-indicadores__icon" src="img/icons/check.png" alt="icon"/></td>
-            <td class="body normal colorText">39 sofipos  </td>
-            <td class="body normal colorText">Autorizadas en operaciones</td>
+            <td class="body normal colorText">39 SOFIPOS </td>
+            <td class="body normal colorText">Autorizadas en Operación</td>
           </tr>
           <tr>
             <td><img class="home-indicadores__icon" src="img/icons/people.png" alt="icon"/></td>
-            <td class="body normal colorText">4,236.601  </td>
-            <td class="body normal colorText">Número de clientes</td>
+            <td class="body normal colorText">4,322,888  </td>
+            <td class="body normal colorText">Número de Clientes</td>
           </tr>
           <tr>
             <td><img class="home-indicadores__icon" src="img/icons/hall.png" alt="icon"/></td>
-            <td class="body normal colorText">1,136</td>
-            <td class="body normal colorText">Número de sucursales</td>
+            <td class="body normal colorText">1,141</td>
+            <td class="body normal colorText">Número de Sucursales</td>
           </tr>
           <tr>
             <td><img class="home-indicadores__icon" src="img/icons/placeholder.png" alt="icon"/></td>
-            <td class="body normal colorText">4,236.601</td>
-            <td class="body normal colorText">Municipios atendidos</td>
+            <td class="body normal colorText">1,629</td>
+            <td class="body normal colorText">Municipios Atendidos</td>
           </tr>
         </table>
       </div>
@@ -89,7 +108,7 @@
         </div>
       </div>
     </div>
-    <div class="home-contacto__row">
+    <div class="home-contacto__row" id="home-contacto">
       <div></div>
       <div>
         <h1 class="heading biggest colorText">Contacto</h1>
@@ -98,7 +117,7 @@
           <input type="text" placeholder="Nombre"/>
           <input type="email" placeholder="Email"/>
           <textarea placeholder="Mensaje"></textarea>
-          <div><a href="#">contacto@amsofipo.mx</a>
+          <div><a href="mailto:contacto@amsofipo.mx" target="_blank">contacto@amsofipo.mx</a>
             <input type="submit" value="Enviar"/>
           </div>
         </form>
@@ -110,7 +129,7 @@
           <p><strong>Asociación Mexicana de Sociedades Financieras Populares</strong></p>
           <p>Av. Insurgentes Sur #2047 Esq. Cracovia Edificio “B”, Colonia San Ángel, Del. Álvaro Obregón C.P. 01000, México D.F</p>
         </div>
-        <div><img class="footer__icon" src="img/icons/facebook.png" alt="facebook amsofipo"/><img class="footer__icon" src="img/icons/twitter.png" alt="twitter amsofipo"/><img class="footer__icon" src="img/icons/linkedin.png" alt="linkedin amsofipo"/>
+        <div><a href="https://www.facebook.com/Amsofipo/" target="_blank">      <img class="footer__icon" src="img/icons/facebook.png" alt="facebook amsofipo"/></a><a href="https://twitter.com/amsofipo?lang=es" target="_blank">      <img class="footer__icon" src="img/icons/twitter.png" alt="twitter amsofipo"/></a><a href="#">      <img class="footer__icon" src="img/icons/linkedin.png" alt="linkedin amsofipo"/></a>
           <p>Tel. 5001 4851</p>
           <p>Marco Legal | Aviso de Privacidad</p>
         </div>
@@ -127,5 +146,6 @@
         <li class="menu__item"> <a class="menu__link" href="#">educación financiera</a></li>
       </ul>
     </nav>
+    <script src="js/slider.js"></script>
   </body>
 </html>
