@@ -66,6 +66,9 @@ html {
   margin: 0;
   padding: 0; }
 
+a, a:link, a:hover, a:active, a:visited {
+  text-decoration: none; }
+
 :root {
   --xl: 4rem;
   --lg: 3.2rem;
@@ -310,16 +313,25 @@ html {
 
 .home-inclusion__destacado {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  height: 56rem; }
+  grid-template-columns: 1fr;
+  grid-template-rows: auto; }
+  @media only screen and (min-width: 667px) {
+    .home-inclusion__destacado {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      height: 56rem; } }
 
 .home-inclusion__destacado-item {
   display: flex;
   color: var(--colorText);
   font-family: 'Open Sans';
   font-size: var(--normal);
-  padding: var(--md); }
+  padding: var(--md);
+  height: 28rem; }
+  @media only screen and (min-width: 667px) {
+    .home-inclusion__destacado-item {
+      height: auto; } }
   .home-inclusion__destacado-item div {
     margin-top: auto; }
   .home-inclusion__destacado-item img {
@@ -330,31 +342,35 @@ html {
     text-transform: uppercase; }
 
 .home-inclusion__destacado-item:first-child {
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 1;
-  grid-row-end: 3;
   background-image: url("../img/home/inclusion-01.png");
-  background-position: center center;
+  background-position: top center;
   background-repeat: no-repeat;
   background-size: cover; }
+  @media only screen and (min-width: 667px) {
+    .home-inclusion__destacado-item:first-child {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 1;
+      grid-row-end: 3; } }
 
 .home-inclusion__destacado-item:nth-child(2) {
-  grid-column-start: 2;
-  grid-column-end: 4;
-  grid-row-start: 1;
-  grid-row-end: 2;
   background-image: url("../img/home/inclusion-02.png");
-  background-position: center center;
+  background-position: top center;
   background-repeat: no-repeat;
   background-size: cover; }
+  @media only screen and (min-width: 667px) {
+    .home-inclusion__destacado-item:nth-child(2) {
+      grid-column-start: 2;
+      grid-column-end: 4;
+      grid-row-start: 1;
+      grid-row-end: 2; } }
 
 .home-inclusion__destacado-item:nth-child(3) {
   background-color: var(--colorFirstAlt); }
 
 .home-inclusion__destacado-item:nth-child(4) {
   background-image: url("../img/home/inclusion-04.png");
-  background-position: center center;
+  background-position: top center;
   background-repeat: no-repeat;
   background-size: cover; }
 
