@@ -15,23 +15,36 @@
     }
 
     &__destacado {
+
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        height: 56rem;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+
+        @media only screen and (min-width: 667px) {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            height: 56rem;
+        }
     }
 
     &__destacado-item {
+
         display: flex;
         color: var(--colorText);
         font-family: 'Open Sans';
         font-size: var(--normal);
         padding: var(--md);
-        
+        height: 28rem;
+
+        @media only screen and (min-width: 667px) {
+            height: auto;
+        }
+
         div {
             margin-top: auto;
         }
-
+       
         img {
             display: block;
             margin: 0 auto var(--md);
@@ -44,27 +57,33 @@
     }
 
     &__destacado-item:first-child {
-        grid-column-start: 1;
-        grid-column-end: 2;
-        grid-row-start: 1;
-        grid-row-end: 3;
 
         background-image: url('../img/home/inclusion-01.png');
-        background-position: center center;
+        background-position: top center;
         background-repeat: no-repeat;
         background-size: cover;
+
+        @media only screen and (min-width: 667px) {
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 1;
+            grid-row-end: 3;
+        }
     }
 
     &__destacado-item:nth-child(2) {
-        grid-column-start: 2;
-        grid-column-end: 4;
-        grid-row-start: 1;
-        grid-row-end: 2;
 
         background-image: url('../img/home/inclusion-02.png');
-        background-position: center center;
+        background-position: top center;
         background-repeat: no-repeat;
         background-size: cover;
+
+        @media only screen and (min-width: 667px) {
+            grid-column-start: 2;
+            grid-column-end: 4;
+            grid-row-start: 1;
+            grid-row-end: 2;
+        }
     }
     &__destacado-item:nth-child(3) {
         background-color: var(--colorFirstAlt);
@@ -72,10 +91,8 @@
 
     &__destacado-item:nth-child(4) {
         background-image: url('../img/home/inclusion-04.png');
-        background-position: center center;
+        background-position: top center;
         background-repeat: no-repeat;
         background-size: cover;
     }
-
-  
 }
