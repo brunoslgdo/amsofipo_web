@@ -14,8 +14,6 @@ $fontSize: (
         --#{$fontSizeName}: #{$fontSizeValue};
     }
 
-    --font-family: 'Open Sans';
-
 }
 
 @each $fontSizeName, $fontSizeValue in $fontSize {
