@@ -1,6 +1,8 @@
 html {
     box-sizing: border-box;
+    font-family: 'Open Sans';
     font-size: 10px;
+    font-weight: normal;
 }
 
 *, *::after, *::before {
@@ -10,6 +12,24 @@ html {
     // outline: 1px solid yellow;
 }
 
+h1, 
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 800;
+} 
+
+ol, ul, li {
+    list-style: none;
+}
+
 a, a:link, a:hover, a:active, a:visited {
     text-decoration: none;
+}
+
+strong, 
+em {
+    font-weight: 700;
 }
