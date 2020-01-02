@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+html(lang="es")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title AMSOFIPO
+        link(href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800&display=swap", rel="stylesheet")
+        link(href="../css/styles.css?=v2", rel="stylesheet")
+        link(href="../css/flexslider.css", rel="stylesheet")
+        script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js")
+        script(src="../flex-slider/jquery.flexslider.js")
+    body
+
+        include ../components/header
+        include ../components/sofipos-slider
+
+        .sofipo__row.sofipos__las-sofipos
+            .sofipos__wrap
+
+                div.sofipos__uno
+                    div
+                        h1.heading.bigger.colorBodyAlt Las Sofipos
+                        p.normal.body.colorBodyAlt Las Sociedades Financieras Populares (SOFIPO) son entidades que ofrecen servicios de ahorro, crédito e inversión, particularmente a un sector popular y en zonas geográficas rurales y periféricas urbanas donde la Banca Comercial generalmente no está participando; son entidades autorizadas y reguladas por CNBV. Dentro del Sistema Financiero Mexicano regulado.
+                    div
+                        img(src="../img/sofipos/fig-01.png", class="", alt="image")
+
+                div.sofipos__dos
+                    div
+                        img(src="../img/sofipos/fig-02.png", class="", alt="image")
+                    div
+                        h1.heading.bigger.colorBodyAlt Naturaleza Jurídica
+                        p.normal.body.colorBodyAlt Son instituciones de microfinanzas constituidas como sociedades anónimas de capital variable, que operan mediante la autorización que les otorga la Comisión Nacional Bancaria y de Valores, conforme a la facultad que le confiere el artículo 9 de la Ley de Ahorro y Crédito Popular (LACP) y previo dictamen favorable otorgado por una Federación.
+                        p.normal.body.colorBodyAlt Las Sociedades Financieras Populares tienen su domicilio en territorio nacional, con una duración indefinida, y están facultadas para prestar servicios tanto a sus socios como a sus clientes, en los términos de la LACP.
+                        p.normal.body.colorBodyAlt En su carácter de sociedades anónimas, deben cumplir también con la Ley General de Sociedades Mercantiles, ya que son empresas privadas y su capital se integra con las aportaciones que hacen sus accionistas.
+
+        .sofipo__row.sofipos__objetivo
+            .sofipos__wrap
+                img(src="../img/icons/target.png", alt="image")
+                h1 objetivo
+                p Las Sociedades Financieras Populares tienen como propósito el fomentar el ahorro popular y expandirel acceso al financiamiento a aquellas personas que por su situación, se han visto excluidas de los sistemas tradicionales de crédito, y en general, propiciar la solidaridad, la superación económica y social, el bienestar de sus miembros y de las comunidades en que operan, sobre bases formativas y del esfuerzo individual y colectivo.
+        
+        .amsofipo__section
+            div
+                img(src="../img/sofipos/fig-04.png", class="image-responsive", alt="image")
+            div.sofipos__seccion
+                h1 Aspectos Generales
+                p La LACP reformada y publicada el 13 de agosto de 2009, establece como objeto: 
+                ul.list
+                    li.list--rombo Regular, promover y facilitar la captación de fondos o recursos monetarios y su colocación mediante préstamos o créditos u otras operaciones por parte de las Sociedades Financieras Populares.Proponer agenda para la aprobación del consejo.
+                    li.list--rombo Proteger los intereses de sus clientes.
+                    li.list--rombo Establece los términos en los que el Estado ejercerá la rectoría de las referidas Sociedades Financieras Populares.
+        
+        .sofipo__row.sofipos__beneficios
+            .sofipo__wrap
+                h1 Beneficios
+                p Las Sociedades Financieras Populares proporcionan a sus clientes y socios:
+                ul.list
+                    li.list--rombo.list--white Acceso a microcréditos ajustados a las características de los clientes, al mercado, a la región geográfica y al riesgo que presentan.
+                    li.list--rombo.list--white Acceso a servicios financieros, a personas de bajos ingresos, ofreciéndoles la oportunidad de mantener de forma segura sus ahorros.
+                    li.list--rombo.list--white Fortalecer el sistema de protección de los ahorros del sector de microfinanzas y el esquema de supervisión auxiliar. Acceso a operaciones como el arrendamiento y el factoraje financiero.
+                    li.list--rombo.list--white Adherirse a los beneficios de una póliza de seguro de vida, a bajo costo.
+                    li.list--rombo.list--white Capacitación en el análisis de proyectos de inversión.
+                    li.list--rombo.list--white Asistencia técnica para elaborar planes de negocios y proyectos de comercialización.
+                    li.list--rombo.list--white Desarrollo comunitario sobre bases formativas y del esfuerzo individual y colectivo.
+        
+        .sofipos__ultima
+            .sofipos__ultima-uno
+                h1 ¿Quieres saber más?
+                p Consulta la guía para la solicitud de autorización para la organización y funcionamiento de Sociedades Financieras Populares
+                img(src="../img/icons/download.png", alt="image")
+            .sofipos__ultima-dos
+                h1 Leyes
+                p Conoce más sobre las leyes, reglamentos y disposiciones oficiales que regulan a las SOFIPOS.
+
+
+        include ../components/footer.pug
+        include ../components/menu
+
+        script(src="../js/slider.js")
