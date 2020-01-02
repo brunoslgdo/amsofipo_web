@@ -1,0 +1,181 @@
+.amsofipo {
+
+    &__wrap {
+        padding-top: var(--xl);
+        padding-bottom: var(--xl);
+        position: relative;
+
+        h1, p {
+            margin-bottom: 1.6rem;
+        }
+    }
+
+    &__heading {
+        background-image: url('../img/amsofipo/fig-00.jpg');
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: var(--colorBody);
+        font-family: 'Open Sans';
+        font-size: var(--big);
+        padding-top: var(--xl);
+        padding-bottom: var(--xl);
+        text-align: center;
+    }
+
+    &__plan-trabajo {
+        background-image: url('../img/amsofipo/top.png'),
+                          url('../img/amsofipo/bottom.png');
+        background-position: right top, left bottom;
+        background-repeat: no-repeat;
+    }
+
+    &__section {
+
+        background-color: #eeefef;
+
+        @media only screen and (min-width: 768px) {
+            display: flex;
+            align-items: center;
+
+            div {
+                width: 50%;
+            }
+        }
+
+        
+        @media only screen and (min-width: 896px) {
+            
+            div:first-child {
+                width: 40%;
+            }
+
+            div:last-child {
+                width: 60%;
+            }
+        }
+        
+        @media only screen and (min-width: 1024px) {
+            
+            div:first-child {
+                width: 35%;
+            }
+
+            div:last-child {
+                width: 65%;
+            }
+        }
+
+        div:last-child {
+            padding: var(--xl);
+            
+            p,
+            li {
+                color: var(--colorBody);
+            }
+            
+            p {
+                color: var(--colorBody);
+                margin-bottom: var(--normal);
+            }
+
+        }
+    }
+
+    &__rombo {
+        margin: 6rem;
+
+        @media only screen and (min-width: 380px) {
+            margin: 7rem;
+        }
+        
+        @media only screen and (min-width: 440px) {
+            margin: 8rem;
+        }
+        
+        @media only screen and (min-width: 520px) {
+            margin: 10rem;
+        }
+
+        img {
+            margin: auto;
+            // position: relative;
+            transform: rotate(45deg);
+            // width: 20rem;
+        }
+    }
+
+    @media only screen and (min-width: 812px) {
+
+
+        &__uno {
+            max-width: 70%;
+        }
+    
+        &__dos {
+            display: flex;
+            align-content: flex-start;
+
+            div:first-child {
+                width: 40%;
+            }
+            
+            div:last-child {
+                width: 60%;
+            }
+        }
+
+        &__right {
+        padding-left: 60%;
+        }
+    
+    }
+
+    &__right {
+        text-align: right;
+    }
+    
+    &__comites {
+
+        @media only screen and (min-width: 568px) {
+            display: flex;
+            align-items: stretch;
+        }
+
+        p {
+            text-align: center;
+            font-size: 1.6rem;
+            color: #ffffff;
+            text-shadow: 0.1rem 0.1rem 0.1rem rgba(0,0,0,0.9);
+        }
+    }
+
+    &__comites-uno,
+    &__comites-dos,
+    &__comites-tres {
+        padding: 18rem 1.6rem 2.4rem;
+
+        @media only screen and (min-width: 568px) {
+            width: 33.33%;
+        }
+    }
+
+    &__comites-uno {
+        background-image: url('../img/amsofipo/fig-03.jpg');
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+
+    &__comites-dos {
+        background-image: url('../img/amsofipo/fig-04.jpg');
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+
+    &__comites-tres {
+        background-image: url('../img/amsofipo/fig-05.jpg');
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+   
+}
