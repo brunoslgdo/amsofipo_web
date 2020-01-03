@@ -292,7 +292,7 @@ em {
   padding-top: 16rem;
   padding-bottom: 16rem; }
 
-.home-indicadores__row {
+.home-indicadores__bg {
   background-image: url("../img/home/indicadores.png");
   background-repeat: no-repeat;
   background-position: center center;
@@ -764,3 +764,65 @@ em {
     width: 0.8rem; }
   .list--white::before {
     background-color: #ffffff; }
+
+.inclusion-financiera__bg {
+  background-image: url("../img/inclusion-financiera/fig-03.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover; }
+
+.inclusion-financiera__uno {
+  text-align: center; }
+  .inclusion-financiera__uno img {
+    margin: auto; }
+
+.inclusion-financiera__ultima {
+  text-align: center; }
+  @media only screen and (min-width: 667px) {
+    .inclusion-financiera__ultima {
+      display: flex; } }
+  .inclusion-financiera__ultima img {
+    width: 24rem; }
+
+.inclusion-financiera__ultima-uno, .inclusion-financiera__ultima-dos {
+  width: 50%; }
+
+.inclusion-financiera__ultima-uno {
+  background-color: #66cccc; }
+
+.inclusion-financiera__ultima-dos {
+  background-color: #00c8ac; }
+
+.inclusion-financiera__penultima {
+  text-align: center;
+  padding: 4rem 1.6rem; }
+  .inclusion-financiera__penultima img {
+    max-width: 100%; }
+  .inclusion-financiera__penultima h1,
+  .inclusion-financiera__penultima p {
+    color: #606060;
+    font-size: 4rem;
+    text-transform: uppercase;
+    text-align: center; }
+
+.inclusion-financiera__antepenultima {
+  background-color: var(--colorFirst);
+  color: #ffffff;
+  padding: 4rem 1.6rem;
+  text-align: center; }
+  .inclusion-financiera__antepenultima h1,
+  .inclusion-financiera__antepenultima h2,
+  .inclusion-financiera__antepenultima p {
+    text-transform: uppercase;
+    font-size: 4rem;
+    margin-bottom: 1.6rem; }
+
+.inclusion-financiera__imagenes {
+  display: flex; }
+  .inclusion-financiera__imagenes div {
+    width: 50%; }
+    @media only screen and (min-width: 568px) {
+      .inclusion-financiera__imagenes div {
+        width: 33.33%; } }
+    .inclusion-financiera__imagenes div img {
+      max-width: 100%; }
