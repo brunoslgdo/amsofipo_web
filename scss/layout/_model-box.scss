@@ -1,24 +1,20 @@
 [class*="__row"] {
-
-    // background-color: teal;
-    display: block;
-    padding-left: var(--xs);
-    padding-right: var(--xs);
-
-    @media only screen and (min-width: 667px) {
-        padding-left: var(--md);
-        padding-right: var(--md);
-    }
-    
-    @media only screen and (min-width: 667px) {
-        padding-left: var(--xl);
-        padding-right: var(--xl);
-    }
-
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
-[class*="__wrap"] {
-    // background-color: tomato;
-    margin: auto;
-    max-width: 192rem;
+[class*="__wrap--"] {
+    margin-right: var(--sm);
+    margin-left: var(--sm);
+    width: 100%;
+}
+
+[class*="__wrap--medium"] {
+    max-width: 128rem;
+}
+
+[class*="__wrap--small"] {
+    max-width: 102.4rem;
 }
