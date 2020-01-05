@@ -1,11 +1,11 @@
-// theme
-@import 'theme/colors';
-@import 'theme/typography';
-
 // layout
 @import 'layout/reset';
 @import 'layout/sizes';
 @import 'layout/model-box';
+
+// theme
+@import 'theme/colors';
+@import 'theme/typography';
 
 // classes
 @import 'classes/generics';
@@ -21,7 +21,7 @@
 @import 'components/footer';
 @import 'components/menu';
 @import 'components/lists';
-@import 'componentes/carousel';
+@import 'components/carousel';
 
 // pages
 @import 'pages/inclusion-financiera';
