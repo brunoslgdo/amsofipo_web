@@ -1,61 +1,3 @@
-:root {
-  --colorFirst: #219C8A;
-  --colorFirstAlt: #00C8AC;
-  --colorText: #ffffff;
-  --colorBody: #353535;
-  --colorBodyAlt: #595858; }
-
-.colorFirst {
-  color: var(--colorFirst); }
-
-.colorFirstAlt {
-  color: var(--colorFirstAlt); }
-
-.colorText {
-  color: var(--colorText); }
-
-.colorBody {
-  color: var(--colorBody); }
-
-.colorBodyAlt {
-  color: var(--colorBodyAlt); }
-
-:root {
-  --biggest: 4rem;
-  --bigger: 3.2rem;
-  --big: 2.4rem;
-  --normal: 1.6rem;
-  --small: 1.2rem;
-  --smaller: 0.8rem; }
-
-.biggest {
-  font-size: var(--biggest); }
-
-.bigger {
-  font-size: var(--bigger); }
-
-.big {
-  font-size: var(--big); }
-
-.normal {
-  font-size: var(--normal); }
-
-.small {
-  font-size: var(--small); }
-
-.smaller {
-  font-size: var(--smaller); }
-
-.heading,
-.body {
-  font-family: var(--font-family); }
-
-.heading {
-  font-weight: 800; }
-
-.body {
-  font-weight: 400; }
-
 html {
   box-sizing: border-box;
   font-family: 'Open Sans';
@@ -65,7 +7,8 @@ html {
 *, *::after, *::before {
   box-sizing: inherit;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  outline: 1px solid yellow; }
 
 h1,
 h2,
@@ -73,7 +16,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: 800; }
+  font-weight: 800;
+  line-height: 1.3; }
 
 ol, ul, li {
   list-style: none; }
@@ -85,6 +29,11 @@ strong,
 em {
   font-weight: 700; }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto; }
+
 :root {
   --xl: 4rem;
   --lg: 3.2rem;
@@ -93,38 +42,61 @@ em {
   --xs: 0.8rem; }
 
 [class*="__row"] {
-  display: block;
-  padding-left: var(--xs);
-  padding-right: var(--xs); }
-  @media only screen and (min-width: 667px) {
-    [class*="__row"] {
-      padding-left: var(--md);
-      padding-right: var(--md); } }
-  @media only screen and (min-width: 667px) {
-    [class*="__row"] {
-      padding-left: var(--xl);
-      padding-right: var(--xl); } }
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center; }
 
-[class*="__wrap"] {
-  margin: auto;
-  max-width: 192rem; }
+[class*="__wrap--"] {
+  margin-right: var(--sm);
+  margin-left: var(--sm);
+  width: 100%; }
 
-.image-responsive {
-  display: block;
-  height: auto;
-  max-width: 100%; }
+[class*="__wrap--medium"] {
+  max-width: 128rem; }
 
-.uppercase {
+[class*="__wrap--small"] {
+  max-width: 102.4rem; }
+
+:root {
+  --first: #219C8A;
+  --first-alt: #00C8AC;
+  --text: #ffffff;
+  --body: #353535;
+  --body-alt: #595858; }
+
+.color--first {
+  color: var(--first); }
+
+.color--first-alt {
+  color: var(--first-alt); }
+
+.color--text {
+  color: var(--text); }
+
+.color--body {
+  color: var(--body); }
+
+.color--body-alt {
+  color: var(--body-alt); }
+
+.font--bigger {
+  font-size: var(--xl); }
+
+.font--big {
+  font-size: var(--lg); }
+
+.font--medium {
+  font-size: var(--md); }
+
+.font--small {
+  font-size: var(--sm); }
+
+.font--smaller {
+  font-size: var(--xs); }
+
+.text--uppercase {
   text-transform: uppercase; }
-
-.button {
-  text-decoration: none;
-  background-color: var(--colorFirst);
-  border-radius: var(--xs);
-  color: var(--colorText);
-  font-family: 'Open Sans';
-  font-size: var(--normal);
-  padding: var(--xs) var(--md); }
 
 .header__wrap, .header__box {
   display: flex;
@@ -764,6 +736,121 @@ em {
     width: 0.8rem; }
   .list--white::before {
     background-color: #ffffff; }
+
+.carousel section, .carousel__controls {
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%); }
+
+.carousel {
+  font-family: "Open Sans";
+  overflow: hidden; }
+  .carousel, .carousel__slide, .carousel__dots {
+    position: relative; }
+  .carousel button {
+    border-style: none; }
+  .carousel a, .carousel a:active, .carousel a:hover, .carousel a:link, .carousel a:visited {
+    text-decoration: none; }
+  .carousel__pleca {
+    position: absolute;
+    z-index: 1; }
+    @media only screen and (min-width: 320px) and (orientation: portrait) {
+      .carousel__pleca {
+        top: 0;
+        transform: initial;
+        width: 50%; } }
+    @media only screen and (min-width: 320px) and (orientation: landscape) {
+      .carousel__pleca {
+        top: 50%;
+        transform: translateY(-50%);
+        width: auto;
+        height: 86vh; } }
+  .carousel__slide {
+    margin: auto;
+    height: 80vh; }
+  .carousel__image {
+    width: 110%;
+    height: 110%;
+    object-fit: cover;
+    position: absolute; }
+  .carousel section {
+    left: 8rem;
+    right: 8rem;
+    max-width: 102.4rem;
+    text-align: center;
+    z-index: 10; }
+    @media only screen and (min-width: 568px) {
+      .carousel section {
+        text-align: left; } }
+  .carousel__caption {
+    color: #ffffff;
+    font-size: 3.2rem;
+    font-weight: 700;
+    line-height: 1.3;
+    text-shadow: 0 0.3rem 0.3rem #000000;
+    margin-bottom: 4rem; }
+    @media only screen and (min-width: 568px) {
+      .carousel__caption {
+        max-width: 32rem; } }
+    @media only screen and (min-width: 568px) and (orientation: landscape) {
+      .carousel__caption {
+        margin-bottom: 2.4rem; } }
+    @media only screen and (min-width: 667px) {
+      .carousel__caption {
+        padding-left: 2.4rem;
+        border-left: 0.4rem solid #ffffff;
+        max-width: 48rem; } }
+    @media only screen and (min-width: 1024px) {
+      .carousel__caption {
+        font-size: 4.8rem;
+        max-width: 58rem;
+        margin-bottom: 4rem; } }
+  .carousel__button {
+    cursor: pointer;
+    background-color: #219c8a;
+    border-radius: 0.8em;
+    color: #ffffff;
+    font-size: 1.6em;
+    padding: 0.8rem 3.2rem; }
+  .carousel__controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 128rem;
+    left: 0.8rem;
+    right: 0.8rem;
+    z-index: 100; }
+  .carousel__prev, .carousel__next {
+    display: flex;
+    align-items: center; }
+  .carousel__prev {
+    justify-content: flex-start; }
+  .carousel__next {
+    justify-content: flex-end; }
+  .carousel__prev::before, .carousel__next::before {
+    color: #ffffff;
+    font-size: 4rem; }
+  .carousel__prev::before {
+    content: "\276E"; }
+  .carousel__next::before {
+    content: "\276F"; }
+  .carousel__dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 2.4rem;
+    z-index: 100; }
+  .carousel__dot {
+    background-color: #ffffff;
+    border-radius: 100%;
+    margin-right: 1.6rem;
+    width: 1.6rem;
+    height: 1.6rem; }
+    .carousel__dot:last-child {
+      margin-right: 0; }
+  .carousel__dot--active {
+    background-color: #219c8a; }
 
 .inclusion-financiera__bg {
   background-image: url("../img/inclusion-financiera/fig-03.png");
