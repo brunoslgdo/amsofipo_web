@@ -1,10 +1,10 @@
 $colors: (
 
-    colorFirst: #219C8A,
-    colorFirstAlt: #00C8AC,
-    colorText: #ffffff,
-    colorBody: #353535,
-    colorBodyAlt: #595858,
+    first: #219C8A,
+    first-alt: #00C8AC,
+    text: #ffffff,
+    body: #353535,
+    body-alt: #595858,
 
 );
 
@@ -16,7 +16,7 @@ $colors: (
 }
         
 @each $colorsName, $colorsValue in $colors {
-    .#{$colorsName} { 
+    .color--#{$colorsName} { 
         color: var(--#{$colorsName});
     }
 }
