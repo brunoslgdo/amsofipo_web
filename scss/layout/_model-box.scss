@@ -11,6 +11,11 @@
     width: 100%;
 }
 
+[class*="__wrap--large"] {
+    margin-right: 0;
+    margin-left: 0;
+}
+
 [class*="__wrap--medium"] {
     max-width: 128rem;
 }
