@@ -178,3 +178,18 @@ zoom: 1; }
 
 .flex-control-nav li:last-child {
 margin-right: 0; }
+
+/* -- EVENTOS SLIDER -- */
+
+.slides__eventos-caption {
+	color: #ffffff;
+	font-size: 3.2rem;
+	text-shadow: 0 0.1rem 0.1rem rgba(0, 0, 0, 0.6);
+	margin: auto;
+	position: absolute;
+	right: 1.6rem;
+	bottom: 9.6rem;
+	left: 1.6rem;
+	max-width: 102.4rem;
+	z-index: 10;
+}
