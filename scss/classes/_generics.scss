@@ -1,0 +1,7 @@
+.hover--underline {
+
+    &:hover {
+        color: var(--body);
+        text-decoration: underline;
+    }
+}
