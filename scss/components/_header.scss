@@ -1,14 +1,64 @@
 .header {
 
+    &__row {
+        box-shadow: 0 0.04rem 0.24rem var(--body-alt);
+    }
+    
+    &__box {
+        position: relative;
+        height: 6rem;
+    }
+
+    &__icon-hamburguer,
+    &__logo-amsofipo,
+    &__icon-search,
+    &__contacto {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    &__contacto {
+        display: none;
+        color: var(--body);
+        font-size: var(--xm);
+        text-transform: uppercase;
+        padding-left: var(--sm);
+        border-left: 0.08rem solid var(--body-alt);
+
+        @media only screen and (min-width: 568px) {
+            display: initial;
+            right: 0;
+        }
+    }
+    
+    &__logo-amsofipo {
+        margin: auto;
+        right: 0;
+        left: 0;
+
+        @media only screen and (min-width: 568px) {
+            margin-left: 5.6rem;
+        }
+    }
+    
+    &__icon-search { 
+        right: 0;
+        width: var(--md);
+
+        @media only screen and (min-width: 568px) {
+            right: 8.6rem;
+        }
+    }
+
+
     &__icon-hamburguer {
         cursor: pointer;
-        background: transparent;
-        border-style: none;
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: space-between;
         width: var(--xl);
-        height: var(--lg);
+        height: var(--md);
 
         span {
             background-color: var(--first);
@@ -27,8 +77,11 @@
         }
         
         span:last-child {
-            width: 45%;
+            width: 35%;
         }
     }
 
+    &__logo-amsofipo {
+        width: 11.2rem;
+    }
 }
