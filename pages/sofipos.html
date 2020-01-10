@@ -12,12 +12,14 @@
     <script src="../flex-slider/jquery.flexslider.js"></script>
   </head>
   <body>
-    <div class="header__row">
-      <div class="header__wrap">
-        <div class="header__box"><a href="#navegacion"><img class="header__icon-menu" src="https://www.amsofipo.mx/img/icons/menu.png" alt="icon"/></a><a href="https://www.amsofipo.mx/"><img class="header__logo" src="https://www.amsofipo.mx/img/logos/amsofipo-logo.png" alt="amsofipo logo"/></a></div>
-        <div class="header__box"><img class="header__icon-search" src="https://www.amsofipo.mx/img/icons/search.png" alt="amsofipo logo"/><a class="body normal uppercase colorBodyAlt header__right-menu" href="#home-contacto">contacto</a></div>
+    <header class="header__row">
+      <div class="header__wrap--medium">
+        <div class="header__box">
+          <button class="header__icon-hamburguer"><span></span> <span></span> <span></span> </button><a href="#"><img class="header__logo-amsofipo" src="img/logos/logo-amsofipo.svg" alt="amsofipo logo"/></a>
+          <button class="header__icon-search"><img src="img/icons/search.svg" alt="amsofipo logo"/></button><a class="header__contacto hover--underline" href="#home-contacto">contacto</a>
+        </div>
       </div>
-    </div>
+    </header>
     <div class="flexslider">
       <ul class="slides">
         <li><img class="slides__image" src="../img/sofipos/slider/slider-01.jpg" alt="slider"/></li>
