@@ -86,6 +86,10 @@ strong,
 em {
   font-weight: 700; }
 
+button {
+  background-color: transparent;
+  border-style: none; }
+
 :root {
   --xl: 4rem;
   --lg: 3.2rem;
