@@ -6,11 +6,10 @@
     top: 0;
     left: 0;
     height: 100vh;
-    width: 26rem;
     z-index: 1000;
 
     div {
-        height: 8rem;
+        height: 6.4rem;
         display: flex;
         justify-content: right;
         align-items: center;
@@ -49,9 +48,13 @@
 }
 
 #navegacion {
-    display: none;
+    transform-origin: left;
+    transform: scale(0,1);
+    overflow: hidden;
+
+    transition: transform 0.2s ease;
 }
 
 #navegacion:target {
-    display: block;
+    transform: scale(1);
 }

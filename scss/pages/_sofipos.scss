@@ -19,7 +19,7 @@
 
     &__ultima-uno,
     &__ultima-dos {
-        padding: 4rem 0.8rem;
+        padding: 4rem;
 
         @media only screen and (min-width: 667px) {
             width: 50%;
@@ -27,7 +27,7 @@
     }
 
     &__ultima-uno {
-        background-color: #01584f;
+        background-color: #03478e;
         
         p {
             margin-bottom: 2.4rem;
@@ -39,6 +39,10 @@
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
+
+        p {
+            margin-bottom: 2.4rem;
+        }
     }
 
     &__beneficios {
@@ -138,10 +142,7 @@
     }
 
     &__objetivo {
-        background-image: url('../img/sofipos/fig-03.png');
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-size: cover;
+        background-color: #E3328C;
 
         img {
             width: 6.4rem;

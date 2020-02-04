@@ -7,9 +7,9 @@
         background-size: cover;
         color: var(--colorText);
         font-family: 'Open Sans';
-        font-size: var(--bigger);
-        padding-top: var(--xl);
-        padding-bottom: var(--xl);
+        font-size: var(--biggest);
+        padding-top: 8rem;
+        padding-bottom: 8rem;
         text-align: center;
         text-transform: uppercase;
     }
@@ -86,7 +86,10 @@
         }
     }
     &__destacado-item:nth-child(3) {
-        background-color: var(--colorFirstAlt);
+        background-image: url('../img/home/inclusion-03.png');
+        background-position: top center;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 
     &__destacado-item:nth-child(4) {

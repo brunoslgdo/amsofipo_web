@@ -1,5 +1,13 @@
 .header {
 
+
+    &__row {
+        position: fixed;
+        background-color: white;
+        width: 100%;
+        z-index: 999;
+    }
+
     &__wrap,
     &__box {
         display: flex;
@@ -8,7 +16,7 @@
 
     &__wrap {
 
-        --header-height: 8rem;
+        --header-height: 6.4rem;
 
         justify-content: space-between;
         height: var(--header-height);
@@ -40,7 +48,7 @@
     }
 
     &__logo {
-        width: 14rem;
+        width: 18rem;
     }
 
     &__icon-menu,
@@ -53,7 +61,7 @@
     }
 
     &__icon-search {
-        width: var(--md);
+        width: var(--sm);
     }
 
     &__icon-menu {

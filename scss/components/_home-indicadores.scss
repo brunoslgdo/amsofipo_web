@@ -1,12 +1,11 @@
 .home-indicadores {
 
     &__row {
-        padding-top: 16rem;
-        padding-bottom: 16rem;
+       height: 32rem;
     }
 
     &__bg {
-        background-image: url('../img/home/indicadores.png');
+        background-image: url('../img/home/home-indicadores.jpg');
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
@@ -16,7 +15,8 @@
         
         background-color: rgba(0,0,0,0.6);
         border-collapse: collapse;
-        max-width: 48rem;
+        width: 50%;
+        height: 56.8rem;
         
         th,
         td {
@@ -30,6 +30,7 @@
 
         td {
             vertical-align: center;
+            text-align: left;
             // width: 33.33%;
         }
 
@@ -40,6 +41,6 @@
     }
 
     &__icon {
-        width: var(--lg);
+        width: 6.4rem;
     }
 }
