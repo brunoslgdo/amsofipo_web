@@ -11,12 +11,6 @@
 @import 'classes/generics';
 
 // components
-@import 'components/header';
-<<<<<<< HEAD
-@import 'components/home_banner';
-@import 'components/home-slider';
-=======
->>>>>>> e96aed8be7f88a56f3663f77a077686e78c78bec
 @import 'components/home-indicadores';
 @import 'components/home-inclusion';
 @import 'components/home-contacto';
@@ -26,6 +20,11 @@
 @import 'components/lists';
 @import 'components/carousel';
 
+@import 'components/header';
+@import 'components/hamburguer';
+@import 'components/header__right-side';
+@import 'components/header__left-side';
+    
 // pages
 @import 'pages/amsofipo';
 @import 'pages/sofipos';

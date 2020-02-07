@@ -5,29 +5,15 @@ html(lang="es")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         meta(http-equiv="X-UA-Compatible", content="ie=edge")
         title AMSOFIPO
-        link(href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800&display=swap", rel="stylesheet")
+        <link href="https://fonts.googleapis.com/css?family=Prompt:400,400i,700,700i|Raleway:400,400i,700,700i&display=swap" rel="stylesheet">
         link(href="css/styles.css?=v3", rel="stylesheet")
         link(href="css/flexslider.css", rel="stylesheet")
         script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js")
         script(src="flex-slider/jquery.flexslider.js")
     body
 
+        //- include components/hamburguer
+        //- include components/menu__left-side
+        //- include components/menu__right-side
         include components/header
-<<<<<<< HEAD
-        //- include components/home_banner
-        //- include components/home-slider
-        //- include components/home-indicadores
-        //- include components/home-inclusion
-        //- include components/home-contacto
-        //- include components/footer
-        //- include components/menu
-=======
-        include components/home-hero-image
-        include components/home-indicadores
-        include components/home-inclusion
-        include components/home-contacto
-        include components/footer
-        include components/menu
->>>>>>> e96aed8be7f88a56f3663f77a077686e78c78bec
-
-        //- script(src="js/slider.js")
+        include components/carousel
