@@ -11,7 +11,7 @@
 @import 'classes/generics';
 
 // components
-@import 'components/home-indicadores';
+
 @import 'components/home-inclusion';
 @import 'components/home-contacto';
 @import 'components/home-hero-image';
@@ -24,6 +24,8 @@
 @import 'components/hamburguer';
 @import 'components/header__right-side';
 @import 'components/header__left-side';
+
+@import 'components/indicadores-de-inclusion';
     
 // pages
 @import 'pages/amsofipo';

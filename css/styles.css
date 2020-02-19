@@ -32,6 +32,7 @@ button {
   background-color: transparent; }
 
 :root {
+  --xx: 4.8rem;
   --xl: 4rem;
   --lg: 3.2rem;
   --md: 2.4rem;
@@ -80,20 +81,29 @@ button {
 .color--body-alt {
   color: var(--body-alt); }
 
-.font--bigger {
-  font-size: var(--xl); }
+.biggest {
+  font-size: var(--xx);
+  font-weight: normal; }
 
-.font--big {
-  font-size: var(--lg); }
+.bigger {
+  font-size: var(--xl);
+  font-weight: normal; }
 
-.font--medium {
-  font-size: var(--md); }
+.big {
+  font-size: var(--lg);
+  font-weight: normal; }
 
-.font--small {
-  font-size: var(--sm); }
+.medium {
+  font-size: var(--md);
+  font-weight: normal; }
 
-.font--smaller {
-  font-size: var(--xs); }
+.small {
+  font-size: var(--sm);
+  font-weight: normal; }
+
+.smaller {
+  font-size: var(--xs);
+  font-weight: normal; }
 
 .text--uppercase {
   text-transform: uppercase; }
@@ -101,33 +111,6 @@ button {
 .hover--underline:hover {
   color: var(--body);
   text-decoration: underline; }
-
-.home-indicadores__row {
-  padding-top: 16rem;
-  padding-bottom: 16rem; }
-
-.home-indicadores__bg {
-  background-image: url("../img/home/indicadores.png");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover; }
-
-.home-indicadores__table {
-  background-color: rgba(0, 0, 0, 0.6);
-  border-collapse: collapse;
-  max-width: 48rem; }
-  .home-indicadores__table th,
-  .home-indicadores__table td {
-    padding: var(--xs); }
-  .home-indicadores__table th {
-    background-color: rgba(0, 0, 0, 0.6); }
-  .home-indicadores__table td {
-    vertical-align: center; }
-  .home-indicadores__table td:first-child {
-    text-align: center; }
-
-.home-indicadores__icon {
-  width: var(--lg); }
 
 .home-inclusion__heading {
   background-image: url("../img/home/inclusion-00.png");
@@ -550,6 +533,26 @@ button {
   @media only screen and (min-width: 568px) {
     .header__imagotipo {
       display: block; } }
+
+.indicadores-de-inclusion {
+  background-color: #9c9c9c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.6rem;
+  outline: 1px solid yellow; }
+  .indicadores-de-inclusion__icon {
+    margin-right: 1.6rem;
+    width: 9.6rem; }
+  .indicadores-de-inclusion__title {
+    font-family: 'Prompt';
+    font-size: 2.8rem;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 0.8rem; }
+  .indicadores-de-inclusion__description {
+    font-size: 1.6rem;
+    line-height: 1; }
 
 .amsofipo__wrap {
   padding-top: var(--xl);
