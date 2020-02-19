@@ -1,5 +1,6 @@
 $fontSize: (
 
+    biggest: xx,
     bigger: xl,
     big: lg,
     medium: md,
@@ -10,8 +11,9 @@ $fontSize: (
 
 @each $fontSizeName, $fontSizeValue in $fontSize {
     
-    .font--#{$fontSizeName} {
+    .#{$fontSizeName} {
         font-size: var(--#{$fontSizeValue});
+        font-weight: normal;
     }
 
 }
