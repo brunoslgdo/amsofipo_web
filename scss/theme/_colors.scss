@@ -1,10 +1,37 @@
 $colors: (
 
-    first: #005850,
-    first-alt: #007f6e,
-    text: #ffffff,
-    body: #353535,
-    body-alt: #595858,
+    first:#195852,
+    first-alt: #009999,
+    second: #2D7E6E,
+    second-alt: #34B2A9,
+    second-aux: #43B6BF,
+    third: #ADD3C9,
+    third-alt:#A7D8D3,
+    third-aux: #66FFFF,
+
+    fourth: #3c3c3c,
+    
+    // #717175
+    // #99989D
+    // #C2C3C8
+    
+    // #CC0033
+    // #FF6600
+    // #FF9900
+    
+    // #FF9966
+    // #FF6666
+    // #E3328C
+    // #BB0A7E
+
+    fifth: #993399,
+
+    sixth: #FFCC00,
+
+    // #CCCC00
+    // #EAE42F
+    
+    seventh: #FFFFFF
 
 );
 
@@ -13,10 +40,13 @@ $colors: (
     @each $colorsName, $colorsValue in $colors {
         --#{$colorsName}: #{$colorsValue};
     }
+
 }
         
 @each $colorsName, $colorsValue in $colors {
+
     .color--#{$colorsName} { 
         color: var(--#{$colorsName});
     }
+
 }
