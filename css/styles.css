@@ -60,11 +60,18 @@ button {
   max-width: 102.4rem; }
 
 :root {
-  --first: #005850;
-  --first-alt: #007f6e;
-  --text: #ffffff;
-  --body: #353535;
-  --body-alt: #595858; }
+  --first: #195852;
+  --first-alt: #009999;
+  --second: #2D7E6E;
+  --second-alt: #34B2A9;
+  --second-aux: #43B6BF;
+  --third: #ADD3C9;
+  --third-alt: #A7D8D3;
+  --third-aux: #66FFFF;
+  --fourth: #3c3c3c;
+  --fifth: #993399;
+  --sixth: #FFCC00;
+  --seventh: #FFFFFF; }
 
 .color--first {
   color: var(--first); }
@@ -72,14 +79,35 @@ button {
 .color--first-alt {
   color: var(--first-alt); }
 
-.color--text {
-  color: var(--text); }
+.color--second {
+  color: var(--second); }
 
-.color--body {
-  color: var(--body); }
+.color--second-alt {
+  color: var(--second-alt); }
 
-.color--body-alt {
-  color: var(--body-alt); }
+.color--second-aux {
+  color: var(--second-aux); }
+
+.color--third {
+  color: var(--third); }
+
+.color--third-alt {
+  color: var(--third-alt); }
+
+.color--third-aux {
+  color: var(--third-aux); }
+
+.color--fourth {
+  color: var(--fourth); }
+
+.color--fifth {
+  color: var(--fifth); }
+
+.color--sixth {
+  color: var(--sixth); }
+
+.color--seventh {
+  color: var(--seventh); }
 
 .biggest {
   font-size: var(--xx);
