@@ -1,0 +1,129 @@
+include ../components/navbar
+
+.header
+    picture
+        source(srcset="img/header/sofipo-desktop.jpg", class="header__background", media="(min-width: 568px)")
+        img(src="img/header/sofipo-movil.jpg", class="header__background", alt="sofipo")
+    .header__box
+        .header__jumbotron
+            .header__fancy
+                h1.header__title sofipo
+                h2.header__subtitle Sociedades Financieras Populares
+            p.header__text Son entidades que ofrecen servicios de ahorro, crédito e inversión, particularmente a un sector popular y en zonas geográficas rurales y periféricas urbanas, donde la banca comercial generalmente no está participando.
+
+.sofipo__row
+    
+    .featured.featured--left
+        .featured__image
+            img(src="img/featured/objetivo.jpg", alt="objetivo")
+        .featured__content
+            .featured__header
+                img(src="img/featured/objective-icon.svg", class="featured__icon", alt="objetivo")
+                h1.featured__title objetivo
+            .featured__jumbotron
+                p.featured__text Las SOFIPO tienen como propósito el fomentar el ahorro popular y expandir el acceso al financiamiento a aquellas personas que por su situación, se han visto excluidas de los sistemas tradicionales de crédito, y en general, propiciar la solidaridad, la superación económica y social, y el bienestar de sus miembros y de las comunidades en que operan, sobre bases formativas y del esfuerzo individual y colectivo.
+    
+    .featured.featured--right
+        .featured__image
+            img(src="img/featured/clientes-de-las-sofipo.jpg", alt="clientes de las sofipo")
+        .featured__content
+            .featured__header
+                img(src="img/featured/objective-icon.svg", class="featured__icon", alt="objetivo")
+                h1.featured__title clientes de las sofipo
+            .featured__jumbotron
+                p.featured__text Son aquellos que los bancos tradicionalmente no atienden por ubicación geográfica o porque no cumplen con los requisitos de las instituciones tradicionales, en las SOFIPOS existen productos hechos a las necesidades del cliente, pueden ser individuales, solidarios o comunales.
+
+.sofipo__row.sofipo__casos-de-exito
+
+    <h1 class="section-title section-title--seventh"> <img src="img/casos-de-exito/award.svg", class="section-title__icon", alt="casos de éxito"> casos de éxito</h1>
+    h2.section-subtitle Inspírate con las historias de quienes han alcanzado sus sueños
+ 
+    include ../components/card-video
+
+.sofipo__row
+    
+    .sofipo__wrap
+    
+        <h1 class="section-title section-title--first"> <img src="img/casos-de-exito/award.svg", class="section-title__icon", alt="casos de éxito"> Portafolio de productos en las SOFIPO</h1>
+        p.section-text Ofrecen una amplia gama de productos y servicios, los créditos pueden otorgarse de manera individual, solidaria o comunal. Este portafolio se ha adaptado a las necesidades de nuestros clientes, durante más de 20 años.
+
+    .sofipo__wrap
+        
+        .sofipo__portafolio-productos
+
+            .portafolio-productos-list
+
+                .portafolio-productos-list__box
+                    img(src="img/portafolio-productos/credit-card.svg", class="portafolio-productos-list__icon", alt="portafolio de productos en las sofipo")
+                    h2.portafolio-productos-list__title créditos
+                
+                .portafolio-productos-list__box
+                    ul.portafolio-productos-list__list
+                        li.portafolio-productos-list__item Personal
+                        li.portafolio-productos-list__item Para el consumo
+                        li.portafolio-productos-list__item Productivo
+                        li.portafolio-productos-list__item Educación
+                        li.portafolio-productos-list__item Compra de vivienda
+                        li.portafolio-productos-list__item Mejoramiento de vivienda
+                        li.portafolio-productos-list__item Microempresa
+                        li.portafolio-productos-list__item Activo fijo del negocio
+                        li.portafolio-productos-list__item Arrendamiento
+                        li.portafolio-productos-list__item Pyme
+            
+            .portafolio-productos-list
+
+                .portafolio-productos-list__box
+                    img(src="img/portafolio-productos/savings.svg", class="portafolio-productos-list__icon", alt="portafolio de productos en las sofipo")
+                    h2.portafolio-productos-list__title ahorros
+                
+                .portafolio-productos-list__box
+                    ul.portafolio-productos-list__list
+                        li.portafolio-productos-list__item Cuenta de ahorros
+                        li.portafolio-productos-list__item Cuenta corriente
+                        li.portafolio-productos-list__item Certificado de depósito
+                        li.portafolio-productos-list__item Pensión
+                        li.portafolio-productos-list__item Ahorros para jóvenes
+                        li.portafolio-productos-list__item Programas de ahorros
+                        li.portafolio-productos-list__item Depósitos a plazos fijos
+                        li.portafolio-productos-list__item Ahorro infantil
+            
+            .portafolio-productos-list
+
+                .portafolio-productos-list__box
+                    img(src="img/portafolio-productos/services.svg", class="portafolio-productos-list__icon", alt="portafolio de productos en las sofipo")
+                    h2.portafolio-productos-list__title servicios
+                
+                .portafolio-productos-list__box
+                    ul.portafolio-productos-list__list
+                        li.portafolio-productos-list__item Transferencias nacionales<br>e internacionales
+                        li.portafolio-productos-list__item Pagos de servicios
+                        li.portafolio-productos-list__item Programas de gobierno
+                        li.portafolio-productos-list__item Tarjeta de débito / ATM
+                        li.portafolio-productos-list__item Pagos electrónicos
+                        li.portafolio-productos-list__item Cajeros automáticos
+                        li.portafolio-productos-list__item Remesas
+            
+            .portafolio-productos-list
+
+                .portafolio-productos-list__box
+                    img(src="img/portafolio-productos/insurance.svg", class="portafolio-productos-list__icon", alt="portafolio de productos en las sofipo")
+                    h2.portafolio-productos-list__title seguros
+                
+                .portafolio-productos-list__box
+                    ul.portafolio-productos-list__list
+                        li.portafolio-productos-list__item Salud
+                        li.portafolio-productos-list__item Vida
+                        li.portafolio-productos-list__item Propiedad
+                        li.portafolio-productos-list__item Discapacidad
+                        li.portafolio-productos-list__item Cultivo / Agrícola
+                        li.portafolio-productos-list__item Crédito de vida
+
+.sofipo__row.sofipo__beneficios
+
+    .sofipo__wrap
+
+        <h1 class="section-title section-title--seventh"> <img src="img/casos-de-exito/award.svg", class="section-title__icon", alt="casos de éxito"> beneficios clientes y socios</h1>
+    
+    .sofipo__wrap        
+        
+        include ../components/card-beneficios
