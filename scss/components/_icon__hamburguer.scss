@@ -1,0 +1,29 @@
+.hamburguer {
+
+    cursor: pointer;
+
+    width: 3.2rem;
+    height: 2.4rem;
+
+    &__line {
+        background-color: var(--first);
+        display: block;
+        width: 100%;
+        height: 0.4rem;
+    }
+
+    &__line:nth-child(2) {
+        --margin: 0.6rem;
+        margin-top: var(--margin);
+        margin-bottom: var(--margin);
+
+        transition: margin 0.2s ease;
+    }
+
+    &:hover &__line:nth-child(2) {
+        --margin: 0.2rem;
+        margin-top: var(--margin);
+        margin-bottom: var(--margin);
+    }
+
+}
