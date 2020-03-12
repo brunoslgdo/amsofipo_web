@@ -1,13 +1,66 @@
 .featured {
 
-    margin: auto;
+    margin-right: auto;
+    margin-bottom: 4rem;
+    margin-left: auto;
+
     position: relative;
     max-width: 32rem;
 
+    &:last-child {
+
+        margin-bottom: 0;
+
+    }
+
     @media only screen and (min-width: 667px) {
 
-        max-width: 67.2rem;
+        max-width: 64rem;
         height: 48rem;
+
+        &--left {
+            
+            .featured__image {
+                left: 0;
+            }
+
+            .featured__content {
+                margin-left: 16rem;
+            }
+
+            .featured__header {
+
+                @media only screen and (min-width: 667px) {
+        
+                    margin-left: 16rem;
+        
+                }        
+        
+            }
+        
+        }
+
+        &--right {
+
+            .featured__image {
+                right: 0;
+            }
+
+            .featured__content {
+                margin-right: 16rem;
+            }
+
+            .featured__header {
+
+                @media only screen and (min-width: 667px) {
+        
+                    margin-right: 16rem;
+        
+                }        
+        
+            }
+        
+        }
 
     }
 
@@ -23,7 +76,7 @@
             display: block;
             
             border: 0.2rem solid var(--fifth);
-            border-radius: 0.8rem;
+            border-radius: 0.4rem;
             
             position: absolute;
             top: 3.2rem;
@@ -36,8 +89,12 @@
         img {
 
             display: block;
-            border-radius: 0.8rem;
-            max-width: 32rem;
+            border-radius: 0.4rem;
+            max-width: 100%;
+
+            @media only screen and (min-width: 667px) {
+                max-width: 32rem;
+            }
         
         }
 
@@ -53,7 +110,6 @@
 
         @media only screen and (min-width: 667px) {
 
-            margin-left: 16rem;
             padding: 0;
 
             position: relative;
@@ -64,19 +120,8 @@
     
     }
 
-    &__header {
-
-        @media only screen and (min-width: 667px) {
-
-            position: relative;
-            margin-left: 16rem;
-
-        }        
-
-    }
-
     &__icon {
-    
+        width: 6.4rem;
     }
 
     &__title {
@@ -86,7 +131,7 @@
         font-size: 3.2rem;
         text-transform: uppercase;
         
-        margin-top: 1.6rem;
+        margin-top: 0.8rem;
         margin-bottom: 2.4rem;
     
     }
@@ -94,8 +139,8 @@
     &__jumbotron {
 
         background-color: var(--seventh);
-        border-radius: 0.8rem;
-        box-shadow: 0 0 0.4rem rgba(0,0,0,0.4);
+        border-radius: 0.4rem;
+        box-shadow: 0 0 0.2rem rgba(0,0,0,0.2);
         
         padding: 2.4rem;
     
