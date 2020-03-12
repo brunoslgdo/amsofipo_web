@@ -1,29 +1,32 @@
-[class*="__container"] {
+[class*="__row"] {
     
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-
-    padding-left: 1.6rem;
-    padding-right: 1.6rem;
+    padding: 8rem 1.6rem;
 
 }
 
-[class*="__wrap--"] {
-    position: relative;
+[class*="__wrap"] {
+
     margin: auto;
-    width: 100%;
-}
-
-[class*="__wrap--lg"] {
-    max-width: 136.6rem;
-}
-
-[class*="__wrap--md"] {
-    max-width: 128rem;
-}
-
-[class*="__wrap--sm"] {
     max-width: 102.4rem;
+
+}
+
+[class*="__grid"] {
+
+    display: grid;
+    gap: 3.2rem;
+
+    @media only screen and (min-width: 667px) {
+
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+
+    }
+
+    @media only screen and (min-width: 1024px) {
+
+        grid-template-columns: repeat(3, 1fr);
+
+    }
+
 }
