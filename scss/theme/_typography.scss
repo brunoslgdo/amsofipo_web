@@ -18,6 +18,37 @@ $fontSize: (
 
 }
 
-.text--uppercase {
+.section-title {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Montserrat' !important;
+    font-size: 4rem;
+    font-weight: 800;
+    text-align: center;
     text-transform: uppercase;
+    
+    margin-bottom: 2.4rem;
+    
+    &--first {
+        color: var(--first);
+    }
+
+    &--seventh {
+        color: var(--seventh);
+    }
+
+    &__icon {
+        padding-right: 1.6rem;
+        // width: 3.9rem;
+    }
+
+}
+
+.section-text {
+
+    font-size: 1.4rem;
+
 }
