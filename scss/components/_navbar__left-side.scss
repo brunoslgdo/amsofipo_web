@@ -1,37 +1,10 @@
-.header {
-
-    &__left-side {
-
-        display: inline-flex;
-        justify-content: center;
-        align-items: center;
+.navbar {
     
-    }
-
-    &__isotipo,
-    &__imagotipo {
-        margin-left: 1.6rem;
-    }
-
-    &__isotipo {
-        
-        width: 4.8rem;
-
-        @media only screen and (min-width: 568px) {
-            display: none;
-        }
-
-    }
-
     &__imagotipo {
 
-        display: none;
-        height: 4.8rem;
-
-        @media only screen and (min-width: 568px) {
-            display: block;
-        }
-
+        display: block;
+        height: 4rem;
+    
     }
 
 }
