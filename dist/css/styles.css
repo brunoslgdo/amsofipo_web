@@ -21,7 +21,8 @@ html {
   box-sizing: inherit;
   font-family: 'Prompt', sans-serif;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  outline: 1px solid yellow; }
 
 h1,
 h2,
@@ -81,10 +82,10 @@ button {
   --third-alt: #A7D8D3;
   --third-aux: #66FFFF;
   --fourth: #3c3c3c;
-  --bg-first: #FF9966;
   --fifth: #993399;
   --sixth: #FFCC00;
-  --seventh: #FFFFFF; }
+  --seventh: #FFFFFF;
+  --bg-first: #FF9966; }
 
 .color--first {
   color: var(--first); }
@@ -113,9 +114,6 @@ button {
 .color--fourth {
   color: var(--fourth); }
 
-.color--bg-first {
-  color: var(--bg-first); }
-
 .color--fifth {
   color: var(--fifth); }
 
@@ -125,49 +123,76 @@ button {
 .color--seventh {
   color: var(--seventh); }
 
-.biggest {
-  font-size: var(--xx);
+.color--bg-first {
+  color: var(--bg-first); }
+
+:root {
+  --title: 4rem;
+  --subtitle: 1.8rem;
+  --text: 1.4rem;
+  --bold: 700;
+  --regular: 400;
+  --light: 300; }
+
+.title {
+  font-size: var(--title);
   font-weight: normal; }
 
-.bigger {
-  font-size: var(--xl);
+.subtitle {
+  font-size: var(--subtitle);
   font-weight: normal; }
 
-.big {
-  font-size: var(--lg);
+.text {
+  font-size: var(--text);
   font-weight: normal; }
 
-.medium {
-  font-size: var(--md);
-  font-weight: normal; }
+.bold {
+  font-weight: var(--bold); }
 
-.small {
-  font-size: var(--sm);
-  font-weight: normal; }
+.regular {
+  font-weight: var(--regular); }
 
-.smaller {
-  font-size: var(--xs);
-  font-weight: normal; }
+.light {
+  font-weight: var(--light); }
 
-.section-title {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: 'Montserrat' !important;
-  font-size: 4rem;
-  font-weight: 800;
+[class*="-title"],
+.title {
+  font-family: 'Montserrat';
+  font-size: 3.2rem;
+  font-weight: var(--bold);
+  text-transform: uppercase; }
+  @media only screen and (min-width: 1024px) {
+    [class*="-title"],
+    .title {
+      font-size: var(--title); } }
+
+[class*="--first"] {
+  color: var(--first); }
+
+[class*="--seventh"] {
+  color: var(--seventh); }
+
+.icon-title {
+  display: grid;
+  grid-template-columns: 1;
+  grid-template-rows: repeat(2, auto);
+  justify-items: center;
   text-align: center;
-  text-transform: uppercase;
-  margin-bottom: 2.4rem; }
-  .section-title--first {
-    color: var(--first); }
-  .section-title--seventh {
-    color: var(--seventh); }
-  .section-title__icon {
-    padding-right: 1.6rem; }
+  margin-bottom: 4rem; }
+  @media only screen and (min-width: 1024px) {
+    .icon-title {
+      display: flex;
+      justify-content: center;
+      align-items: center; } }
+  .icon-title__glyph {
+    grid-row-start: 2; }
+    @media only screen and (min-width: 1024px) {
+      .icon-title__glyph {
+        grid-row-start: initial;
+        margin-right: 1.6rem; } }
 
-.section-text {
-  font-size: 1.4rem; }
+.subtitle {
+  font-size: var(--subtitle); }
 
 .hover--underline:hover {
   color: var(--body);
@@ -500,6 +525,30 @@ button {
     color: var(--seventh);
     font-size: 1.4rem; }
 
+.list {
+  padding-left: 1.6rem; }
+  .list--dot .list__item {
+    font-size: 1.4rem;
+    position: relative; }
+    .list--dot .list__item::after {
+      content: "\25CF";
+      color: var(--first);
+      display: block;
+      position: absolute;
+      top: 0.04rem;
+      left: -1.6rem; }
+
+.consulta-documentos {
+  display: flex; }
+  .consulta-documentos__descripcion {
+    margin-left: 2.4rem; }
+  .consulta-documentos__title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-transform: capitalize; }
+  .consulta-documentos__text {
+    font-size: 1.4rem; }
+
 .sofipo {
   margin-top: 6.4rem; }
   @media only screen and (min-width: 1024px) {
@@ -539,6 +588,19 @@ button {
     background-color: var(--first); }
     .sofipo__beneficios .sofipo__wrap:nth-child(2) {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: 1fr;
       grid-template-rows: auto;
       gap: 3.2rem; }
+      @media only screen and (min-width: 568px) {
+        .sofipo__beneficios .sofipo__wrap:nth-child(2) {
+          grid-template-columns: repeat(2, 1fr); } }
+      @media only screen and (min-width: 1024px) {
+        .sofipo__beneficios .sofipo__wrap:nth-child(2) {
+          grid-template-columns: repeat(3, 1fr); } }
+  .sofipo__legales {
+    background-color: var(--bg-first); }
+    .sofipo__legales .sofipo__wrap {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: auto;
+      gap: 16rem; }

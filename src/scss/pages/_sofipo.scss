@@ -70,9 +70,42 @@
         .sofipo__wrap:nth-child(2) {
 
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: 1fr;
             grid-template-rows: auto;
             gap: 3.2rem;
+
+            @media only screen and (min-width: 568px) {
+
+                grid-template-columns: repeat(2, 1fr);
+
+            }
+            
+            @media only screen and (min-width: 1024px) {
+
+                grid-template-columns: repeat(3, 1fr);
+
+            }
+
+        }
+
+    }
+
+    &__legales {
+
+        background-color: var(--bg-first);
+
+        .sofipo__wrap {
+
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: auto;
+            gap: 16rem;
+            
+            .sofipo__box {
+
+                
+
+            }
 
         }
 

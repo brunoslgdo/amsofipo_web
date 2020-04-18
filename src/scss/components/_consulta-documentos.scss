@@ -1,0 +1,25 @@
+.consulta-documentos {
+
+    display: flex;
+
+    &__descripcion {
+        margin-left: 2.4rem;
+    }
+
+    &__icon {
+
+    }
+
+    &__title {
+
+        font-size: 1.8rem;
+        font-weight: 600;
+        text-transform: capitalize;
+
+    }
+
+    &__text {
+        font-size: 1.4rem;
+    }
+
+}

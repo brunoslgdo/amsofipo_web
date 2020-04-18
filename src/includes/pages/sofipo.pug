@@ -35,8 +35,11 @@ include ../components/navbar
 
 .sofipo__row.sofipo__casos-de-exito
 
-    <h1 class="section-title section-title--seventh"> <img src="img/casos-de-exito/award.svg", class="section-title__icon", alt="casos de éxito"> casos de éxito</h1>
-    h2.section-subtitle Inspírate con las historias de quienes han alcanzado sus sueños
+    h1.icon-title
+        img(src="img/casos-de-exito/award.svg", class="icon-title__glyph", alt="casos de éxito")
+        span.icon-title--seventh Casos de éxito
+    
+    h2.subtitle.subtitle--seventh Inspírate con las historias de quienes han alcanzado sus sueños
  
     include ../components/card-video
 
@@ -44,7 +47,9 @@ include ../components/navbar
     
     .sofipo__wrap
     
-        <h1 class="section-title section-title--first"> <img src="img/casos-de-exito/award.svg", class="section-title__icon", alt="casos de éxito"> Portafolio de productos en las SOFIPO</h1>
+        h1.icon-title
+            img(src="img/portafolio-productos/portfolio.svg", class="icon-title__glyph", alt="portafolio de productos en las sofipo")
+            span.icon-title--first Portafolio de productos
         p.section-text Ofrecen una amplia gama de productos y servicios, los créditos pueden otorgarse de manera individual, solidaria o comunal. Este portafolio se ha adaptado a las necesidades de nuestros clientes, durante más de 20 años.
 
     .sofipo__wrap
@@ -122,8 +127,41 @@ include ../components/navbar
 
     .sofipo__wrap
 
-        <h1 class="section-title section-title--seventh"> <img src="img/casos-de-exito/award.svg", class="section-title__icon", alt="casos de éxito"> beneficios clientes y socios</h1>
+        h1.icon-title
+            img(src="img/casos-de-exito/award.svg", class="icon-title__glyph", alt="beneficios clientes y socios")
+            span.icon-title--seventh Beneficios de clientes y socios
     
     .sofipo__wrap        
         
         include ../components/card-beneficios
+
+.sofipo__row.sofipo__legales
+
+    .sofipo__wrap
+
+        .sofipo__box
+            
+            h1.title.title--seventh naturaleza jurídica
+
+            p.section-text Son instituciones de microfinanzas constituidas como Sociedades Anónimas de Capital Variable, que operan mediante la autorización que les otorga la CNBV, conforme a la facultad que les confiere el artículo 9 de la LACP y previo dictamen favorable otorgado por una Federación.
+            p.section-text Las SOFIPO tienen su domicilio en territorio nacional, con una duración indefinida, y están facultadas para prestar servicios tanto a sus socios como a sus clientes, en los términos de la LACP.
+            p.section-text En su carácter de sociedades anónimas deben cumplir también con la Ley General de Sociedades Mercantiles (LGSM), ya que son empresas privadas y su capital se integra con las aportaciones que hacen sus accionistas.
+
+            h1.title.title--seventh aspectos generales
+            
+            p.section-text La LACP reformada y publicada el 13 de agosto de 2009 establece como objeto:
+            ul.list.list--dot
+                li.list__item Regular, promover y facilitar la captación de fondos o recursos monetarios y su colocación mediante préstamos o créditos u otras operaciones por parte de las SOFIPO.
+                li.list__item Proteger los intereses de sus clientes.
+                li.list__item Establecer los términos en los que el Estado ejerce la rectoría de las referidas SOFIPO.
+        
+        .sofipo__box
+
+            h1.title.title--seventh quieres saber más
+            p.section-text Consulta los siguientes documentos:
+
+            .consulta-documentos
+                img(src="", class="consulta-documentos__icon", alt="ver")
+                .consulta-documentos__descripcion
+                    h2.consulta-documentos__title guía
+                    p.consulta-documentos__text Solicitud de autorización para la organización y funcionamiento de SOFIPO
