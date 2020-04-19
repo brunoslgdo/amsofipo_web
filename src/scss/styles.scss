@@ -4,6 +4,12 @@
 
 // layout
 @import 'layout/reset';
+@import 'layout/model-box';
 
 // components
+
+@import 'components/header';
 @import 'components/menu';
+@import 'components/hamburguer';
+
+@import 'components/jumbotron';

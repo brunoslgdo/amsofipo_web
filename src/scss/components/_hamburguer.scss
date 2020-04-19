@@ -2,28 +2,43 @@
 
     cursor: pointer;
 
-    width: 3.2rem;
-    height: 2.4rem;
+    width: var(--lg);
+    height: var(--md);
+
+    @media only screen and (min-width: 1024px) {
+        display: none;
+    }
 
     &__line {
-        background-color: var(--first);
+
         display: block;
+        
+        background-color: var(--first);
+        border-radius: var(--lg);
+        
         width: 100%;
-        height: 0.4rem;
+        height: var(--ss);
+    
     }
 
     &__line:nth-child(2) {
+
         --margin: 0.6rem;
+        
         margin-top: var(--margin);
         margin-bottom: var(--margin);
 
         transition: margin 0.2s ease;
+
     }
 
     &:hover &__line:nth-child(2) {
+        
         --margin: 0.2rem;
+        
         margin-top: var(--margin);
         margin-bottom: var(--margin);
+   
     }
 
 }

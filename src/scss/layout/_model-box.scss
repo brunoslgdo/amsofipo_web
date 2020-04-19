@@ -1,32 +1,35 @@
+$sizes: (
+
+    xx: 8rem,
+    xl: 4rem,
+    lg: 3.2rem,
+    md: 2.4rem,
+    sm: 1.6rem,
+    xs: 0.8rem,
+    ss: 0.4rem
+
+);
+
+:root {
+
+    @each $sizesName, $sizesValue in $sizes {
+        --#{$sizesName}: #{$sizesValue};
+    }
+
+}
+
 [class*="__row"] {
     
-    padding: 8rem 1.6rem;
+    padding: var(--xx) var(--sm);
+
+    @media only screen and (min-width: 768px) {
+        padding-right: var(--lg);
+        padding-left: var(--lg);
+    }
 
 }
 
-[class*="__wrap"] {
-
+[class*="__column"] {
     margin: auto;
     max-width: 102.4rem;
-
-}
-
-[class*="__grid"] {
-
-    display: grid;
-    gap: 3.2rem;
-
-    @media only screen and (min-width: 667px) {
-
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: auto;
-
-    }
-
-    @media only screen and (min-width: 1024px) {
-
-        grid-template-columns: repeat(3, 1fr);
-
-    }
-
 }

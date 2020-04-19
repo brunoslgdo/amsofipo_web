@@ -1,11 +1,11 @@
 .menu {
 
     position: fixed;
-    top: calc(8rem + 1.6rem);
-    right: 1.6rem;
+    top: calc(var(--xx) + var(--sm));
+    right: var(--sm);
 
     @media only screen and (min-width: 768px) {
-        right: 3.2rem;
+        right: var(--lg);
     }
 
     @media only screen and (min-width: 1024px) {
@@ -18,7 +18,7 @@
 
     &__item {
         
-        margin-bottom: 1.6rem;
+        margin-bottom: var(--sm);
         text-align: right;
 
         &:last-child {
@@ -27,7 +27,7 @@
 
         @media only screen and (min-width: 1024px) {
             
-            margin-right: 3.2rem;
+            margin-right: var(--lg);
             margin-bottom: 0;
 
             &:last-child {
@@ -42,29 +42,33 @@
 
         display: inline-flex;
 
+        background-color: var(--white);
+
         color: var(--first);
 
         border: 0.2rem solid var(--first);
-        border-radius: 4.8rem;
+        border-radius: var(--xl);
         
         font-family: var(--upper);
-        font-size: 1.2rem;
+        font-size: var(--menu);
         font-weight: var(--bold);
         
         text-transform: uppercase;
 
-        padding: 0.8rem 1.2rem;
+        padding: var(--xs) 1.2rem;
 
         @media only screen and (min-width: 1024px) {
 
             align-items: center;
+
+            background-color: initial;
 
             border: initial;
             border-radius: initial;
 
             padding: initial;
 
-            height: 8rem;
+            line-height: var(--xx);
 
         }
     
