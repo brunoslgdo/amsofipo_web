@@ -1,38 +1,9 @@
-// layout
-@import 'layout/reset';
-@import 'layout/sizes';
-@import 'layout/model-box';
-
 // theme
 @import 'theme/colors';
 @import 'theme/typography';
 
-// classes
-@import 'classes/general';
+// layout
+@import 'layout/reset';
 
 // components
-
-@import 'components/buttons';
-
 @import 'components/menu';
-@import 'components/navbar__left-side';
-@import 'components/navbar__right-side';
-@import 'components/icon__close';
-@import 'components/navbar';
-
-@import 'components/header';
-
-@import 'components/featured'; 
-
-@import 'components/card-video';
-
-@import 'components/portafolio-productos-list'; 
-
-@import 'components/card-beneficios';
-
-@import 'components/list';
-
-@import 'components/consulta-documentos';
-
-// pages
-@import 'pages/sofipo';

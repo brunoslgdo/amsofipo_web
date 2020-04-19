@@ -1,11 +1,27 @@
+-
+    const pages = [
+        {
+            title: 'amsofipo',
+            url: 'amsofipo.html',
+            child: []
+        },
+        {
+            title: 'sofipo',
+            url: 'sofipo.html',
+            child: []
+        },
+        {
+            title: 'inclusión financiera',
+            url: 'inclusion-financiera.html',
+            child: []
+        },
+        {
+            title: 'blog',
+            url: 'blog.html',
+            child: []
+        }
+    ]
+
 ul.menu
-    li.menu__item
-        a(href="#", class="menu__link menu__link--ghost") amsofipo
-    li.menu__item 
-        a(href="#", class="menu__link menu__link--ghost") sofipo
-    li.menu__item 
-        a(href="#", class="menu__link menu__link--ghost") inclusión financiera
-    li.menu__item 
-        a(href="#", class="menu__link menu__link--ghost") blog
-    li.menu__item
-        button.button contáctanos
+    each page in pages
+        li.menu__item: a(href= page.url).menu__link= page.title
