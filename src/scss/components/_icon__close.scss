@@ -1,0 +1,48 @@
+.icon {
+    
+    &__close {
+
+        border-radius: 100%;
+        border: 0.1rem solid var(--first);
+
+        position: relative;
+
+        width: 3.2rem;
+        height: 3.2rem;
+
+        @media only screen and (min-width: 1024px) {
+
+            display: none;
+
+        }
+    
+    }
+
+    &__cross {
+
+        display: block;
+
+        background-color: var(--first);
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+
+        width: 2rem;
+        height: 0.2rem;
+
+        &:first-child {
+
+            transform: translate(-50%, -50%) rotate(45deg);
+
+        }
+
+        &:last-child {
+
+            transform: translate(-50%, -50%) rotate(-45deg);
+
+        }
+
+    }
+
+}

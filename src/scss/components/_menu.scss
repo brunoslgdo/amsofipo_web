@@ -1,0 +1,73 @@
+.menu {
+
+    position: fixed;
+    top: calc(8rem + 1.6rem);
+    right: 1.6rem;
+
+    @media only screen and (min-width: 768px) {
+        right: 3.2rem;
+    }
+
+    @media only screen and (min-width: 1024px) {
+     
+        display: inline-flex;
+        position: initial;
+
+    }
+
+
+    &__item {
+        
+        margin-bottom: 1.6rem;
+        text-align: right;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        @media only screen and (min-width: 1024px) {
+            
+            margin-right: 3.2rem;
+            margin-bottom: 0;
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+        }
+
+    }
+
+    &__link {
+
+        display: inline-flex;
+
+        color: var(--first);
+
+        border: 0.2rem solid var(--first);
+        border-radius: 4.8rem;
+        
+        font-family: var(--upper);
+        font-size: 1.2rem;
+        font-weight: var(--bold);
+        
+        text-transform: uppercase;
+
+        padding: 0.8rem 1.2rem;
+
+        @media only screen and (min-width: 1024px) {
+
+            align-items: center;
+
+            border: initial;
+            border-radius: initial;
+
+            padding: initial;
+
+            height: 8rem;
+
+        }
+    
+    }
+
+}

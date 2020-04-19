@@ -1,0 +1,19 @@
+.card-beneficios {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 0.1rem solid var(--seventh);
+    border-radius: 0.4rem;
+
+    padding: 2.4rem;
+
+    &__text {
+
+        color: var(--seventh);
+        font-size: 1.4rem;
+
+    }
+
+}

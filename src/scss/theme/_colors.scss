@@ -1,0 +1,17 @@
+$colors: (
+
+    first: #195852,
+    second: #43B6BF,
+    text: #3C3C3C,
+
+    white: #ffffff,
+
+);
+
+:root {
+
+    @each $colors-key, $colors-value in $colors {
+        --#{$colors-key}: #{$colors-value};
+    }
+
+}
