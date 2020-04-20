@@ -14,7 +14,7 @@ $font-size: (
     slider: 5.6rem,
 
     title: 4rem,
-    subtitle: 2.4rem,
+    subtitle: 2rem,
     normal: 1.6rem,
     small: 1.4rem,
     smaller: 1rem
@@ -92,7 +92,7 @@ $line-height: (
 %subtitle {
 
     font-size: var(--subtitle);
-    font-weight: var(--regular);
+    font-weight: var(--light);
 
 }
 

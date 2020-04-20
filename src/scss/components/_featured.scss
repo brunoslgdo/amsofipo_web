@@ -1,155 +1,15 @@
 .featured {
 
-    margin-right: auto;
-    margin-bottom: 4rem;
-    margin-left: auto;
-
-    position: relative;
-    max-width: 32rem;
-
-    &:last-child {
-
-        margin-bottom: 0;
+    &__header {
 
     }
 
-    @media only screen and (min-width: 667px) {
-
-        max-width: 64rem;
-        height: 48rem;
-
-        &--left {
-            
-            .featured__image {
-                left: 0;
-            }
-
-            .featured__content {
-                margin-left: 16rem;
-            }
-
-            .featured__header {
-
-                @media only screen and (min-width: 667px) {
-        
-                    margin-left: 16rem;
-        
-                }        
-        
-            }
-        
-        }
-
-        &--right {
-
-            .featured__image {
-                right: 0;
-            }
-
-            .featured__content {
-                margin-right: 16rem;
-            }
-
-            .featured__header {
-
-                @media only screen and (min-width: 667px) {
-        
-                    margin-right: 16rem;
-        
-                }        
-        
-            }
-        
-        }
+    &__body {
 
     }
 
     &__image {
-
-        position: absolute;
-
-        z-index: -1;
-
-        &::before {
-            
-            content: "";
-            display: block;
-            
-            border: 0.2rem solid var(--fifth);
-            border-radius: 0.4rem;
-            
-            position: absolute;
-            top: 3.2rem;
-            right: 3.2rem;
-            bottom: 3.2rem;
-            left: 3.2rem;
         
-        }
-
-        img {
-
-            display: block;
-            border-radius: 0.4rem;
-            max-width: 100%;
-
-            @media only screen and (min-width: 667px) {
-                max-width: 32rem;
-            }
-        
-        }
-
-    }
-
-    &__content {
-
-        text-align: center;
-
-        padding-top: 50%;
-        padding-left: 1.6rem;
-        padding-right: 1.6rem;
-
-        @media only screen and (min-width: 667px) {
-
-            padding: 0;
-
-            position: relative;
-            top: 50%;
-            transform: translateY(-50%);
-
-        }
-    
-    }
-
-    &__icon {
-        width: 6.4rem;
-    }
-
-    &__title {
-        
-        color: var(--seventh);
-        font-family: 'Montserrat', sans-serif;
-        font-size: 3.2rem;
-        text-transform: uppercase;
-        
-        margin-top: 0.8rem;
-        margin-bottom: 2.4rem;
-    
-    }
-
-    &__jumbotron {
-
-        background-color: var(--seventh);
-        border-radius: 0.4rem;
-        box-shadow: 0 0 0.2rem rgba(0,0,0,0.2);
-        
-        padding: 2.4rem;
-    
-    }
-
-    &__text {
-        color: var(--text);
-        font-size: 1.4rem;
-        text-align: left;
     }
 
 }

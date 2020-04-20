@@ -1,7 +1,13 @@
 html {
     box-sizing: border-box;
     font-size: 10px;
-    padding-top: var(--xx);
+
+    padding-top: 4.8rem;
+
+    @media only screen and (min-width: 1024px) {
+        padding-top: 7.2rem;
+    }
+
 }
 
 *, *::after, *::before {

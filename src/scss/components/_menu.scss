@@ -1,7 +1,7 @@
 .menu {
 
     position: fixed;
-    top: calc(var(--xx) + var(--sm));
+    top: calc(4.8rem + var(--sm));
     right: var(--sm);
 
     @media only screen and (min-width: 768px) {
@@ -68,7 +68,7 @@
 
             padding: initial;
 
-            line-height: var(--xx);
+            // line-height: var(--xx);
 
         }
     
