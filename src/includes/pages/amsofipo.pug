@@ -1,15 +1,16 @@
-<!DOCTYPE html>
-html(lang="es")
-    head
-        meta(charset="UTF-8")
-        meta(name="viewport", content="width=device-width, initial-scale=1.0")
-        meta(http-equiv="X-UA-Compatible", content="ie=edge")
-        title AMSOFIPO
-        link(href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Prompt:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap", rel="stylesheet")
-        link(href="../css/styles.css", rel="stylesheet")
-    body
+extends ../templates/pages
 
-        include ../components/header
-        include ../components/jumbotron
+block jumbotron
+    +jumbotron(0)
 
-        include ../components/featured
+block featured
+    .__row
+        .__column
+            +featured_right(0)
+            +featured_left(1)
+
+block more_content
+    .__row
+        .__column
+            +header_section('nuestros asociados', 'association', 'first')
+            include ../components/associates

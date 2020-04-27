@@ -1,0 +1,41 @@
+mixin jumbotron(index)
+    .jumbotron
+        picture.jumbotron__background
+            source(srcset=`${imagePath}${jumbotron[index].desktop}.jpg`, class="jumbotron__image", media="(min-width: 768px)")
+            source(srcset=`${imagePath}${jumbotron[index].tablet}.jpg`, class="jumbotron__image", media="(min-width: 480px)")
+            img(src=`${imagePath}${jumbotron[index].movil}.jpg`, class="jumbotron__image", alt="sofipo")
+        .jumbotron__box
+            .jumbotron__description
+                .jumbotron__header
+                    h1.jumbotron__title= `${jumbotron[index].title}`
+                    h2.jumbotron__subtitle= `${jumbotron[index].subtitle}`
+                p.jumbotron__body= `${jumbotron[index].body}`
+
+mixin featured_right(index)
+    .featured
+        .featured__wrap
+            img(src=`${imagePath}${featured[index].image}.jpg`, alt="misión")
+        .featured__wrap
+            .featured__header
+                img(src=`${imagePath}icon-${featured[index].icon}.svg`, class="featured__icon", alt="misión")
+                h2.featured__title= `${featured[index].title}`
+            p.featured__body= `${featured[index].body}`
+
+mixin featured_left(index)
+    .featured.featured--left
+        .featured__wrap
+            img(src=`${imagePath}${featured[index].image}.jpg`, alt="misión")
+        .featured__wrap
+            .featured__header
+                img(src=`${imagePath}icon-${featured[index].icon}.svg`, class="featured__icon", alt="misión")
+                h2.featured__title= `${featured[index].title}`
+            p.featured__body= `${featured[index].body}`
+
+mixin header_section(header_title, header_icon, header_class_color)
+    .header-section
+        img(src=`${imagePath}icon-${header_icon}.svg`, class="header-section__icon", alt= header_title)
+        h1(class=`header-section__title ${header_class_color}`)= `${header_title.toUpperCase()}`
+
+mixin header_caption(header_description, header_class_color)
+    .header-caption
+        h2(class=`header-caption__description ${header_class_color}`)= `${header_description}`

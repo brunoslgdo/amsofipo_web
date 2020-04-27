@@ -15,3 +15,9 @@ $colors: (
     }
 
 }
+
+@each $colors-key, $colors-value in $colors {
+    .#{$colors-key} {
+        color: #{$colors-value} !important;
+    }
+}

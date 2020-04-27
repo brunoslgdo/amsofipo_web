@@ -1,0 +1,29 @@
+.header-section {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: var(--md);
+
+    &__icon {
+        width: var(--xl);
+    }
+
+    &__title {
+        @extend %title;
+        margin-left: var(--sm);
+    }
+
+}
+
+.header-caption {
+
+    margin-bottom: var(--xl);
+
+    &__description {   
+        @extend %subtitle;
+        text-align: center;
+    }
+
+}

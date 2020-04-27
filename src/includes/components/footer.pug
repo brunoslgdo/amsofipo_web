@@ -1,0 +1,29 @@
+.footer__row
+    .footer__column
+        .footer__wrap
+            img(src=`${imagePath}logotipo-amsofipo-white.svg`, alt="amsofipo")
+        .footer__wrap
+            .footer__box
+                ul.footer__socials
+                    each social in footerSocials
+                        li
+                            img(src=`${imagePath}icon-foo-${social.name}.svg`, alt=`amsofipo - ${social.name}`)
+                            a(href=`${social.url}`, target="_blank")= `${social.name}`
+            .footer__box
+                div
+                    h3 Escríbenos o llámanos:
+                    p= `Email: ${footerDatosContacto.email}`
+                    p= `Tel.: ${footerDatosContacto.telefono}` 
+                div
+                    h3 Visítanos:
+                    p !{`${footerDatosContacto.direccion}`}
+            .footer__box
+                ul.footer__sitios-interes
+                    each sitio in footerSitiosInteres
+                        li
+                            a(href=`${sitio.url}`, target="_blank")= `${sitio.name.toUpperCase()}`
+        .footer__wrap
+            p Asociación Mexicana de Sociedades Financieras Populares
+            ul
+                li: a(href="", target="_blank") Marco Legal
+                li: a(href="", target="_blank") Aviso de Privacidad

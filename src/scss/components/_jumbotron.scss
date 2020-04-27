@@ -30,7 +30,7 @@
 
         @media only screen and (min-width: 1024px) {
             
-            border-radius: var(--xs);
+            border-radius: var(--ss);
 
             position: absolute;
             top: 50%;
@@ -53,8 +53,8 @@
 
         background-color: var(--second);
         
-        border-bottom-right-radius: var(--xs);
-        border-bottom-left-radius: var(--xs);
+        border-bottom-right-radius: var(--ss);
+        border-bottom-left-radius: var(--ss);
         
         padding: var(--md) var(--sm);
         
@@ -63,7 +63,7 @@
         }
 
         @media only screen and (min-width: 1024px) {
-            border-radius:  var(--xs);
+            border-radius:  var(--ss);
         }
 
     }
