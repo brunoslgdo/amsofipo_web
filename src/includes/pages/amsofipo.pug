@@ -10,7 +10,10 @@ block featured
             +featured_left(1)
 
 block more_content
-    .__row
+    .__row(style="background-color: #F8F9FA;")
         .__column
             +header_section('nuestros asociados', 'association', 'first')
+            +header_caption('Conoce a las SOFIPO que están cerca de ti', 'text')
             include ../components/associates
+            +margin_height(4)
+            include ../components/pin

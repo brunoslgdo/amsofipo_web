@@ -39,3 +39,6 @@ mixin header_section(header_title, header_icon, header_class_color)
 mixin header_caption(header_description, header_class_color)
     .header-caption
         h2(class=`header-caption__description ${header_class_color}`)= `${header_description}`
+
+mixin margin_height(height)
+    div(style=`max-width: 100%; height: ${height}rem;`)

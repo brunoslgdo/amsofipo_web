@@ -1,1 +1,27 @@
-//- include ../components/navbar
+extends ../templates/pages
+
+block jumbotron
+    +jumbotron(1)
+
+block featured
+    .__row
+        .__column
+            +featured_right(2)
+            +featured_left(3)
+
+block more_content
+    .__row(style="background-color: #FF9966;")
+        .__column
+            +header_section('casos de éxito', 'award', 'white')
+            +header_caption('Inspírate con las historias de quienes han alcanzado sus sueños','white')
+            include ../components/videos
+    .__row
+        .__column
+            +header_section('Portafolio de Productos', 'portfolio', 'first')
+            +header_caption('Ofrecen una amplia gama de productos y servicios, los créditos pueden otorgarse de manera individual, solidaria o comunal. Este portafolio se ha adaptado a las necesidades de nuestros clientes, durante más de 20 años.','text')
+            include ../components/portafolio-productos
+
+    .__row(style="background-color: #34B2A9;")
+        .__column
+            +header_section('Beneficios clientes y socios', 'benefits', 'white')
+            include ../components/beneficio-clientes  

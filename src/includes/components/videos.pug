@@ -1,0 +1,11 @@
+.videos
+    .videos__wrap
+        each video in videos
+            .videos__card
+                img(src=`${imagePath}videos-thumbnail.png`, class="videos__thumbnail", alt="video thumbnail")
+                .videos__description
+                    h3.videos__title= `${video.title}`
+                    p.videos__caption= `${video.caption}`
+        .videos__youtube
+            h2 Conoce más historias
+            img(src=`${imagePath}icon-youtube-alt.svg`, alt="youtube")

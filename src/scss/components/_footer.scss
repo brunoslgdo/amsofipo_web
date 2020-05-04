@@ -7,17 +7,72 @@
     &__wrap {
 
         &:first-child {
-            text-align: center;
+            
             margin-bottom: var(--xl);
+
+            @media screen and (min-width: 568px) {
+                text-align: center;
+            }
+            
         }
 
         &:nth-child(2) {
+
+            display: flex;
+            flex-direction: column;
             
-            display: grid;
-            // justify-content: space-between;
-            grid-template-columns: 1fr 3fr 1fr;
-            grid-template-rows: auto;
-            column-gap: var(--xl);
+            @media only screen and (min-width: 568px) {
+                
+                display: grid;
+                grid-template-columns: 1fr 3fr 1fr;
+                grid-template-rows: auto;
+                column-gap: var(--xl);
+                
+            }
+
+        }
+
+        &:last-child {
+
+            border-top: 0.1rem solid var(--white);
+            font-family: 'Montserrat';
+
+            padding-top: var(--sm);
+
+            @media only screen and (min-width: 568px) {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            p, a {
+                color: var(--white);
+                font-size: var(--smaller);
+            }
+
+            ul {
+                display: inline-flex;
+            }
+
+            li::after {
+
+                content: "|";
+                
+                color: var(--white);
+                font-size: var(--smaller);
+
+                margin-right: var(--xs);
+                margin-left: var(--xs);
+
+            }
+
+            li:last-child::after {
+                
+                content: "";
+                
+                margin-right: 0;
+                margin-left: 0;
+
+            }
 
         }
 
@@ -40,6 +95,22 @@
             font-weight: var(--light);
         }
     
+    }
+
+    &__box {
+        margin-bottom: var(--sm);
+    }
+
+    &__box:last-child {
+
+        margin-bottom: var(--lg);
+
+        
+        h3 {
+            font-weight: 600;
+            margin-bottom: var(--ss);
+        }
+
     }
 
     &__box:nth-child(2) {

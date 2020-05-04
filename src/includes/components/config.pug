@@ -11,6 +11,9 @@
         'savings',
         'services',
         'vission',
+        'target',
+        'client',
+        'pin',
     ]
 
     const footerSocials = [
@@ -51,32 +54,32 @@
             subtitle: 'Asociación Mexicana de Sociedades Financieras Populares',
             body: 'La Asociación Mexicana de Sociedades Financieras Populares (AMSOFIPO) fue creada a finales del 2009, como resultado del interés de un grupo de Sociedades Financieras Populares (SOFIPO) por generar sinergias tendientes a fortalecer al sector mediante adecuaciones a la regulación y mantener una sana interacción de comunicación para proponer adicionalmente programas y proyectos donde se vincule su figura.',
             desktop: 'jumbotron-amsofipo-desktop',
-            tablet: 'jumbotron-amsofipo-tablet',
-            movil: 'jumbotron-amsofipo-movil',
+            tablet: 'jumbotron-amsofipo-desktop',
+            movil: 'jumbotron-amsofipo-desktop',
         },
         {
             title: 'sofipo', 
             subtitle: 'Sociedades Financieras Populares',
             body: 'Son entidades que ofrecen servicios de ahorro, crédito e inversión, particularmente a un sector popular y en zonas geográficas rurales y periféricas urbanas, donde la banca comercial generalmente no está participando.',
-            desktop: '',
-            tablet: '',
-            movil: '',
+            desktop: 'jumbotron-sofipo-desktop',
+            tablet: 'jumbotron-sofipo-desktop',
+            movil: 'jumbotron-sofipo-desktop',
         },
         {
             title: 'inclusión financiera', 
             subtitle: '¿Qué significa?',
             body: 'Tener acceso a un conjunto de productos y servicios financieros que incluyen crédito, ahorro, seguros, sistema de pagos y pensiones, así como educación y protección al consumidor.',
-            desktop: '',
-            tablet: '',
-            movil: '',
+            desktop: 'jumbotron-amsofipo-desktop',
+            tablet: 'jumbotron-amsofipo-desktop',
+            movil: 'jumbotron-amsofipo-desktop',
         },
         {
             title: 'plan de trabajo', 
             subtitle: '2019 - 2021',
             body: 'El 1 abril de 2019 se llevó a cabo la Asamblea General de Asociados, donde fue elegido como Presidente del Consejo Directivo David Romero Morfín, Director General de Fincomún.',
-            desktop: '',
-            tablet: '',
-            movil: '',
+            desktop: 'jumbotron-amsofipo-desktop',
+            tablet: 'jumbotron-amsofipo-desktop',
+            movil: 'jumbotron-amsofipo-desktop',
         },
     ]
     
@@ -90,8 +93,20 @@
         {
             title: 'visión', 
             body: 'La AMSOFIPO será el organismo de representación y autorregulación de mayor relevancia y representatividad en México, integrado por SOFIPO reguladas, fomentando el sano desarrollo del Sector de Ahorro Popular dentro del Sistema Financiero Mexicano.',
-            image: 'featured-amsofipo-mision',
+            image: 'featured-amsofipo-vision',
             icon: 'vission',
+        },
+        {
+            title: 'objetivo', 
+            body: 'Las SOFIPO tienen como propósito el fomentar el ahorro popular y expandir el acceso al financiamiento a aquellas personas que por su situación, se han visto excluidas de los sistemas tradicionales de crédito, y en general, propiciar la solidaridad, la superación económica y social, así como el bienestar de sus miembros y de las comunidades en que operan, sobre bases formativas y del esfuerzo individual y colectivo.',
+            image: 'featured-sofipo-objetivo',
+            icon: 'target',
+        },
+        {
+            title: 'clientes', 
+            body: 'Son aquellos que los bancos tradicionalmente no atienden por ubicación geográfica o porque no cumplen con los requisitos de las instituciones tradicionales. En las SOFIPO existen productos hechos a las necesidades del cliente, pueden ser individuales, solidarios o comunales.',
+            image: 'featured-sofipo-clientes',
+            icon: 'clients',
         },
     ]
 
@@ -122,4 +137,90 @@
             name: 'shcp',
             url: '#',
         },
+    ]
+
+    const videos = [
+        {
+            title: 'Testimonio',
+            caption: 'BIENESTAR, Francisco Rabell',
+        },
+        {
+            title: 'Testimonio',
+            caption: 'BIENESTAR, Francisco Rabell',
+        },
+        {
+            title: 'Testimonio',
+            caption: 'BIENESTAR, Francisco Rabell',
+        },
+        {
+            title: 'Testimonio',
+            caption: 'BIENESTAR, Francisco Rabell',
+        },
+    ]
+
+    const portafolioProductos = [
+        {
+            producto: 'créditos',
+            list: [
+                'Personal',
+                'Para el consumo',
+                'Productivo',
+                'Educación',
+                'Compra de vivienda',
+                'Mejoramiento de vivienda ',
+                'Microempresa',
+                'Activo fijo del negocio',
+                'Arrendamiento',
+                'Pyme',
+            ],
+            icon: 'icon-credit-card.svg',
+        },
+        {
+            producto: 'servicios',
+            list: [
+                'Transferencias nacionales e internacionales',
+                'Pagos de servicios',
+                'Programas de gobierno',
+                'Tarjeta de débito / ATM',
+                'Pagos electrónicos',
+                'Cajeros automáticos',
+                'Remesas',
+            ],
+            icon: 'icon-services.svg',
+        },
+        {
+            producto: 'ahorros',
+            list: [
+                'Cuenta de ahorros',
+                'Cuenta corriente',
+                'Certificado de depósito',
+                'Pensión',
+                'Ahorros para jóvenes',
+                'Programas de ahorros',
+                'Depósitos a plazos fijos',
+                'Ahorro Infantil',
+            ],
+            icon: 'icon-savings.svg',
+        },
+        {
+            producto: 'seguros',
+            list: [
+                'Salud',
+                'Vida',
+                'Propiedad',
+                'Cultivo / Agrícola',
+                'Crédito de vida',
+            ],
+            icon: 'icon-insurance.svg',
+        },
+    ]
+
+    const beneficiosClientes = [
+        'Acceso a microcréditos ajustados a las características de los clientes, mercado,  región geográfica y al riesgo que presentan.',
+        'Fortalecer el sistema de protección de los ahorros del sector de microfinanzas y el esquema de supervisión auxiliar. Acceso a operaciones como el arrendamiento y el factoraje financiero.',
+        'Asistencia técnica para elaborar planes de negocios y proyectos de comercialización.',
+        'Desarrollo comunitario sobre bases formativas y del esfuerzo individual y colectivo.',
+        'Acceso a servicios financieros a personas de bajos ingresos, ofreciéndoles la oportunidad de mantener de forma segura sus ahorros.',
+        'Adherirse a los beneficios de una póliza de seguro de vida a bajo costo.',
+        'Capacitación en el análisis de proyectos de inversión.',
     ]

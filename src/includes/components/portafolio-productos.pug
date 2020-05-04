@@ -1,0 +1,13 @@
+.portafolio-productos
+    .portafolio-productos__wrap
+
+        each productos in portafolioProductos
+            .portafolio-productos__producto
+                .portafolio-productos__box
+                    img(src=`${imagePath}${productos.icon}`, class="portafolio-productos__icon", alt="")
+                    h2.portafolio-productos__nombre= `${productos.producto.toUpperCase()}`
+                .portafolio-productos__box
+                    ul
+                        each descripcion in productos.list
+                            li= `${descripcion}`
+    
