@@ -1,0 +1,17 @@
+.contacto
+    h1 contacto
+    h2 Queremos ayudarte a resolver todas tus dudas, <strong>¡escríbenos!</strong>
+
+form
+
+    each tag in form.input
+        div
+            label= `${tag.label}`
+            input(type=`${tag.type}`, placeholder=`${tag.placeholder}`)
+    
+    each tag in form.textarea
+        div
+            label= `${tag.label}`
+            textarea(placeholder=`${tag.placeholder}`)
+    div
+        a(href="#") enviar

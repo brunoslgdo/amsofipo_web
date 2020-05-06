@@ -1,0 +1,84 @@
+.naturaleza-juridica,
+.quieres-saber-mas,
+.aspectos-generales {
+
+    &__title {
+
+        @extend %title;
+        color: var(--white);
+
+        margin-bottom: var(--md);
+
+    }
+
+    &__text {
+
+        @extend %body;
+        color: var(--white);
+
+        margin-bottom: var(--sm);
+
+    }
+
+}
+
+.quieres-saber-mas,
+.aspectos-generales {
+
+    li,
+    a {
+
+        @extend %body;
+        color: var(--white);
+
+    }
+
+}
+
+.quieres-saber-mas {
+
+    li {
+
+        display: flex;
+
+        margin-bottom: var(--md);
+
+        &::before {
+            content: url('../img/icon-view.svg');
+        }
+
+        div {
+            margin-left: var(--xs);
+        }
+
+    }
+
+    &__item-title {
+
+        color: var(--white);
+        
+        font-family: 'Prompt';
+        font-size: 1.8rem;
+        font-weight: normal;
+
+    }
+
+}
+
+.naturaleza-juridica {
+
+    &__text:last-child {
+
+        margin-bottom: var(--xl);
+
+    }
+}
+
+.aspectos-generales {
+
+    margin-bottom: var(--xl);
+
+    @media only screen and (min-width: 768px) {
+        margin-bottom: 0;
+    }
+}

@@ -33,3 +33,78 @@ $sizes: (
     margin: auto;
     max-width: 102.4rem;
 }
+
+.__wrap {
+
+    @media only screen and (min-width: 768px) {
+
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        column-gap: 8rem;
+
+    }
+
+}
+
+/* --- BACKGROUNDS --- */
+
+.casos-de-exito {
+
+    background-color: #FF9966;
+    background-image: url('../img/sofipo-bg-casos-exito.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.beneficio-clientes-socios {
+
+    background-color: #34B2A9;
+    background-image: url('../img/sofipo-bg-beneficios-clientes.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.naturaleza-juridica-mas {
+
+    // background-color: #FF9966;
+    background-image: url('../img/sofipo-bg-naturaleza-juridica.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.info-financiera {
+
+    background-color: #FF9966;
+    background-image: url('../img/inclusion-financiera-bg-indicadores.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.info-financiera-home {
+
+    background-color: #FF9966;
+    background-image: url('../img/inclusion-financiera-bg-indicadores.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.contact {
+
+    background-color: #43B6BF;
+    background-image: url('../img/home-contact-bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}

@@ -1,0 +1,115 @@
+.informacion-estadistica {
+
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: auto;
+    column-gap: var(--lg);
+
+    &__item {
+
+        li {
+
+            border: 0.1rem solid var(--white);
+            color: white;
+            font-family: 'Prompt';
+            font-size: var(--sm);
+            font-weight: normal;
+
+            padding: var(--sm);
+            
+        }
+
+        ul ul li {
+            border: initial;
+        }
+
+        &:last-child {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: auto;
+        }
+
+    }
+    
+    &__info {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        border: 0.1rem solid var(--white);
+
+        padding-top: var(--lg);
+        padding-bottom: var(--lg);
+
+        div:last-child {
+            padding-left: var(--sm);
+        }
+
+        h2,
+        h3 {
+            color: white;
+            font-family: 'Prompt';
+            font-weight: normal;
+        }
+
+        h2 {
+            font-size: var(--md);
+            font-weight: 600;
+        }
+
+        h3 {
+            font-size: var(--sm);
+        }
+
+    }
+
+}
+
+.informacion-estadistica-home {
+
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    
+    @media only screen and (min-width: 568px) {
+        
+        grid-template-columns: repeat(2, 1fr);
+    
+    }
+
+    &__info {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        border: 0.1rem solid var(--white);
+
+        padding-top: var(--lg);
+        padding-bottom: var(--lg);
+
+        div:last-child {
+            padding-left: var(--sm);
+    }
+
+        h2,
+        h3 {
+            color: white;
+            font-family: 'Prompt';
+            font-weight: normal;
+        }
+
+        h2 {
+            font-size: var(--md);
+            font-weight: 600;
+        }
+
+        h3 {
+            font-size: var(--sm);
+        }
+
+    } 
+
+}

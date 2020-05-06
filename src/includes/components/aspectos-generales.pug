@@ -1,0 +1,7 @@
+.aspectos-generales
+    h1.aspectos-generales__title= `${aspectosGenerales.title}`
+    each paragraph in aspectosGenerales.paragraphs
+        p.aspectos-generales__text= `${paragraph}`
+    ul
+        each item in aspectosGenerales.items
+            li= `${item}`

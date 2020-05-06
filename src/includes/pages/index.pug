@@ -1,0 +1,22 @@
+extends ../templates/pages
+
+block carousel
+    include ../components/carousel
+
+block featured
+    .__row
+        .__column
+            +featured_left(5)
+            +featured_right(6)
+
+block more_content
+    .__row.info-financiera-home
+        .__column
+            +header_section('Indicadores diciembre', 'benefits', 'white')
+            include ../components/informacion-estadistica-home
+
+    include ../components/mosaicos
+
+    .__row.contact
+        .__column
+            include ../components/form

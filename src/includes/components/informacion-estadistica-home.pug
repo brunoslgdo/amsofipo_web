@@ -1,0 +1,10 @@
+.informacion-estadistica-home
+    each val in informacionEstadistica
+        .informacion-estadistica-home__info
+            div
+                img(src=`${imagePath}${val.icon}`, alt="icon")
+            div
+                h2= `${val.cifra}`
+                h3= `${val.caption}`
+                
+
