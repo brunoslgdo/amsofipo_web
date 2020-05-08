@@ -1,17 +1,15 @@
-.contacto
-    h1 contacto
-    h2 Queremos ayudarte a resolver todas tus dudas, <strong>¡escríbenos!</strong>
+form.formulario.formulario-contacto
 
-form
-
-    each tag in form.input
-        div
-            label= `${tag.label}`
-            input(type=`${tag.type}`, placeholder=`${tag.placeholder}`)
+    each tag in formularioContacto.input
+        .formulario__box
+            label.formulario__label.white= `${tag.label}`
+            input(type=`${tag.type}`, placeholder=`${tag.placeholder}`, class="formulario__input white")
     
-    each tag in form.textarea
-        div
-            label= `${tag.label}`
-            textarea(placeholder=`${tag.placeholder}`)
-    div
-        a(href="#") enviar
+    each tag in formularioContacto.textarea
+        .formulario__box
+            label.formulario__label.white= `${tag.label}`
+            textarea(placeholder=`${tag.placeholder}`, class="formulario__input formulario__textarea white")
+
+    each tag in formularioContacto.submit
+        .formulario__box
+            button(type=`${tag.type}`, class="formulario__submit")= `${tag.cta}`

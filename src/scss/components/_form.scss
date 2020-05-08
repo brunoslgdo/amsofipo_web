@@ -1,108 +1,71 @@
-form {
+.formulario {
 
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto;
-    column-gap: var(--lg);
-
-    max-width: 50%;
-    margin-left: auto;
-
-    div {
-
-        display: flex;
-        flex-direction: column;
-
-        margin-bottom: var(--sm);
-
-        grid-column-start: 1;
-        grid-column-end: 3;
-
-        &:nth-child(2) {
-
-            grid-column-start: 1;
-            grid-column-end: 2;
-
-        }
-        
-        &:nth-child(3) {
-
-            grid-column-start: 2;
-            grid-column-end: 3;
-
-        }
+    &__box {
+        margin-bottom: var(--md);
 
         &:last-child {
             margin-bottom: 0;
         }
-    
+
     }
 
-    label,
-    input,
-    textarea,
-    a,
-    textarea:placeholder-shown,
-    textarea::placeholder,
-    input:placeholder-shown,
-    input::placeholder {
-
-        color: var(--white);
-        font-family: 'Prompt';
-        font-size: var(--sm);
-    
-    }
-
-    label {
+    &__label {
         margin-bottom: var(--xs);
     }
 
-    input,
-    textarea,
-    a {
-
-        background-color: transparent;
-        border: 0.1rem solid var(--white);
-        border-radius: var(--lg);
-
-        padding: 1.2rem var(--sm);
-    
+    &__input,
+    &__submit {
+        @extend %button;
     }
 
-    textarea {
+    &__input {
+        @extend %button;
+        border-color: currentColor;
+    }
+
+    &__textarea {
         height: 16rem;
     }
 
-    a {
-        margin-top: var(--sm);
-        text-align: center;
+    &__submit {
+        cursor: pointer;    
         background-color: var(--white);
         color: var(--first);
-        font-weight: 500;
         text-transform: capitalize;
     }
 
 }
 
-.contacto {
+.formulario-contacto {
 
-    max-width: 50%;
-
-    margin-left: auto;
-
-    h1,
-    h2 {
-        color: var(--white);
+    @media only screen and (min-width: 568px) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        column-gap: var(--lg);
     }
 
-    h1 {
-        @extend %title;
-        margin-bottom: 1.6rem;
+    @media only screen and (min-width: 1024px) {
+        max-width: 50%;
+        margin-left: auto;
     }
 
-    h2 {
-        @extend %subtitle;
-        margin-bottom: 4rem;
-    }
+    .formulario__box {
+        display: flex;
+        flex-direction: column;
+        grid-column-start: 1;
+        grid-column-end: 3;
 
+        &:nth-child(2) {
+            grid-column-start: 1;
+            grid-column-end: 2;
+        }
+        
+        &:nth-child(3) {
+            grid-column-start: 2;
+            grid-column-end: 3;
+        }
+
+    }
+    
 }
