@@ -16,14 +16,3 @@
     }
 
 }
-
-.header-caption {
-
-    margin-bottom: var(--xl);
-
-    &__description {   
-        @extend %subtitle;
-        text-align: center;
-    }
-
-}

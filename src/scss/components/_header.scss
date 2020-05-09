@@ -1,26 +1,20 @@
 .header {
-
+    @extend .__row;
+    padding-top: 0;
+    padding-bottom: 0;
     box-shadow: 0 -0.2rem 0.4rem rgba(0,0,0,0.4);
     background-color: var(--white);
-
     position: fixed;
     top: 0;
-
-    min-width: 100vw;
-
+    left: 0;
+    width: 100%;
     z-index: 100;
 
-    &.__row {
-        padding-top: 0;
-        padding-bottom: 0;
-    }
-
-    &__column {
-
+    &__wrap {
+        @extend .__column;
         display: flex;
         justify-content: space-between;
         align-items: center;
-
         height: 4.8rem;
 
         @media only screen and (min-width: 1024px) {
@@ -29,8 +23,7 @@
     
     }
 
-    &__logo {
-        
+    &__logo {       
         height: var(--lg);
 
         @media only screen and (min-width: 1024px) {

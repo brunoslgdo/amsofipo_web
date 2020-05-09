@@ -1,0 +1,5 @@
+mixin header_section(title, icon, color)
+    .header-section
+        if icon
+            img(src=`${imagePath}${icon}`, class="header-section__icon", alt= title)
+        h1(class=`header-section__title ${color}`)= `${title.toUpperCase()}`

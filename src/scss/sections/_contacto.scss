@@ -1,0 +1,22 @@
+.contacto {
+    @extend %backgrounds;
+    background-image: url('../img/home-contact-bg.png');
+
+    .header-section,
+    .header-caption {
+        @media only screen and (min-width: 1024px) {
+            max-width: 50%;
+            margin-left: auto;
+        }
+    }
+
+    .header-section__title {
+        margin-right: auto;
+        margin-left: 0;
+    }
+
+    .header-caption__description {
+        text-align: left;
+    }
+
+}

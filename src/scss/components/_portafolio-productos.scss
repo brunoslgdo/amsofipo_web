@@ -1,36 +1,28 @@
 .portafolio-productos {
 
     &__wrap {
-
         display: flex;
         flex-direction: column;
-
         justify-content: center;
         align-items: center;
 
         @media only screen and (min-width: 667px) {
-
             display: grid;
             grid-template-columns: repeat(2, auto);
             grid-template-rows: auto;
             column-gap: var(--xx);
             row-gap: var(--xl);
-
             flex-direction: initial;
-
             justify-content: initial;
             align-items: initial;
-
             max-width: 76.8rem;
             margin-right: auto;
             margin-left: auto;
-
         }
     
     }
 
     &__producto {
-
         display: flex;
         margin-bottom: var(--xl);
 
@@ -62,7 +54,7 @@
     }
 
     &__nombre {
-        font-family: 'Montserrat';
+        font-family: var(--title);
         font-size: 1.8rem;
         color: var(--first);
     }
@@ -72,7 +64,6 @@
     }
 
     li {
-        @extend %body;
         padding-left: var(--sm);
         position: relative;
 
@@ -84,6 +75,7 @@
             top: 0.3rem;
             left: 0;
         }
+        
     }
 
 }

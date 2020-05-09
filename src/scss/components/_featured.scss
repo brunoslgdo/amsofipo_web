@@ -1,10 +1,8 @@
 .featured {
-
     margin-right: auto;
     margin-bottom: var(--xl);
     margin-left: auto;
     position: relative;
-
     max-width: 32rem;
 
     &:last-child {
@@ -24,10 +22,8 @@
         .featured__wrap:last-child {
             
             @media only screen and (min-width: 568px) {
-
                 right: 16rem;
                 left: 0;
-
             }
             
         }
@@ -35,7 +31,6 @@
         .featured__header {
         
             @media only screen and (min-width: 568px) {
-                    
                 margin-right: 16rem;
                 margin-left: initial;
             }
@@ -47,38 +42,27 @@
     &__wrap {
 
         &:first-child {
-
-            background: teal;
             border-radius: var(--ss);
             overflow: hidden;
-
             position: relative;
             z-index: -1;
-
             max-width: 32rem;
             height: 48rem;
-
         }
 
         &:last-child {
-
             margin-top: -32rem;
             margin-right: auto;
             margin-left: auto;
-
             max-width: calc(32rem - var(--sm) * 2);
-        
-            @media only screen and (min-width: 568px) {
 
+            @media only screen and (min-width: 568px) {
                 position: absolute;
                 right: 0;
                 bottom: 50%;
                 left: 16rem;
-
                 transform: translateY(50%);
-
                 max-width: 48rem;
-
             }
 
         }
@@ -86,24 +70,21 @@
     }
 
     &__header {
-
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
-
         margin-bottom: var(--md);
         text-align: center;
 
         @media only screen and (min-width: 568px) {
-
             margin-left: 16rem;
-
         }
     
     }
 
     &__icon {
-        margin-right: var(--xs);
+        margin-bottom: var(--sm);
     }
 
     &__title {
@@ -111,15 +92,11 @@
     }
 
     &__body {
-        
-        @extend %body;
-
         background-color: var(--white);
         border-radius: var(--ss);
         box-shadow: 0 0 0.2rem rgba(0,0,0,0.2);
         text-align: justify;
         padding: var(--md);
-
     }
 
 }

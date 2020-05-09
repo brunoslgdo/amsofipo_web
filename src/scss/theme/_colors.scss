@@ -18,6 +18,12 @@ $colors: (
 
 @each $colors-key, $colors-value in $colors {
     .#{$colors-key} {
-        color: #{$colors-value} !important;
+        color: #{$colors-value};
+    }
+}
+
+@each $colors-key, $colors-value in $colors {
+    .bg--#{$colors-key} {
+        background-color: #{$colors-value};
     }
 }

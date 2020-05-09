@@ -1,103 +1,47 @@
-// map
-
 $font-family: (
-
     body: 'Prompt',
     display: 'Raleway',
-    upper: 'Montserrat'
-
+    upper: 'Montserrat',
 );
     
 $font-size: (
-
     menu: 1.2rem,
     slider: 5.6rem,
-
     title: 4rem,
     subtitle: 2rem,
     normal: 1.6rem,
     small: 1.4rem,
-    smaller: 1rem
-
+    smaller: 1rem,
 );
 
 $font-weight: (
-
     bold: 700,
     regular: 400,
-    light: 300
-
+    light: 300,
 );
 
 $line-height: (
-
     exact: 1,
     minimum: 1.2,
-    simple: 1.4
-
+    simple: 1.4,
 );
-
-// variables
 
 :root {
 
     @each $font-family-key, $font-family-value in $font-family {
-
         --#{$font-family-key}: "#{$font-family-value}";
-
     }
     
     @each $font-size-key, $font-size-value in $font-size {
-
         --#{$font-size-key}: #{$font-size-value};
-
     }
     
     @each $font-weight-key, $font-weight-value in $font-weight {
-
         --#{$font-weight-key}: #{$font-weight-value};
-
     }
     
     @each $line-height-key, $line-height-value in $line-height {
-
         --#{$line-height-key}: #{$line-height-value};
-
     }
-
-}
-
-%title {
-
-    color: var(--first);
-
-    font-family: var(--upper);
-    font-size: var(--title);
-    font-weight: bold;
-
-    line-height: var(--exact);
-
-    text-transform: uppercase;
-
-}
-
-%subtitle,
-%body {
-    font-family: var(--body);
-}
-
-%subtitle {
-
-    font-size: var(--subtitle);
-    font-weight: var(--light);
-
-}
-
-%body {
-
-    font-size: var(--normal);
-    font-weight: var(--light);
-
-    line-height: var(--simple);
 
 }

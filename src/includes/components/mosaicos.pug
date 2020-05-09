@@ -1,4 +1,10 @@
 .mosaicos
     each mosaico in mosaicos
-        .mosaicos__item
-            img(src=`${imagePath}${mosaico}`, alt="mosaico")
+        .mosaicos__wrap
+            .mosaicos__box
+                img(src=`${imagePath}${mosaico.icon}`, class="mosaicos__icon", alt="")
+            .mosaicos__box
+                h1.mosaicos__title= `${mosaico.title.toUpperCase()}`
+                hr.mosaicos__separator
+                p.mosaicos__caption= `${mosaico.caption}`
+                a(href="#", class="button") conoce más

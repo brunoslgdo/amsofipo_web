@@ -1,31 +1,37 @@
+// placeholders
+@import 'placeholders/place-fonts';
+@import 'placeholders/place-buttons';
+@import 'placeholders/place-lists';
+@import 'placeholders/place-backgrounds';
+
 // theme
-@import 'theme/colors';
-@import 'theme/typography';
+    @import 'theme/colors';
+    @import 'theme/typography';
 
 // layout
-@import 'layout/reset';
-@import 'layout/model-box';
+    @import 'layout/reset';
+    @import 'layout/model-box';
 
 // components
+    @import 'components/header-section';
+    @import 'components/header-caption';
+    @import 'components/header';
+    @import 'components/menu';
+    @import 'components/icon-hamburguer';
+    @import 'components/jumbotron';
+    @import 'components/featured';
+    @import 'components/associates';
+    @import 'components/pin';
+    @import 'components/videos';
+    @import 'components/portafolio-productos';
+    @import 'components/beneficio-clientes';
+    @import 'components/naturaleza-juridica';
+    @import 'components/informacion-estadistica';
+    @import 'components/carousel';
+    @import 'components/mosaicos';
+    @import 'components/form';
+    @import 'components/footer';
+    @import 'components/buttons';
 
-@import 'components/header-section';
-
-@import 'components/header';
-@import 'components/menu';
-@import 'components/icon-hamburguer';
-
-@import 'components/jumbotron';
-@import 'components/featured';
-@import 'components/associates';
-
-@import 'components/pin';
-@import 'components/videos';
-@import 'components/portafolio-productos';
-@import 'components/beneficio-clientes';
-@import 'components/naturaleza-juridica';
-@import 'components/informacion-estadistica';
-@import 'components/carousel';
-@import 'components/mosaicos';
-@import 'components/form';
-
-@import 'components/footer';
+// sections
+    @import 'sections/contacto';

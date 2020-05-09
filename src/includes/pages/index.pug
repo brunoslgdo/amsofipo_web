@@ -12,11 +12,13 @@ block featured
 block more_content
     .__row.info-financiera-home
         .__column
-            +header_section('Indicadores diciembre', 'benefits', 'white')
+            +header_section('Indicadores diciembre 2019', '', 'white')
             include ../components/informacion-estadistica-home
 
     include ../components/mosaicos
 
-    .__row.contact
+    .__row.contacto
         .__column
+            +header_section('contacto', '', 'white')
+            +header_caption('Queremos ayudarte a resolver todas tus dudas, <strong>¡escríbenos!</strong>', 'white')
             include ../components/form

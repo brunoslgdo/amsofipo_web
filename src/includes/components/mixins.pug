@@ -31,14 +31,5 @@ mixin featured_left(index)
                 h2.featured__title= `${featured[index].title}`
             p.featured__body= `${featured[index].body}`
 
-mixin header_section(header_title, header_icon, header_class_color)
-    .header-section
-        img(src=`${imagePath}icon-${header_icon}.svg`, class="header-section__icon", alt= header_title)
-        h1(class=`header-section__title ${header_class_color}`)= `${header_title.toUpperCase()}`
-
-mixin header_caption(header_description, header_class_color)
-    .header-caption
-        h2(class=`header-caption__description ${header_class_color}`)= `${header_description}`
-
 mixin margin_height(height)
     div(style=`max-width: 100%; height: ${height}rem;`)

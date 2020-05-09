@@ -1,0 +1,9 @@
+.button {
+    @extend %button;
+    background-color: #FFCC00;
+    color: var(--white);
+    font-family: var(--title);
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
