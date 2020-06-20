@@ -1,64 +1,55 @@
 $font-family: (
-    body: 'Prompt',
-    display: 'Raleway',
-    upper: 'Montserrat',
     title: 'Montserrat',
+    emphasis: 'Raleway',
+    body: 'Prompt',
 );
     
 $font-size: (
-    menu: 1.2rem,
-    slider: 5.6rem,
+    display: 6.4rem,
+    display--alt: 4.8rem,
     title: 4rem,
-    subtitle: 2rem,
-    normal: 1.6rem,
-    small: 1.4rem,
-    smaller: 1rem,
+    subtitle: 3.2rem,
+    caption: 2.4rem,
+    body: 1.6rem,
+    body--alt: 1.4rem,
 );
 
 $font-weight: (
     bold: 700,
+    medium: 500,
     regular: 400,
     light: 300,
 );
 
-$line-height: (
-    exact: 1,
-    minimum: 1.2,
-    simple: 1.4,
-);
-
 :root {
 
-    @each $font-family-key, $font-family-value in $font-family {
-        --#{$font-family-key}: "#{$font-family-value}";
-    }
-    
-    @each $font-size-key, $font-size-value in $font-size {
-        --#{$font-size-key}: #{$font-size-value};
-    }
-    
-    @each $font-weight-key, $font-weight-value in $font-weight {
-        --#{$font-weight-key}: #{$font-weight-value};
-    }
-    
-    @each $line-height-key, $line-height-value in $line-height {
-        --#{$line-height-key}: #{$line-height-value};
-    }
-
-}
-
-.text {
-
     @each $key, $val in $font-family {
-        &--#{$key} {
-            font-family: '#{$val}';
-        }
+        --#{$key}: "#{$val}";
+    }
+    
+    @each $key, $val in $font-size {
+        --#{$key}: #{$val};
     }
     
     @each $key, $val in $font-weight {
-        &--#{$key} {
-            font-weight: '#{$val}';
-        }
+        --#{$key}: #{$val};
     }
+}
 
+@each $key, $val in $font-family {
+    .#{$key} { 
+        font-family: "#{$val}";
+    }
+}
+
+@each $key, $val in $font-size {
+    .#{$key} {
+        font-size: #{$val};
+    }
+}
+
+@each $key, $val in $font-weight {
+    .#{$key} { 
+        font-weight: #{$val};
+    }
 }
