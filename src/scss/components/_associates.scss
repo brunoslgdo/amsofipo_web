@@ -1,27 +1,37 @@
 .associates {
-
-    --border-width: 0.2rem;
-
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: 1fr;
     grid-template-rows: auto;
-
-    // overflow-x: scroll;
+    border-top: 0.1rem solid var(--second);
+    border-left: 0.1rem solid var(--second);
+    
+    @media only screen and (min-width: 568px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    @media only screen and (min-width: 736px) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    @media only screen and (min-width: 1024px) {
+        grid-template-columns: repeat(5, 1fr);
+    }
 
     &__item {
-
         display: flex;
         justify-content: center;
         align-items: center;
+        border-right: 0.1rem solid var(--second);
+        border-bottom: 0.1rem solid var(--second);
+        padding: var(--md);
+        // width: 20.4rem;
+        height: 24rem;
+    }
 
-        box-shadow: 0.1rem 0 var(--second),
-                    0 -0.1rem var(--second),
-                    -0.1rem 0 var(--second),
-                    0 0.1rem var(--second);
-
-        width: 20.4rem;
-        height: 20.4rem;
-
+    &__logo {
+        max-width: 100%;
+        height: auto;
+        transform: scale(0.8);
     }
     
 }

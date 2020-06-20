@@ -1,0 +1,55 @@
+#year2018.indicadores__wrap
+
+    .indicadores
+        .indicadores__box
+            img(src="../img/icon-numero-clientes.svg", class="indicadores__icon", alt="icon")
+            h1.indicadores__title Número de clientes
+        .indicadores__box
+            each val, key in INDICADORES2018
+                h2.indicadores__month=  `${key}`
+                p.indicadores__quantity= `${val.numero_de_clientes}`
+
+    .indicadores
+        .indicadores__box
+            img(src="../img/icon-sofipo-operacion.svg", class="indicadores__icon", alt="icon")
+            h1.indicadores__title SOFIPO autorizadas
+        .indicadores__box
+            each val, key in INDICADORES2018
+                h2.indicadores__month=  `${key}`
+                p.indicadores__quantity= `${val.sofipos_autorizadas_en_operacion}`
+
+    .indicadores
+        .indicadores__box
+            img(src="../img/icon-numero-sucursales.svg", class="indicadores__icon", alt="icon")
+            h1.indicadores__title Número de sucursales
+        .indicadores__box
+            each val, key in INDICADORES2018
+                h2.indicadores__month=  `${key}`
+                p.indicadores__quantity= `${val.numero_de_sucursales}`
+
+    .indicadores
+        .indicadores__box
+            img(src="../img/icon-activo-total.svg", class="indicadores__icon", alt="icon")
+            h1.indicadores__title Activo total
+        .indicadores__box
+            each val, key in INDICADORES2018
+                h2.indicadores__month=  `${key}`
+                p.indicadores__quantity= `${val.activo_total}`
+
+    .indicadores
+        .indicadores__box
+            img(src="../img/icon-captacion.svg", class="indicadores__icon", alt="icon")
+            h1.indicadores__title Captación
+        .indicadores__box
+            each val, key in INDICADORES2018
+                h2.indicadores__month=  `${key}`
+                p.indicadores__quantity= `${val.captacion}`
+
+    .indicadores
+        .indicadores__box
+            img(src="../img/icon-municipios-atendidos.svg", class="indicadores__icon", alt="icon")
+            h1.indicadores__title Municipios atendidos
+        .indicadores__box
+            each val, key in INDICADORES2018
+                h2.indicadores__month=  `${key}`
+                p.indicadores__quantity= `${val.municipios_atendidos}`

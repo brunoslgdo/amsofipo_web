@@ -1,0 +1,38 @@
+.hero {
+    background-color: rgba(0, 0, 0, 0.2);
+    position: relative;
+    padding-top: 16rem;
+    padding-right: var(--md);
+    padding-bottom: var(--md);
+    padding-left: var(--md);
+    
+    &__title {
+        color: var(--white);
+        font-family: var(--title);
+        font-size: var(--lg);
+        font-weight: 100;
+        text-shadow: 0 0 0.6rem rgba(0, 0, 0, 0.9);
+    }
+
+    &__img {
+        object-fit: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    }
+
+}
+
+.__grid-2 {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    gap: var(--md);
+
+    @media only screen and (min-width: 568px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

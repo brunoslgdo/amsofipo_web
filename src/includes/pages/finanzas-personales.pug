@@ -1,0 +1,17 @@
+extends ../templates/pages
+
+block more_content
+    
+    include ../config/conf-finanzas-personales
+    
+    section
+        .blog__grid
+            a(href="https://www.youtube.com/watch?v=_Vc993MMbDY&feature=youtu.be&list=PLpE6P7wnhr_qHRxU7zqRUaJbdqXDrFdhT", target="_blank").blog__cumplimiento.blog__child
+                h1.blog__title Cumplimiento
+                p.blog__text Guía para el cumplimiento de las obligaciones en materia de  PLD/FT
+                img(src="../img/home-cumplimiento.jpg", class="blog__hero-img", alt="")
+            each nota in FINANZASPERSONALES
+                a(href=`${nota.href}`).blog__eventos.blog__child
+                    img(src=`../img/${nota.img}`, class="blog__img", alt="")
+                    h1.blog__title= `${nota.title}`
+                    p.blog__text= `${nota.text}`

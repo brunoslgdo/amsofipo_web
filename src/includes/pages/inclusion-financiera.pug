@@ -17,4 +17,17 @@ block more_content
         .__column
             +header_section('informacion estadística', 'icon-presentation.svg', 'white')
             +header_caption('Conoce aquí los principales indicadores del sector.', 'white')
-            include ../components/informacion-estadistica
+        .__column.info-financiera__years
+            button(class="yearLink", onclick="openYear(event,'year2015')") 2015
+            button(class="yearLink", onclick="openYear(event,'year2016')") 2016
+            button(class="yearLink", onclick="openYear(event,'year2017')") 2017
+            button(class="yearLink", onclick="openYear(event,'year2018')") 2018
+            button(class="yearLink", onclick="openYear(event,'year2019')") 2019
+        .__column
+            include ../components/indicadores-2019 
+            include ../components/indicadores-2018
+            include ../components/indicadores-2017
+            include ../components/indicadores-2016
+            include ../components/indicadores-2015
+
+    script(src="../js/indicadores.js")

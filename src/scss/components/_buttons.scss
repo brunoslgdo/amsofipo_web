@@ -1,6 +1,6 @@
 .button {
     @extend %button;
-    background-color: #FFCC00;
+    background-color: var(--first);
     color: var(--white);
     font-family: var(--title);
     font-size: 1.2rem;

@@ -72,4 +72,12 @@
         text-align: justify;
     }
 
+    &__buttons {
+        margin-top: var(--md);
+
+        a {
+            margin-right: var(--md);
+        }
+    }
+
 }

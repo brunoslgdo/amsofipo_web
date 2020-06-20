@@ -6,8 +6,7 @@
 
     &__wrap {
 
-        &:first-child {
-            
+        &:first-child {   
             margin-bottom: var(--xl);
 
             @media screen and (min-width: 568px) {
@@ -17,26 +16,21 @@
         }
 
         &:nth-child(2) {
-
             display: flex;
             flex-direction: column;
             
             @media only screen and (min-width: 568px) {
-                
                 display: grid;
                 grid-template-columns: 1fr 3fr 1fr;
                 grid-template-rows: auto;
                 column-gap: var(--xl);
-                
             }
 
         }
 
         &:last-child {
-
             border-top: 0.1rem solid var(--white);
             font-family: 'Montserrat';
-
             padding-top: var(--sm);
 
             @media only screen and (min-width: 568px) {
@@ -54,24 +48,22 @@
             }
 
             li::after {
-
                 content: "|";
-                
                 color: var(--white);
                 font-size: var(--smaller);
-
                 margin-right: var(--xs);
                 margin-left: var(--xs);
-
             }
 
             li:last-child::after {
-                
                 content: "";
-                
                 margin-right: 0;
                 margin-left: 0;
 
+            }
+
+            a {
+                @extend %underline;
             }
 
         }
@@ -79,9 +71,6 @@
     }
 
     &__box * {
-
-        // background-color: teal;
-        
         color: var(--white);
         font-family: 'Montserrat';
         font-size: var(--small);
@@ -118,19 +107,19 @@
         div {
             margin-bottom: var(--md);
         }
+
     }
 
     &__socials {
         
         li {
-
             display: flex;
-            align-items: center;
-            
+            align-items: center;           
             margin-bottom: var(--sm);
         }
 
         a {
+            @extend %underline;
             text-transform: capitalize;
             padding-left: var(--xs);
         }
@@ -140,9 +129,7 @@
     &__sitios-interes {
 
         li {
-
             display: flex;
-            
             margin-bottom: var(--ss);
 
             &:last-child {
@@ -151,15 +138,18 @@
         }
 
         a {
-    
+            @extend %underline;
             position: relative;
+            padding-left: var(--sm);
 
             &::before {
-
                 content: "\276F";
-                padding-right: var(--xs);
-        
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                left: 0;
             }
+            
         }
     
     }

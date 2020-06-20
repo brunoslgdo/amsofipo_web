@@ -2,6 +2,7 @@ $font-family: (
     body: 'Prompt',
     display: 'Raleway',
     upper: 'Montserrat',
+    title: 'Montserrat',
 );
     
 $font-size: (
@@ -42,6 +43,22 @@ $line-height: (
     
     @each $line-height-key, $line-height-value in $line-height {
         --#{$line-height-key}: #{$line-height-value};
+    }
+
+}
+
+.text {
+
+    @each $key, $val in $font-family {
+        &--#{$key} {
+            font-family: '#{$val}';
+        }
+    }
+    
+    @each $key, $val in $font-weight {
+        &--#{$key} {
+            font-weight: '#{$val}';
+        }
     }
 
 }

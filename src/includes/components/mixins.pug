@@ -10,6 +10,10 @@ mixin jumbotron(index)
                     h1.jumbotron__title= `${jumbotron[index].title}`
                     h2.jumbotron__subtitle= `${jumbotron[index].subtitle}`
                 p.jumbotron__body= `${jumbotron[index].body}`
+                if `${jumbotron.buttonone}` && `${jumbotron.buttontwo}`
+                    .jumbotron__buttons
+                            a(href=`#${jumbotron[index].buttonone.split(' ').join('-')}`, class="button")= `${jumbotron[index].buttonone}`
+                            a(href=`#${jumbotron[index].buttontwo.split(' ').join('-')}`, class="button")= `${jumbotron[index].buttontwo}`
 
 mixin featured_right(index)
     .featured

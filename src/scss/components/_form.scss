@@ -18,18 +18,41 @@
         @extend %button;
     }
 
+    &__input:focus,
+    &__textarea:focus {
+        color: var(--text);
+        background-color: var(--white);
+        outline: none;
+        transition: 0.3s ease-in;
+    }
+    
+    &__input::placeholder,
+    &__textarea::placeholder {
+        color: rgba(255,255,255,0.6);
+    }
+
     &__input {
         @extend %button;
         border-color: currentColor;
     }
 
     &__textarea {
+        border-radius: var(--md);
+        padding-top: 1.2rem;
         height: 16rem;
     }
 
     &__submit {
         cursor: pointer;
         text-transform: capitalize;
+        transition: color 0.3s ease,
+                    background-color 0.3s ease;
+        outline: none;
+
+        &:hover {
+            color: var(--white);
+            background-color: var(--second);
+        }
     }
 
 }

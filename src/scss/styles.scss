@@ -3,6 +3,7 @@
 @import 'placeholders/place-buttons';
 @import 'placeholders/place-lists';
 @import 'placeholders/place-backgrounds';
+@import 'placeholders/place-underline';
 
 // theme
     @import 'theme/colors';
@@ -32,6 +33,12 @@
     @import 'components/form';
     @import 'components/footer';
     @import 'components/buttons';
+    @import 'components/indicadores';
+    @import 'components/notas';
+    @import 'components/hero';
 
 // sections
     @import 'sections/contacto';
+
+// pages
+    @import 'pages/finanzas-personales';

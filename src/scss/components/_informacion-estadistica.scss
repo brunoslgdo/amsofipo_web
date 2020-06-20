@@ -113,3 +113,30 @@
     } 
 
 }
+
+.info-financiera__years {
+    text-align: center;
+
+    button {
+        cursor: pointer;
+        background-color: transparent;
+        border: none;
+        color: rgba(255,255,255,0.8);
+        font-size: var(--md);
+        margin-right: var(--md);
+        
+        &:last-child {
+            margin-right: 0;
+        }
+
+        &:hover {
+            color: var(--white);
+            text-decoration: underline;
+        }
+    }
+
+    button.active {
+        color: var(--white);
+        text-decoration: underline;
+    }
+}

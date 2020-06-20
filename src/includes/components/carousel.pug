@@ -1,2 +1,11 @@
-.carousel
-    img(src=`${imagePath}carousel-frame.png`, alt="slide")
+ul.carousel
+    li.carousel__item-alt.carousel__hidden.fade
+        .carousel__box-alt
+            img(src=`${imagePath}carousel-frame.png`, class="carousel__image-alt", alt="slide")
+    li.carousel__item.carousel__hidden.fade
+        img(src=`${imagePath}carousel-frame-1.jpg`, class="carousel__image", alt="slide")
+        .carousel__box
+            h1.carousel__caption Solicita tu crédito y comienza a crecer
+            a(href="#", class="button") Acércate
+
+script(src="../js/carousel.js")
