@@ -16,7 +16,6 @@
 
     &__item,
     &__item-alt {
-        @extend .__row;
         position: relative;
         padding-top: var(--md);
         padding-bottom: var(--md);
