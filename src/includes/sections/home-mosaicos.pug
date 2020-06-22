@@ -1,0 +1,21 @@
+include ../config/conf-mosaicos
+
+ul.home-mosaicos.__grid
+    each mosaico, key in MOSAICOS
+        if key == 0
+            li.home-mosaicos__child
+                .home-mosaicos__picture--alt
+                    img(src=`${pathImg}${mosaico.desktop}`, class="center--block")
+        else
+            li.home-mosaicos__child
+                picture.home-mosaicos__picture
+                    source(srcset=`${pathImg}${mosaico.desktop}`, media="(min-width: 1024px)")
+                    source(srcset=`${pathImg}${mosaico.tablet}`, media="(min-width: 568px)")
+                    source(srcset=`${pathImg}${mosaico.movil}`, media="(min-width: 320px)")
+                    img(src=`${pathImg}${mosaico.desktop}`, class="center--block")
+                .home-mosaicos__icon
+                    img(src=`${pathImg}${mosaico.icon}`, class="center--block")
+                .home-mosaicos__content
+                    h1.subtitle.regular.heading.uppercase.mbottom--md= `${mosaico.title}`
+                    p.caption.light.body.mbottom--md= `${mosaico.caption}`
+                    a(href=`${mosaico.href}`, class="button--alt") conoce más
