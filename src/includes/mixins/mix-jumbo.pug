@@ -1,0 +1,17 @@
+include ../config/conf-jumbo
+
+mixin jumbo(nombre)
+    .jumbo.__grid
+        picture.jumbo__child
+            source(srcset=`${pathImg}${nombre.desktop}`, media="(min-width: 768px)")
+            source(srcset=`${pathImg}${nombre.tablet}`, media="(min-width: 480px)")
+            img(src=`${pathImg}${nombre.movil}`, alt="sofipo")
+        .jumbo__child
+            .jumbo__header
+                h1.heading.title.bold.uppercase= `${nombre.title}`
+                h2.body.caption.light= `${nombre.subtitle}`
+            p.body.normal.light.justify= `${nombre.body}`
+            //- if `${jumbo.buttonone}` && `${jumbo.buttontwo}`
+            //-     .jumbo__buttons
+            //-             a(href=`#${jumbo[nombre].buttonone.split(' ').join('-')}`, class="button")= `${jumbo[nombre].buttonone}`
+            //-             a(href=`#${jumbo[nombre].buttontwo.split(' ').join('-')}`, class="button")= `${jumbo[nombre].buttontwo}`

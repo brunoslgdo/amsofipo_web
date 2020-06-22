@@ -1,0 +1,17 @@
+include ../config/conf-featured
+
+mixin featured(nombre)
+    .featured.__grid
+        .featured__child
+            img(src=`${pathImg}${nombre.img}`, class="center--block", alt="misión")
+        .featured__child
+            h2.heading.title.bold.uppercase.first.mbottom--md= `${nombre.title}`
+            p.body.normal.light.text= `${nombre.text}`
+
+mixin featured_right(nombre)
+    .featured.featured--right.__grid
+        .featured__child
+            h2.heading.title.bold.uppercase.first.mbottom--md= `${nombre.title}`
+            p.body.normal.light.text= `${nombre.text}`
+        .featured__child
+            img(src=`${pathImg}${nombre.img}`, class="center--block", alt="misión")
