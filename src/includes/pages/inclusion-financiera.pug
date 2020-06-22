@@ -1,33 +1,33 @@
-extends ../templates/pages
+//- extends ../templates/pages
 
-block jumbotron
-    +jumbotron(2)
+//- block jumbotron
+//-     +jumbotron(2)
 
-block featured
-    .__row
-        .__column
-            +featured_right(4)
+//- block featured
+//-     .__row
+//-         .__column
+//-             +featured_right(4)
 
-block more_content
-    .__row(style="background-color: #43B6BF;")
-        .__column
-            p(style="color: #ffffff; font-size: 1.8rem; font-family: prompt; text-align: center;") El acceso a servicios financieros tiene un enorme potencial para mejorar la calidad de vida de las personas; se trata de un requisito indispensable para la reducción de la pobreza y vulnerabilidad de amplios sectores de la población. La falta de éste limita innecesariamente el desarrollo de los hogares.
+//- block more_content
+//-     .__row(style="background-color: #43B6BF;")
+//-         .__column
+//-             p(style="color: #ffffff; font-size: 1.8rem; font-family: prompt; text-align: center;") El acceso a servicios financieros tiene un enorme potencial para mejorar la calidad de vida de las personas; se trata de un requisito indispensable para la reducción de la pobreza y vulnerabilidad de amplios sectores de la población. La falta de éste limita innecesariamente el desarrollo de los hogares.
 
-    .__row.info-financiera
-        .__column
-            +header_section('informacion estadística', 'icon-presentation.svg', 'white')
-            +header_caption('Conoce aquí los principales indicadores del sector.', 'white')
-        .__column.info-financiera__years
-            button(class="yearLink", onclick="openYear(event,'year2015')") 2015
-            button(class="yearLink", onclick="openYear(event,'year2016')") 2016
-            button(class="yearLink", onclick="openYear(event,'year2017')") 2017
-            button(class="yearLink", onclick="openYear(event,'year2018')") 2018
-            button(class="yearLink", onclick="openYear(event,'year2019')") 2019
-        .__column
-            include ../components/indicadores-2019 
-            include ../components/indicadores-2018
-            include ../components/indicadores-2017
-            include ../components/indicadores-2016
-            include ../components/indicadores-2015
+//-     .__row.info-financiera
+//-         .__column
+//-             +header_section('informacion estadística', 'icon-presentation.svg', 'white')
+//-             +header_caption('Conoce aquí los principales indicadores del sector.', 'white')
+//-         .__column.info-financiera__years
+//-             button(class="yearLink", onclick="openYear(event,'year2015')") 2015
+//-             button(class="yearLink", onclick="openYear(event,'year2016')") 2016
+//-             button(class="yearLink", onclick="openYear(event,'year2017')") 2017
+//-             button(class="yearLink", onclick="openYear(event,'year2018')") 2018
+//-             button(class="yearLink", onclick="openYear(event,'year2019')") 2019
+//-         .__column
+//-             include ../components/indicadores-2019 
+//-             include ../components/indicadores-2018
+//-             include ../components/indicadores-2017
+//-             include ../components/indicadores-2016
+//-             include ../components/indicadores-2015
 
-    script(src="../js/indicadores.js")
+//-     script(src="../js/indicadores.js")
