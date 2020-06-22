@@ -2,7 +2,7 @@
     //- const INDICADORES = {
     //-     2015: {
     //-         mar: {
-    //-             sofipos_autorizadas_en_operacion: '44',
+    //-             autorizadas_en_operacion: '44',
     //-             numero_de_clientes: '3057140',
     //-             numero_de_sucursales: '1043',
     //-             activo_total: '24345',
@@ -140,145 +140,178 @@
     //-     },
     //- }
 
-    const INDICADORES2015 = {
-        mar: {
-            sofipos_autorizadas_en_operacion: '44',
-            numero_de_clientes: '3,057,140',
-            numero_de_sucursales: '1,043',
-            activo_total: '24,345',
-            captacion: '17,450',
-            municipios_atendidos: '1,629',
-        },
-        oct: {
-            sofipos_autorizadas_en_operacion: '44',
-            numero_de_clientes: '3,175,594',
-            numero_de_sucursales: '1,051',
-            activo_total: '24,707',
-            captacion: '17,787',
-            municipios_atendidos: '1,629',
-        },
-    }
+    //- const INDICADORES2015 = {
+    //-     mar: {
+    //-         sofipos_autorizadas_en_operacion: '44',
+    //-         numero_de_clientes: '3,057,140',
+    //-         numero_de_sucursales: '1,043',
+    //-         activo_total: '24,345',
+    //-         captacion: '17,450',
+    //-         municipios_atendidos: '1,629',
+    //-     },
+    //-     oct: {
+    //-         sofipos_autorizadas_en_operacion: '44',
+    //-         numero_de_clientes: '3,175,594',
+    //-         numero_de_sucursales: '1,051',
+    //-         activo_total: '24,707',
+    //-         captacion: '17,787',
+    //-         municipios_atendidos: '1,629',
+    //-     },
+    //- }
 
-    const INDICADORES2016 = {
-        mar: {
-            sofipos_autorizadas_en_operacion: '45',
-            numero_de_clientes: '3,423,472',
-            numero_de_sucursales: '1,099',
-            activo_total: '27,204',
-            captacion: '19,003',
-            municipios_atendidos: '1,629',
-        },
-        jun: {
-            sofipos_autorizadas_en_operacion: '45',
-            numero_de_clientes: '3,475,437',
-            numero_de_sucursales: '1,103',
-            activo_total: '28,062',
-            captacion: '19,617',
-            municipios_atendidos: '1,629',
-        },
-        sep: {
-            sofipos_autorizadas_en_operacion: '43',
-            numero_de_clientes: '3,493,998',
-            numero_de_sucursales: '1,103',
-            activo_total: '29,992',
-            captacion: '19,937',
-            municipios_atendidos: '1,629',
-        },
-        dic: {
-            sofipos_autorizadas_en_operacion: '43',
-            numero_de_clientes: '3,558,971',
-            numero_de_sucursales: '1,206',
-            activo_total: '31,283',
-            captacion: '20,233',
-            municipios_atendidos: '1,629',
-        },
-    }
+    //- const INDICADORES2016 = {
+    //-     mar: {
+    //-         sofipos_autorizadas_en_operacion: '45',
+    //-         numero_de_clientes: '3,423,472',
+    //-         numero_de_sucursales: '1,099',
+    //-         activo_total: '27,204',
+    //-         captacion: '19,003',
+    //-         municipios_atendidos: '1,629',
+    //-     },
+    //-     jun: {
+    //-         sofipos_autorizadas_en_operacion: '45',
+    //-         numero_de_clientes: '3,475,437',
+    //-         numero_de_sucursales: '1,103',
+    //-         activo_total: '28,062',
+    //-         captacion: '19,617',
+    //-         municipios_atendidos: '1,629',
+    //-     },
+    //-     sep: {
+    //-         sofipos_autorizadas_en_operacion: '43',
+    //-         numero_de_clientes: '3,493,998',
+    //-         numero_de_sucursales: '1,103',
+    //-         activo_total: '29,992',
+    //-         captacion: '19,937',
+    //-         municipios_atendidos: '1,629',
+    //-     },
+    //-     dic: {
+    //-         sofipos_autorizadas_en_operacion: '43',
+    //-         numero_de_clientes: '3,558,971',
+    //-         numero_de_sucursales: '1,206',
+    //-         activo_total: '31,283',
+    //-         captacion: '20,233',
+    //-         municipios_atendidos: '1,629',
+    //-     },
+    //- }
 
-    const INDICADORES2017 = {
-        mar: {
-            sofipos_autorizadas_en_operacion: '44',
-            numero_de_clientes: '35,76,562',
-            numero_de_sucursales: '1,158',
-            activo_total: '30,202',
-            captacion: '19,411',
-            municipios_atendidos: '1,629',
-        },
-        jun: {
-            sofipos_autorizadas_en_operacion: '44',
-            numero_de_clientes: '3,764,887',
-            numero_de_sucursales: '1,160',
-            activo_total: '31,603',
-            captacion: '19,872',
-            municipios_atendidos: '1,629',
-        },
-        sep: {
-            sofipos_autorizadas_en_operacion: '44',
-            numero_de_clientes: '3,842,849',
-            numero_de_sucursales: '1,183',
-            activo_total: '32,797',
-            captacion: '20,573',
-            municipios_atendidos: '1,629',
-        },
-    }
+    //- const INDICADORES2017 = {
+    //-     mar: {
+    //-         sofipos_autorizadas_en_operacion: '44',
+    //-         numero_de_clientes: '35,76,562',
+    //-         numero_de_sucursales: '1,158',
+    //-         activo_total: '30,202',
+    //-         captacion: '19,411',
+    //-         municipios_atendidos: '1,629',
+    //-     },
+    //-     jun: {
+    //-         sofipos_autorizadas_en_operacion: '44',
+    //-         numero_de_clientes: '3,764,887',
+    //-         numero_de_sucursales: '1,160',
+    //-         activo_total: '31,603',
+    //-         captacion: '19,872',
+    //-         municipios_atendidos: '1,629',
+    //-     },
+    //-     sep: {
+    //-         sofipos_autorizadas_en_operacion: '44',
+    //-         numero_de_clientes: '3,842,849',
+    //-         numero_de_sucursales: '1,183',
+    //-         activo_total: '32,797',
+    //-         captacion: '20,573',
+    //-         municipios_atendidos: '1,629',
+    //-     },
+    //- }
 
-    const INDICADORES2018 = {
-        jun: {
-            sofipos_autorizadas_en_operacion: '44',
-            numero_de_clientes: '3,681,372',
-            numero_de_sucursales: '1,139',
-            activo_total: '31,080',
-            captacion: '19,472',
-            municipios_atendidos: '1,629',
-        },
-        sep: {
-            sofipos_autorizadas_en_operacion: '40',
-            numero_de_clientes: '3,861,866',
-            numero_de_sucursales: '1,204',
-            activo_total: '32,459',
-            captacion: '20,136',
-            municipios_atendidos: '1,629',
-        },
-        dic: {
-            sofipos_autorizadas_en_operacion: '39',
-            numero_de_clientes: '3,899,662',
-            numero_de_sucursales: '1,165',
-            activo_total: '32,035',
-            captacion: '19,729',
-            municipios_atendidos: '1,629',
-        },
-    }
+    //- const INDICADORES2018 = {
+    //-     jun: {
+    //-         sofipos_autorizadas_en_operacion: '44',
+    //-         numero_de_clientes: '3,681,372',
+    //-         numero_de_sucursales: '1,139',
+    //-         activo_total: '31,080',
+    //-         captacion: '19,472',
+    //-         municipios_atendidos: '1,629',
+    //-     },
+    //-     sep: {
+    //-         sofipos_autorizadas_en_operacion: '40',
+    //-         numero_de_clientes: '3,861,866',
+    //-         numero_de_sucursales: '1,204',
+    //-         activo_total: '32,459',
+    //-         captacion: '20,136',
+    //-         municipios_atendidos: '1,629',
+    //-     },
+    //-     dic: {
+    //-         sofipos_autorizadas_en_operacion: '39',
+    //-         numero_de_clientes: '3,899,662',
+    //-         numero_de_sucursales: '1,165',
+    //-         activo_total: '32,035',
+    //-         captacion: '19,729',
+    //-         municipios_atendidos: '1,629',
+    //-     },
+    //- }
 
-    const INDICADORES2019 = {
-        marzo: {
-            sofipos_autorizadas_en_operacion: '39',
-            numero_de_clientes: '4,236,601',
-            numero_de_sucursales: '1,136',
-            activo_total: '3,186',
-            captacion: '20,266',
-            municipios_atendidos: '1,629',
+    //- const INDICADORES2019 = {
+    //-     marzo: {
+    //-         sofipos_autorizadas_en_operacion: '39',
+    //-         numero_de_clientes: '4,236,601',
+    //-         numero_de_sucursales: '1,136',
+    //-         activo_total: '3,186',
+    //-         captacion: '20,266',
+    //-         municipios_atendidos: '1,629',
+    //-     },
+    //-     junio: {
+    //-         sofipos_autorizadas_en_operacion: '39',
+    //-         numero_de_clientes: '4,322,888',
+    //-         numero_de_sucursales: '1,141',
+    //-         activo_total: '31,410',
+    //-         captacion: '19,807',
+    //-         municipios_atendidos: '1,629',
+    //-     },
+    //-     septiembre: {
+    //-         sofipos_autorizadas_en_operacion: '39',
+    //-         numero_de_clientes: '4,389,096',
+    //-         numero_de_sucursales: '1,087',
+    //-         activo_total: '31,100',
+    //-         captacion: '19,451',
+    //-         municipios_atendidos: '1,629',
+    //-     },
+    //-     diciembre: {
+    //-         sofipos_autorizadas_en_operacion: '39',
+    //-         numero_de_clientes: '4,875,823',
+    //-         numero_de_sucursales: '1,206',
+    //-         activo_total: '31,011',
+    //-         captacion: '19,495',
+    //-         municipios_atendidos: '1,629',
+    //-     },
+    //- }
+-
+    var INDICADORES__DICIEMBRE__2019 = [
+        {
+            indicador: 'Numero de clientes',
+            cifra: '4,875,823',
+            icon: 'icon-people-alt.svg',
+        },  
+        {
+            indicador: 'Municipios atendidos',
+            cifra: '1,629',
+            icon: 'icon-pin-alt.svg',
         },
-        junio: {
-            sofipos_autorizadas_en_operacion: '39',
-            numero_de_clientes: '4,322,888',
-            numero_de_sucursales: '1,141',
-            activo_total: '31,410',
-            captacion: '19,807',
-            municipios_atendidos: '1,629',
+        {
+            indicador: 'Captacion',
+            cifra: '19,495',
+            icon: 'icon-give-money-alt.svg',
         },
-        septiembre: {
-            sofipos_autorizadas_en_operacion: '39',
-            numero_de_clientes: '4,389,096',
-            numero_de_sucursales: '1,087',
-            activo_total: '31,100',
-            captacion: '19,451',
-            municipios_atendidos: '1,629',
+        {
+            indicador: 'Activo total',
+            cifra: '31,011',
+            icon: 'icon-coin-stack-alt.svg',
         },
-        diciembre: {
-            sofipos_autorizadas_en_operacion: '39',
-            numero_de_clientes: '4,875,823',
-            numero_de_sucursales: '1,206',
-            activo_total: '31,011',
-            captacion: '19,495',
-            municipios_atendidos: '1,629',
+        {
+            indicador: 'Numero de sucursales',
+            cifra: '1,206',
+            icon: 'icon-supermarket-alt.svg',
         },
-    }
+        {
+            indicador: 'En operacion',
+            cifra: '39',
+            icon: 'icon-radio-check-alt.svg',
+        },
+    ]
