@@ -1,21 +1,78 @@
-.formulario {
+.form {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: var(--md);
 
-    &__box {
-        margin-bottom: var(--md);
+    @media only screen and (min-width: 667px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
 
-        &:last-child {
-            margin-bottom: 0;
+    &__child {
+        position: relative;
+        margin-top: 0.8rem;
+
+        @media only screen and (min-width: 667px) {
+
+            &:first-child,
+            &:nth-child(2),
+            &:nth-child(5),
+            &:nth-child(6),
+            &:last-child {
+                grid-column-start: 1;
+                grid-column-end: 3;
+            }
+
+            &:nth-child(3) {
+                grid-column-start: 1;
+                grid-column-end: 2;
+            }
+            
+            &:nth-child(4) {
+                grid-column-start: 2;
+                grid-column-end: 3;
+            }
+            
+            &:last-child {
+                margin-top: 0;
+            }
         }
-
     }
 
     &__label {
-        margin-bottom: var(--xs);
+        @extend .heading;
+        @extend .bold;
+        @extend .normal--alt;
+        @extend .first;
+        background-color: #fff;
+        display: block;
+        padding-left: var(--ss);
+        padding-right: var(--ss);
+        position: absolute;
+        top: 0;
+        left: var(--md);
+        transform: translateY(-50%);
     }
 
-    &__input,
+    &__input {
+        background-color: transparent;
+        border-color: var(--first);
+        border-style: solid;
+        border-radius: var(--lg);
+        border-width: 0.1rem;
+        padding: var(--small) var(--md);
+        width: 100%;
+    }
+
+    &__txtarea {
+        height: var(--xx);
+    }
+
     &__submit {
-        @extend %button;
+        cursor: pointer;
+        background-color: var(--first);
+        color: #fff;
+        text-transform: capitalize;
     }
 
     &__input:focus,
@@ -28,65 +85,6 @@
     
     &__input::placeholder,
     &__textarea::placeholder {
-        color: rgba(255,255,255,0.6);
-    }
-
-    &__input {
-        @extend %button;
-        border-color: currentColor;
-    }
-
-    &__textarea {
-        border-radius: var(--md);
-        padding-top: 1.2rem;
-        height: 16rem;
-    }
-
-    &__submit {
-        cursor: pointer;
-        text-transform: capitalize;
-        transition: color 0.3s ease,
-                    background-color 0.3s ease;
-        outline: none;
-
-        &:hover {
-            color: var(--white);
-            background-color: var(--second);
-        }
-    }
-
-}
-
-.formulario-contacto {
-
-    @media only screen and (min-width: 568px) {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: auto;
-        column-gap: var(--md);
-    }
-
-    @media only screen and (min-width: 1024px) {
-        max-width: 50%;
-        margin-left: auto;
-    }
-
-    .formulario__box {
-        display: flex;
-        flex-direction: column;
-        grid-column-start: 1;
-        grid-column-end: 3;
-
-        &:nth-child(2) {
-            grid-column-start: 1;
-            grid-column-end: 2;
-        }
         
-        &:nth-child(3) {
-            grid-column-start: 2;
-            grid-column-end: 3;
-        }
-
     }
-    
 }
