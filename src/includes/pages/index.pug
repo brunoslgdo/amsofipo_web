@@ -3,26 +3,9 @@ extends ../templates/pages
 block carousel
     include ../components/carousel
 
-block featured
-    .__row
-        .__column
-            +featured_left(5)
-            +featured_right(6)
-
-block more_content
-    .__row.info-financiera-home
-        .__column
-            +header_section('Indicadores diciembre 2019', '', 'white')
-            include ../components/informacion-estadistica-home
-
-    include ../components/mosaicos
-
-    .__row.contacto
-        .__column
-            +header_section('contacto', '', 'white')
-            +header_caption('Queremos ayudarte a resolver todas tus dudas, <strong>¡escríbenos!</strong>', 'white')
-            include ../components/form
-
-    //- .__row
-    //-     .__column
-    //-         include ../components/graficas
+block sections
+    include ../sections/home-amsofipo
+    include ../sections/home-indicadores
+    include ../sections/home-sofipo
+    include ../sections/home-mosaicos
+    include ../sections/home-contacto
