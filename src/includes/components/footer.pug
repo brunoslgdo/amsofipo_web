@@ -1,30 +1,29 @@
-.footer__row
-    .footer__column
-        .footer__wrap
-            img(src=`${imagePath}logotipo-amsofipo-white.svg`, alt="amsofipo")
-        .footer__wrap
-            .footer__box
-                ul.footer__socials
-                    each social in footerSocials
-                        li
-                            img(src=`${imagePath}icon-foo-${social.name}.svg`, alt=`amsofipo - ${social.name}`)
-                            a(href=`${social.url}`, target="_blank")= `${social.name}`
-            .footer__box
-                div
-                    h3 Escríbenos o llámanos:
-                    p= `Email: ${footerDatosContacto.email}`
-                    p= `Tel.: ${footerDatosContacto.telefono}` 
-                div
-                    h3 Visítanos:
-                    p !{`${footerDatosContacto.direccion}`}
-            .footer__box
-                h3 Sitios de interés:
-                ul.footer__sitios-interes
-                    each sitio in footerSitiosInteres
-                        li
-                            a(href=`${sitio.url}`, target="_blank")= `${sitio.name.toUpperCase()}`
-        .footer__wrap
-            p Asociación Mexicana de Sociedades Financieras Populares
-            ul
-                li: a(href="../assets/marco-legal.PPTX", target="_blank") Marco Legal
-                li: a(href="../assets/aviso-de-privacidad.pdf", target="_blank") Aviso de Privacidad
+include ../config/conf-footer
+
+footer.footer.__grid
+    .footer__child
+        img(src=`${pathImg}logo-amsofipo.svg`, alt="amsofipo")
+    .footer__child
+        ul.footer__socials
+            each social in FOOTER_SOCIALS
+                li: a(href=`${social.href}`, target="_blank"): img(src=`${pathImg}${social.icon}`, alt=`amsofipo - ${social.alt}`)
+    .footer__child
+        h3.footer__label Escríbenos
+        p.footer__text.mbottom--md= `${FOOTER_CONTACTO.email}`
+        h3.footer__label Llámanos
+        p.footer__text= `${FOOTER_CONTACTO.telefono}` 
+    .footer__child
+        h3.footer__label Visítanos
+        p.footer__text !{`${FOOTER_CONTACTO.direccion}`}
+    .footer__child
+        h3.footer__label Sitios de interés
+        ul.footer__sitios-interes
+            each sitio in FOOTER_SITIOSINTERES
+                li: a(href=`${sitio.url}`, class="footer__text", target="_blank")= `${sitio.name.toUpperCase()}`
+    .footer__child
+        ul
+            li.footer__small: a(href="../assets/marco-legal.PPTX", class="footer__small", target="_blank") Marco Legal
+            li.footer__small: a(href="../assets/aviso-de-privacidad.pdf", class="footer__small", target="_blank") Aviso de Privacidad
+        ul
+            li.footer__small Asociación Mexicana de Sociedades Financieras Populares
+            li.footer__small: img(src=`${pathImg}icon-info.svg`, alt="información")
