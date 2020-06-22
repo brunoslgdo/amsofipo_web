@@ -1,0 +1,41 @@
+.home-amsofipo {
+    background-image: url('../img/home-amsofipo-bg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: var(--xx);
+    padding-bottom: var(--xx);
+    text-align: center;
+
+    @media only screen and (min-width: 1024px) {
+        text-align: left;
+    }
+
+    &__child {
+
+        @media only screen and (min-width: 1024px) {
+
+            &:first-child {
+                grid-column-start: 2;
+                grid-column-end: 5;
+                margin-top: auto;
+                margin-bottom: auto;
+            }
+            
+            &:last-child {
+                grid-column-start: 6;
+                grid-column-end: 11;
+            }
+        }
+    }
+
+    &__logo {
+        margin-right: auto;
+        margin-left: auto;
+        
+        @media only screen and (min-width: 1024px) {
+            margin-right: initial;
+            margin-left: initial;
+        }
+    }
+}
