@@ -1,12 +1,8 @@
 html {
     box-sizing: border-box;
     font-size: 10px;
-    padding-top: 48px;
-
-    @media only screen and (min-width: 1024px) {
-        padding-top: 72px;
-    }
-
+    font-weight: normal;
+    line-height: 1.2;
 }
 
 *, *::after, *::before {
@@ -18,10 +14,16 @@ html {
     // outline: 1px solid yellow;
 }
 
-ol, ul, li {
+ol, ul {
     list-style: none;
 }
 
 a {
     text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
