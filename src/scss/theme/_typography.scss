@@ -1,22 +1,23 @@
 $font-family: (
-    title: 'Montserrat',
+    heading: 'Montserrat',
     emphasis: 'Raleway',
     body: 'Prompt',
 );
     
 $font-size: (
     display: 6.4rem,
-    display--alt: 4.8rem,
+    display--alt: 4.6rem,
     title: 4rem,
     subtitle: 3.2rem,
     caption: 2.4rem,
-    body: 1.6rem,
-    body--alt: 1.4rem,
+    normal: 1.6rem,
+    normal--alt: 1.4rem,
     small: 1.2rem,
 );
 
 $font-weight: (
     bold: 700,
+    sbold: 600,
     medium: 500,
     regular: 400,
     light: 300,
@@ -53,4 +54,12 @@ $font-weight: (
     .#{$key} { 
         font-weight: #{$val};
     }
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.justify {
+    text-align: justify;
 }
