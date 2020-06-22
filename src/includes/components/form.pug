@@ -1,15 +1,14 @@
-form.formulario.formulario-contacto
+include ../config/conf-form
 
-    each tag in formularioContacto.input
-        .formulario__box
-            label.formulario__label.white= `${tag.label}`
-            input(type=`${tag.type}`, placeholder=`${tag.placeholder}`, class="formulario__input white")
-    
-    each tag in formularioContacto.textarea
-        .formulario__box
-            label.formulario__label.white= `${tag.label}`
-            textarea(placeholder=`${tag.placeholder}`, class="formulario__input formulario__textarea white")
-
-    each tag in formularioContacto.submit
-        .formulario__box
-            button(type=`${tag.type}`, class="formulario__submit first bg--white")= `${tag.cta}`
+form.form
+    each tag in FORM.input
+        .form__child
+            label.form__label= `${tag.label}`
+            input(type=`${tag.type}`, placeholder=`${tag.placeholder}`, class="form__input")
+    each tag in FORM.textarea
+        .form__child
+            label.form__label= `${tag.label}`
+            textarea(placeholder=`${tag.placeholder}`, class="form__input form__txtarea")
+    each tag in FORM.submit
+        .form__child
+            button(type=`${tag.type}`, class="form__input form__submit")= `${tag.cta}`
