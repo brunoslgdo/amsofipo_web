@@ -11,15 +11,16 @@
 
 // layout
     @import 'layout/reset';
-    @import 'layout/model-box';
+    @import 'layout/box-model';
 
 // components
+    @import 'components/classes';
     @import 'components/header-section';
     @import 'components/header-caption';
     @import 'components/header';
     @import 'components/menu';
     @import 'components/icon-hamburguer';
-    @import 'components/jumbotron';
+    @import 'components/jumbo';
     @import 'components/featured';
     @import 'components/associates';
     @import 'components/pin';
@@ -29,7 +30,6 @@
     @import 'components/naturaleza-juridica';
     @import 'components/informacion-estadistica';
     @import 'components/carousel';
-    @import 'components/mosaicos';
     @import 'components/form';
     @import 'components/footer';
     @import 'components/buttons';
@@ -38,7 +38,11 @@
     @import 'components/hero';
 
 // sections
-    @import 'sections/contacto';
+    @import 'sections/home-amsofipo';
+    @import 'sections/home-indicadores';
+    @import 'sections/home-sofipo';
+    @import 'sections/home-mosaicos';
+    @import 'sections/home-contacto';
 
 // pages
     @import 'pages/finanzas-personales';
