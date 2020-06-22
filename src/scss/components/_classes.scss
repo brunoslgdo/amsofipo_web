@@ -1,0 +1,22 @@
+.center {
+
+    &--content {
+        text-align: center;
+    }
+
+    &--block {
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+.hero {
+    position: relative;
+    
+    img {
+        object-fit: cover;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+}
