@@ -1,19 +1,11 @@
 extends ../templates/pages
 
-block jumbotron
-    +jumbotron(0)
+block jumbo
+    include ../mixins/mix-jumbo
+    +jumbo(JUMBO_AMSOFIPO)
 
-block featured
-    .__row
-        .__column
-            +featured_right(0)
-            +featured_left(1)
-
-block more_content
-    .__row(style="background-color: #F8F9FA;")
-        .__column
-            +header_section('nuestros asociados', 'icon-association.svg', 'first')
-            +header_caption('Conoce a las SOFIPO que están cerca de ti', 'text')
-            include ../components/associates
-            +margin_height(4)
-            include ../components/pin
+block sections
+    include ../mixins/mix-featured
+    +featured(FEATURED_MISION)
+    +featured_right(FEATURED_VISION)
+    include ../sections/amsofipo-asociados
