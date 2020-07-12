@@ -1,0 +1,24 @@
+include ../config/conf-indicadores
+.inclusion-financiera-estadistica.__grid
+    .inclusion-financiera-estadistica__child
+        h1.heading.title.bold.uppercase.text--alt.mbottom--md Información estadística
+        p.body.caption.light.text--alt Conoce aquí los principales indicadores del sector.
+    .inclusion-financiera-estadistica__child
+        .years.mbottom--md
+            button(class="tablink body normal light text--alt", onclick="openCity('2019', this, 'var(--second)')", id="defaultOpen") 2019
+            button(class="tablink body normal light text--alt", onclick="openCity('2018', this, 'var(--second)')") 2018
+            button(class="tablink body normal light text--alt", onclick="openCity('2017', this, 'var(--second)')") 2017
+            button(class="tablink body normal light text--alt", onclick="openCity('2016', this, 'var(--second)')") 2016
+            button(class="tablink body normal light text--alt", onclick="openCity('2015', this, 'var(--second)')") 2015
+        .tabcontent#2019
+            include ../components/indicadores-2019
+        .tabcontent#2018
+            include ../components/indicadores-2018
+        .tabcontent#2017
+            include ../components/indicadores-2017
+        .tabcontent#2016
+            include ../components/indicadores-2016
+        .tabcontent#2015
+            include ../components/indicadores-2015
+
+script(src="../js/indicadores.js")

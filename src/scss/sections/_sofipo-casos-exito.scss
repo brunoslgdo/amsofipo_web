@@ -1,0 +1,26 @@
+.sofipo-casos-exito {
+    margin-top: var(--xx);
+    padding-top: var(--xx);
+    padding-bottom: var(--xx);
+    text-align: center;
+
+    &__child {
+
+        @media only screen and (min-width: 1024px) {
+
+            &:first-child {
+                grid-column-start: 2;
+                grid-column-end: 12;
+            }
+
+            &:last-child {
+                grid-column-start: 2;
+                grid-column-end: 12;
+            }
+        }
+    }
+}
+
+.bg-sofipo-casos-exito {
+    background-color: var(--first);
+}

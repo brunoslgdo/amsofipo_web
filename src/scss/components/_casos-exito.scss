@@ -1,0 +1,57 @@
+.casos-exito {
+
+    &.__grid {
+
+        @media only screen and (min-width: 667px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @media only screen and (min-width: 1024px) {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+
+    &__card {
+
+        @media only screen and (min-width: 667px) {
+
+            &:last-child {
+                grid-column-start: 1;
+                grid-column-end: 3;
+                margin-top: auto;
+                margin-bottom: auto;
+
+            }
+        }
+       
+        @media only screen and (min-width: 1024px) {
+
+            &:last-child {
+                grid-column-start: 2;
+                grid-column-end: 4;
+                margin-top: auto;
+                margin-bottom: auto;
+
+            }
+        }
+    }
+
+    &__card {
+        background-color: #fff;
+        border-radius: var(--ss);
+        box-shadow: 0 0 0.2rem rgba(0,0,0,0.2);    
+        overflow: hidden;
+
+        &:last-child {
+            background-color: initial;
+            border-radius: initial;
+            box-shadow: initial;   
+            overflow: initial;
+        }
+    }
+
+    &__descripcion {
+        padding: var(--sm) var(--md);
+        text-align: left;
+    }
+}

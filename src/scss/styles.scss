@@ -22,13 +22,12 @@
     @import 'components/icon-hamburguer';
     @import 'components/jumbo';
     @import 'components/featured';
-    @import 'components/associates';
-    @import 'components/pin';
-    @import 'components/videos';
-    @import 'components/portafolio-productos';
-    @import 'components/beneficio-clientes';
+    @import 'components/asociados';
+    @import 'components/casos-exito';
+    @import 'components/productos';
+    @import 'components/beneficios';
     @import 'components/naturaleza-juridica';
-    @import 'components/informacion-estadistica';
+    // @import 'components/informacion-estadistica';
     @import 'components/carousel';
     @import 'components/form';
     @import 'components/footer';
@@ -36,13 +35,23 @@
     @import 'components/indicadores';
     @import 'components/notas';
     @import 'components/hero';
+    @import 'components/entry';
 
 // sections
+
     @import 'sections/home-amsofipo';
     @import 'sections/home-indicadores';
     @import 'sections/home-sofipo';
     @import 'sections/home-mosaicos';
     @import 'sections/home-contacto';
+    
+    @import 'sections/amsofipo-asociados';
+
+    @import 'sections/sofipo-casos-exito';
+    @import 'sections/sofipo-portafolio';
+    @import 'sections/sofipo-beneficios';
+
+    @import 'sections/inclusion-financiera-estadistica';
 
 // pages
     @import 'pages/finanzas-personales';

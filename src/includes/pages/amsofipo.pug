@@ -6,6 +6,9 @@ block jumbo
 
 block sections
     include ../mixins/mix-featured
-    +featured(FEATURED_MISION)
-    +featured_right(FEATURED_VISION)
-    include ../sections/amsofipo-asociados
+    .__wrap
+        +featured(FEATURED_MISION)
+    .__wrap
+        +featured_right(FEATURED_VISION)
+    .__wrap
+        include ../sections/amsofipo-asociados

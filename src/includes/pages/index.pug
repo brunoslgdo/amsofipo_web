@@ -4,8 +4,12 @@ block carousel
     include ../components/carousel
 
 block sections
-    include ../sections/home-amsofipo
-    include ../sections/home-indicadores
-    include ../sections/home-sofipo
+    .__wrap.bg-home-amsofipo
+        include ../sections/home-amsofipo
+    .__wrap.bg-home-indicadores
+        include ../sections/home-indicadores
+    .__wrap.bg-home-sofipo
+        include ../sections/home-sofipo
     include ../sections/home-mosaicos
-    include ../sections/home-contacto
+    .__wrap.bg-home-contacto
+        include ../sections/home-contacto

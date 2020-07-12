@@ -1,0 +1,36 @@
+.asociados {
+
+    &.__grid {
+        grid-template-columns: 1fr;
+        gap: 0; 
+        border-top: 0.1rem solid var(--first);
+        border-left: 0.1rem solid var(--first);
+        padding: 0;
+
+        @media only screen and (min-width: 568px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        
+        @media only screen and (min-width: 736px) {
+            grid-template-columns: repeat(3, 1fr);
+        }
+        
+        @media only screen and (min-width: 1024px) {
+            grid-template-columns: repeat(5, 1fr);
+        }
+    }
+
+    &__child {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-right: 0.1rem solid var(--first);
+        border-bottom: 0.1rem solid var(--first);
+        padding: var(--md);
+        height: 24rem;
+    }
+
+    &__logo {
+        transform: scale(0.8);
+    }
+}

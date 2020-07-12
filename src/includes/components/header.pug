@@ -1,6 +1,7 @@
-header.header.__grid
+header.header
     .header__child
-        a(href="index.html"): img(src=`${pathImg}logo-amsofipo.svg`, class="header__logo", alt="amsofipo")
-    .header__child
-        include icon-hamburguer
-        include menu
+        .header__item
+            a(href="index.html"): img(src=`${pathImg}logo-amsofipo.svg`, class="header__logo", alt="amsofipo")
+        .header__item
+            include icon-hamburguer
+            include menu

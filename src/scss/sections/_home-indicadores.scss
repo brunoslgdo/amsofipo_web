@@ -1,8 +1,8 @@
 .home-indicadores {
-    background-color: var(--bg);
     padding-top: var(--xx);
     padding-bottom: var(--xx);
     text-align: center;
+    @extend .__grid;
 
     @media only screen and (min-width: 1024px) {
         text-align: left;
@@ -89,4 +89,8 @@
         margin-right: auto;
         margin-left: auto;
     }
+}
+
+.bg-home-indicadores {
+    background-color: var(--bg);
 }

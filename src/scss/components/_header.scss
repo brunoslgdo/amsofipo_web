@@ -1,26 +1,17 @@
 .header {
+    box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 0.3);
     padding-top: var(--sm);
     padding-bottom: var(--sm);
-    align-items: center;
-    
+    @extend .__grid;
+
     &__child {
-
-        @media only screen and (min-width: 1280px) {
-            
-            &:first-child {
-                grid-column-start: 2;
-                grid-column-end: 4;
-            }
-            
-            &:last-child {
-                grid-column-start: 4;
-                grid-column-end: 12;
-                justify-self: end;
-            }
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        @media only screen and (min-width: 1024px) {
+            grid-column-start: 2;        
+            grid-column-end: 12;        
         }
-    }
-
-    &__logo {
-
     }
 }

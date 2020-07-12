@@ -1,60 +1,82 @@
 .indicadores {
-    color: var(--white);
-    padding: var(--md);
-    border-right: 0.1rem solid white;
-    border-bottom: 0.1rem solid white;
+    color: var(--text--alt);
+    text-align: left;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: var(--md);
+    // overflow-x: scroll;
 
-    &__wrap {
-        // display: grid;
-        display: none;
-        grid-template-columns: repeat(3,1fr);
-        border-left: 0.1rem solid white;
-        border-top: 0.1rem solid white;
-        max-width: 102.4rem;
+    &__item {
+        background-color: var(--second);
+        border-radius: var(--ss);
+        padding: var(--md);
     }
 
-    &__box {
-
+    &__content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: var(--md);
+        
         &:first-child {
-            display: flex;
-            justify-content: center;
-            align-content: center;
+            display: initial;
         }
-
-        &:last-child {
-            text-align: center;
-        }
-    }
-
-    &__title, 
-    &__quantity {
-        font-size: var(--md);
-    }
-
-    &__title {
-        font-size: var(--md);
-        font-weight: var(--light);
-        margin-bottom: var(--sm);
-    }
-
-    &__icon {
-        margin-right: var(--xs);
-        height: 2.4rem;
-    }
-
-    &__month {
-        font-size: var(--sm);
-        font-weight: var(--light);
-        text-transform: capitalize;
-    }
-
-    &__quantity {
-        font-size: var(--md);
-        line-height: 1;
-        margin-bottom: var(--xs);
 
         &:last-child {
             margin-bottom: 0;
         }
     }
+
+    &__child {
+
+        &:first-child {
+            flex: 4rem;
+        }
+        
+        &:last-child {
+            flex: 100;
+        }
+    }
+
+    &__description {
+        padding-left: var(--sm);
+    }
+
+    &__icon {
+        margin-right: auto;
+        margin-left: auto;
+        width: var(--xx);
+    }
+}
+
+.years {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: auto;
+    gap: var(--md);
+}
+
+.tablink {
+    border: none;
+    border-radius: var(--ss);
+    background-color: #278b81;
+    padding-top: var(--xs);
+    padding-bottom: var(--xs);
+
+    &:hover {
+        opacity: 0.8;
+    }
+}
+
+.tabcontent {
+    display: none;
+}
+
+#2019,
+#2018,
+#2017,
+#2016,
+#2015 {
+    background-color: var(--second);
 }

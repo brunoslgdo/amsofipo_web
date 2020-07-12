@@ -49,13 +49,19 @@ $separation: (
     }
 }
 
+.__wrap {
+    padding-right: var(--sm);
+    padding-left: var(--sm);
+}
+
 .__grid {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1366px;
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto;
     gap: var(--md);
-    padding-right: var(--sm);
-    padding-left: var(--sm);
     
     @media only screen and (min-width: 1024px) {
         grid-template-columns: repeat(12, 1fr);

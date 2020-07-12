@@ -1,0 +1,12 @@
+include ../config/conf-productos
+.portafolio
+    ul.productos
+        each item in PRODUCTOS
+            li.productos__item
+                .productos__caption
+                    .productos__icon
+                        img(src=`${pathImg}${item.icon}`)
+                    h2.heading.caption.bold.uppercase.text--alt.mbottom--md= `${item.servicio.toUpperCase()}`
+                ul.productos__list
+                    each descripcion in item.list
+                        li.body.regular.light.text--alt.mbottom--xs= `${descripcion}`
