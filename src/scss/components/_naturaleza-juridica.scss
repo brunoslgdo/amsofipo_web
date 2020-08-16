@@ -66,3 +66,32 @@
     }
 
 }
+
+.sofipo-naturaleza-juridica {
+    max-width: 102.4rem;
+
+    @media only screen and (min-width: 1024px) {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--xl);
+
+        &__child:last-child {
+            background: url('../img/naturaleza-juridica.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position-x: center;
+        }
+    }
+
+    .list-nj__item {
+        display: flex;
+        margin-bottom: var(--sm);
+    }
+
+    .list-nj__cont {
+        margin-left: var(--sm);
+    }
+
+    .list-nj__item::before {
+        content: url('../img/icon-download.svg');
+    }
+}

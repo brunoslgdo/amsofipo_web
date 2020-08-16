@@ -95,25 +95,26 @@
 
 @media only screen and (min-width: 1024px) {
 
-    .mosaicos__wrap {
+    .home-mosaicos__child {
 
-        .mosaicos__box {
+        .home-mosaicos__icon,
+        .home-mosaicos__content {
             transition: transform 0.6s ease;
         }
 
-        .mosaicos__box:last-child {
-            transform: translateY(200%);
+        .home-mosaicos__content {
+            transform: translateY(300%);
         }
 
     }
 
-    .mosaicos__wrap:hover {
+    .home-mosaicos__child:hover {
 
-        .mosaicos__box:first-child {
-            transform: translateY(-300%);
+        .home-mosaicos__icon {
+            transform: translateY(-600%);
         }
 
-        .mosaicos__box:last-child {
+        .home-mosaicos__content {
             transform: translateY(-50%);
         }
     }

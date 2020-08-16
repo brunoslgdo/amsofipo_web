@@ -17,6 +17,12 @@ ul.indicadores
                     p.body.normal.light Número de clientes
             .indicadores__content
                 .indicadores__child
+                    img(src=`${pathImg}icon-placeholder.svg`, class="indicadores__icon")
+                .indicadores__child.indicadores__description
+                    h2.body.caption.medium= `${val.municipios_atendidos}`
+                    p.body.normal.light Municipios atendidos
+            .indicadores__content
+                .indicadores__child
                     img(src=`${pathImg}icon-numero-sucursales.svg`, class="indicadores__icon")
                 .indicadores__child.indicadores__description
                     h2.body.caption.medium= `${val.numero_de_sucursales}`
@@ -25,12 +31,12 @@ ul.indicadores
                 .indicadores__child
                     img(src=`${pathImg}icon-activo-total.svg`, class="indicadores__icon")
                 .indicadores__child.indicadores__description
-                    h2.body.caption.medium= `${val.activo_total}`
+                    h2.body.caption.medium= `${val.activo_total} MDP`
                     p.body.normal.light Activo total
             .indicadores__content
                 .indicadores__child
                     img(src=`${pathImg}icon-captacion.svg`, class="indicadores__icon")
                 .indicadores__child.indicadores__description
-                    h2.body.caption.medium= `${val.municipios_atendidos}`
+                    h2.body.caption.medium= `${val.captacion} MDP`
                     p.body.normal.light Captación
 

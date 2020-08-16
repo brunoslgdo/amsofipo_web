@@ -8,13 +8,14 @@ block sections
     include ../mixins/mix-featured
     +featured(FEATURED_OBJETIVO)
     +featured_right(FEATURED_CLIENTES)
-    .__wrap.bg-sofipo-casos-exito
+    .__wrap.bg-sofipo-casos-exito#casos-de-exito
         include ../sections/sofipo-casos-exito
-    .__wrap.bg--bg
+    .__wrap.bg--bg#portafolio-de-productos
         include ../sections/sofipo-portafolio
     .__wrap
         include ../sections/sofipo-beneficios
-    //- include ../sections/sofipo-naturaleza
+    .__wrap
+        include ../sections/sofipo-naturaleza-juridica
 
 //- block more_content
 //-     .__row.casos-de-exito
