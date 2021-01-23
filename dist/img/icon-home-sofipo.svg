@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="70.857" height="64" viewBox="0 0 70.857 64">
+  <g id="supermarket" transform="translate(0 -24)">
+    <g id="Grupo_2233" data-name="Grupo 2233" transform="translate(0 24)">
+      <path id="Trazado_3418" data-name="Trazado 3418" d="M70.857,48V42.286H59.429V38.857h2.286V33.143h-8V29.714H56V24H14.857v5.714h2.286v3.429h-8v5.714h2.286v3.429H0V48H2.286V85.714H0V88H70.857V85.714H68.571V48Zm-2.286-3.429v1.143H59.429V44.571Zm-9.143-9.143v1.143H53.714V35.429ZM17.143,26.286H53.714v1.143H17.143Zm2.286,3.429h32V65.143h-32V29.714Zm-8,5.714h5.714v1.143H11.429ZM2.286,44.571h9.143v1.143H2.286ZM4.571,48h6.857V85.714H4.571Zm9.143,37.714V38.857h3.429V85.714Zm33.143,0H36.571V72H46.857Zm-12.571,0H24V72H34.286Zm14.857,0v-16H21.714v16H19.429V67.429h32V85.714Zm4.571-46.857h3.429V85.714H53.714ZM66.286,85.714H59.429V48h6.857Z" transform="translate(0 -24)" fill="#195852"/>
+      <rect id="Rectángulo_2858" data-name="Rectángulo 2858" width="18.286" height="2.286" transform="translate(26.286 17.143)" fill="#195852"/>
+      <rect id="Rectángulo_2859" data-name="Rectángulo 2859" width="2.286" height="2.286" transform="translate(42.286 21.714)" fill="#195852"/>
+      <rect id="Rectángulo_2860" data-name="Rectángulo 2860" width="13.714" height="2.286" transform="translate(26.286 21.714)" fill="#195852"/>
+      <rect id="Rectángulo_2861" data-name="Rectángulo 2861" width="2.286" height="5.714" transform="translate(30.857 51.429)" fill="#195852"/>
+      <rect id="Rectángulo_2862" data-name="Rectángulo 2862" width="2.286" height="5.714" transform="translate(37.714 51.429)" fill="#195852"/>
+    </g>
+  </g>
+</svg>

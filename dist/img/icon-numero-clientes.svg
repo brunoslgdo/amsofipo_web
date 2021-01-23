@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="35.288" height="25" viewBox="0 0 35.288 25">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #fff;
+        stroke-linecap: round;
+        stroke-miterlimit: 10;
+      }
+    </style>
+  </defs>
+  <g id="icon-numero-clientes" transform="translate(0.5 0.5)">
+    <path id="Trazado_1760" data-name="Trazado 1760" class="cls-1" d="M4684.065,1667.331c2.062,0,3.429-1.754,3.429-3.918v-1.306c0-2.164-1.367-3.918-3.429-3.918s-3.429,1.754-3.429,3.918v1.306C4680.637,1665.577,4682,1667.331,4684.065,1667.331Z" transform="translate(-4666.922 -1658.188)"/>
+    <path id="Trazado_1761" data-name="Trazado 1761" class="cls-1" d="M4700.146,1670.547c2.061,0,3.429-1.754,3.429-3.918v-1.306c0-2.164-1.368-3.918-3.429-3.918s-3.429,1.754-3.429,3.918v1.306C4696.718,1668.793,4698.085,1670.547,4700.146,1670.547Z" transform="translate(-4671.574 -1659.119)"/>
+    <path id="Trazado_1762" data-name="Trazado 1762" class="cls-1" d="M4667.986,1670.547c2.062,0,3.429-1.754,3.429-3.918v-1.306c0-2.164-1.366-3.918-3.429-3.918s-3.429,1.754-3.429,3.918v1.306C4664.558,1668.793,4665.925,1670.547,4667.986,1670.547Z" transform="translate(-4662.272 -1659.119)"/>
+    <path id="Trazado_1763" data-name="Trazado 1763" class="cls-1" d="M4689.529,1687.3v-8c0-2.832-4.476-3.429-6.857-3.429s-6.857.6-6.857,3.429v6.857" transform="translate(-4665.528 -1663.304)"/>
+    <path id="Trazado_1764" data-name="Trazado 1764" class="cls-1" d="M4695.11,1679.479a15.088,15.088,0,0,1,3.429-.387c2.382,0,6.857.6,6.857,3.428v4.572" transform="translate(-4671.109 -1664.234)"/>
+    <path id="Trazado_1765" data-name="Trazado 1765" class="cls-1" d="M4661.341,1687.092v-4.572c0-2.831,4.476-3.428,6.858-3.428a15.081,15.081,0,0,1,3.428.387" transform="translate(-4661.341 -1664.234)"/>
+  </g>
+</svg>

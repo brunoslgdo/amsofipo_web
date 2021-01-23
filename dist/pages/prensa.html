@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>AMSOFIPO</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Prompt:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;display=swap" rel="stylesheet"/>
+    <link href="../css/styles.css?=08062020:1223" rel="stylesheet"/>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__child">
+        <div class="header__item"><a href="index.html"><img class="header__logo" src="../img/logo-amsofipo.svg" alt="amsofipo"/></a></div>
+        <div class="header__item"><a class="hamburguer" href="javascript:void(0);" onclick="menu()"><span class="hamburguer__line"></span><span class="hamburguer__line"></span><span class="hamburguer__line"></span></a>
+          <ul class="menu">
+            <li class="menu__item"><a class="menu__link" href="amsofipo.html">amsofipo</a></li>
+            <li class="menu__item"><a class="menu__link" href="sofipo.html">sofipo</a></li>
+            <li class="menu__item"><a class="menu__link" href="inclusion-financiera.html">inclusión financiera</a></li>
+            <li class="menu__item"><a class="menu__link" href="finanzas-personales.html">finanzas personales</a></li>
+            <li class="menu__item"><a class="menu__link" href="prensa.html">prensa</a></li>
+            <li class="menu__item"><a class="menu__link" href="http://blog.amsofipo.mx/pages/">blog</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+        <div class="jumbo __grid">
+          <picture class="jumbo__child">
+            <source srcset="../img/jumbotron-prensa.png" media="(min-width: 768px)"/>
+            <source srcset="../img/jumbotron-prensa.png" media="(min-width: 480px)"/><img src="../img/jumbotron-prensa.png" alt="sofipo"/>
+          </picture>
+          <div class="jumbo__child">
+            <div class="jumbo__header">
+              <h1 class="heading title bold uppercase">prensa</h1>
+              <h2 class="body caption light"></h2>
+            </div>
+            <p class="body normal light justify">Descubre más de AMSOFIPO y mantente al día sobre las últimas noticias de la asociación. Aquí encontrarás los comunicados en nuestra sección de boletines de prensa.</p>
+          </div>
+        </div>
+    <div class="prensa">
+      <div class="prensa__child notas-prensa mbottom--md">
+        <button class="tablink body normal light text--alt" onclick="prensa('notas-de-prensa', this, 'var(--second)')" id="defaultOpen">Notas de prensa</button>
+        <button class="tablink body normal light text--alt" onclick="prensa('boletines-de-prensa', this, 'var(--second)')">Boletines de presna</button>
+      </div>
+      <div class="prensa__child tabcontent" id="notas-de-prensa">
+        <div class="notas-de-prensa__child">
+          <ul class="notas">
+            <li class="notas__item"><a href="https://insurgentepress.com.mx/autoriza-la-cnbv-a-otorgar-creditos-por-via-digital-a-las-sofipo/" target="_blank">
+                <h1 class="notas__titulo">Autoriza la CNBV a otorgar créditos por vía digital a las sofipo</h1>
+                <h2 class="notas__autor">Redacción</h2>
+                <p class="notas__medio">Insurgente Press</p>
+                <p class="notas__fecha">27 de abril, 2020</p></a></li>
+            <li class="notas__item"><a href="https://grupoenconcreto.com/alistan-sofipos-apoyos-a-pequenos-comerciantes-por-contingencia/" target="_blank">
+                <h1 class="notas__titulo">Alistan SOFIPOS apoyos a pequeños comerciantes por contingencia</h1>
+                <h2 class="notas__autor">Redacción</h2>
+                <p class="notas__medio">En Concreto</p>
+                <p class="notas__fecha">24 de abril, 2020</p></a></li>
+            <li class="notas__item"><a href=" https://expansion.mx/economia/2020/04/24/sofipos-otorgaran-creditos-via-internet-durante-contingencia" target="_blank">
+                <h1 class="notas__titulo">SOFIPOS otorgan créditos vía internet durante contingencia</h1>
+                <h2 class="notas__autor">Redacción</h2>
+                <p class="notas__medio">Expansión</p>
+                <p class="notas__fecha">24 de abril, 2020</p></a></li>
+            <li class="notas__item"><a href="https://www.elnorte.com/aplicacioneslibre/preacceso/articulo/default.aspx?__rval=1&amp;urlredirect=https://www.elnorte.com/confian-sofipos-en-su-solvencia/ar1914275?referer=--7d616165662f3a3a6262623b727a7a7279703b767a783a--" target="_blank">
+                <h1 class="notas__titulo">Confían sofipos en su solvencia</h1>
+                <h2 class="notas__autor">Redacción</h2>
+                <p class="notas__medio">El Norte</p>
+                <p class="notas__fecha">7 de abril, 2020</p></a></li>
+            <li class="notas__item"><a href="https://www.reforma.com/diferiran-deudas-financieras-populares/ar1910639?referer=--7d616165662f3a3a6262623b727a7a7279703b767a783a--" target="_blank">
+                <h1 class="notas__titulo">Diferiran deudas financieras populares</h1>
+                <h2 class="notas__autor">Redacción</h2>
+                <p class="notas__medio">Reforma</p>
+                <p class="notas__fecha">3 de abril, 2020</p></a></li>
+            <li class="notas__item"><a href="https://mx.investing.com/news/stock-market-news/sofipos-tambien-implementaran-medidas-de-apoyo-a-clientes-1968119" target="_blank">
+                <h1 class="notas__titulo">Sofipos también implementarán medidas de apoyo a clientes</h1>
+                <h2 class="notas__autor">Redacción</h2>
+                <p class="notas__medio">Investing.com</p>
+                <p class="notas__fecha">3 de abril, 2020</p></a></li>
+            <li class="notas__item"><a href="https://elceo.com/economia/sofipos-daran-apoyos-a-sus-clientes-afectados-por-contingencia-del-covid-19/" target="_blank">
+                <h1 class="notas__titulo">Sofipos darán apoyos a sus clientes afectados por contingencia del COVID-19</h1>
+                <h2 class="notas__autor">Carmen Luna</h2>
+                <p class="notas__medio">EL CEO</p>
+                <p class="notas__fecha">3 de abril, 2020</p></a></li>
+            <li class="notas__item"><a href="https://www.dineroenimagen.com/alicia-salgado/reunion-empresarial-rispida-pero-buena-senal/121231" target="_blank">
+                <h1 class="notas__titulo">Reunión empresarial rápida pero buena señal</h1>
+                <h2 class="notas__autor">Alicia Salgado</h2>
+                <p class="notas__medio">Enfoque</p>
+                <p class="notas__fecha">3 de abril, 2020</p></a></li>
+            <li class="notas__item"><a href="https://www.eleconomista.com.mx/sectorfinanciero/Se-trabaja-para-enfrentar-la-contingencia-Amsofipo-20200323-0102.html" target="_blank">
+                <h1 class="notas__titulo">Se trabaja para enfrentar la contingencia</h1>
+                <h2 class="notas__autor">Fernando Gutiérrez</h2>
+                <p class="notas__medio">El Economista</p>
+                <p class="notas__fecha">3 de abril, 2020</p></a></li>
+            <li class="notas__item"><a href="https://www.la-prensa.com.mx/mexico/sofipos-ofrece-oxigeno-a-los-microempresarios-por-contingencia-5052334.html" target="_blank">
+                <h1 class="notas__titulo">Sofipos ofrece &quot;oxígeno&quot; a los microempresarios por contingencia</h1>
+                <h2 class="notas__autor">Patricia Carrasco</h2>
+                <p class="notas__medio">La Prensa</p>
+                <p class="notas__fecha">2 de abril, 2020</p></a></li>
+            <li class="notas__item"><a href="https://lasillarota.com/dinero/como-apoyaran-bancos-y-sofipos-en-la-crisis-por-covid-19-abm-clientes-banorte-citibanamex/374023" target="_blank">
+                <h1 class="notas__titulo">¿Cómo apoyarán bancos y sofipos en la crisis por covid 19?</h1>
+                <h2 class="notas__autor">AMSOFIPO</h2>
+                <p class="notas__medio">La Silla Rota</p>
+                <p class="notas__fecha">2 de abril, 2020</p></a></li>
+            <li class="notas__item"><a href="https://expansion.mx/finanzas-personales/2020/04/02/sofipos-apoyan-pequenos-comerciantes-ante-contingencia" target="_blank">
+                <h1 class="notas__titulo">Sofipos apoyan pequeños comerciantes ante contingencia</h1>
+                <h2 class="notas__autor">AMSOFIPO</h2>
+                <p class="notas__medio">Expansión</p>
+                <p class="notas__fecha">2 de abril, 2020</p></a></li>
+            <li class="notas__item"><a href="https://www.mural.com/libre/acceso/accesofb.htm?urlredirect=/ofrecen-sofipos-planes-de-pago-por-virus/ar1910659" target="_blank">
+                <h1 class="notas__titulo">Diferiran deudas financieras populares</h1>
+                <h2 class="notas__autor">AMSOFIPO</h2>
+                <p class="notas__medio">Mural</p>
+                <p class="notas__fecha">2 de abril, 2020</p></a></li>
+            <li class="notas__item"><a href="https://www.elnorte.com/libre/acceso/accesofb.htm?urlredirect=/diferiran-deudas-financieras-populares/ar1910658?v=3&amp;referer=--7d616165662f3a3a6262623b727a7a7279703b767a783a--" target="_blank">
+                <h1 class="notas__titulo">Diferiran deudas financieras populares</h1>
+                <h2 class="notas__autor">AMSOFIPO</h2>
+                <p class="notas__medio">El Norte</p>
+                <p class="notas__fecha">2 de abril, 2020</p></a></li>
+            <li class="notas__item"><a href="https://www.reforma.com/aplicacioneslibre/preacceso/articulo/default.aspx?__rval=1&amp;urlredirect=https://www.reforma.com/diferiran-deudas-financieras-populares/ar1910639?referer=--7d616165662f3a3a6262623b727a7a7279703b767a783b786d3a--" target="_blank">
+                <h1 class="notas__titulo">Diferiran deudas financieras populares</h1>
+                <h2 class="notas__autor">AMSOFIPO</h2>
+                <p class="notas__medio">Reforma</p>
+                <p class="notas__fecha">2 de abril, 2020</p></a></li>
+            <li class="notas__item"><a href="https://www.eleconomista.com.mx/sectorfinanciero/Clientes-de-sofipos-y-socaps-ya-podran-diferir-pagos-de-creditos-para-sortear-la-contingencia--20200402-0074.html, 2020" target="_blank">
+                <h1 class="notas__titulo">Clientes de sofipos y socaps ya podrán diferir pagos de créditos para sortear la contingencia</h1>
+                <h2 class="notas__autor">Fernando Gutiérrez</h2>
+                <p class="notas__medio">El Economista</p>
+                <p class="notas__fecha">2 de abril</p></a></li>
+            <li class="notas__item"><a href="https://www.elfinanciero.com.mx/economia/cnbv-autoriza-a-sofipos-apoyar-a-clientes-para-diferir-deudas" target="_blank">
+                <h1 class="notas__titulo">CNBV autoriza a sofipos apoyar a clientes para diferir deudas</h1>
+                <h2 class="notas__autor">Jeanette Leyva</h2>
+                <p class="notas__medio">El Financiero</p>
+                <p class="notas__fecha">2 de abril, 2020</p></a></li>
+            <li class="notas__item"><a href="https://eldiariodefinanzas.com/alcanza-codi-un-millon-de-cuentas-citibanamex-y-bbva-lideran-operaciones/" target="_blank">
+                <h1 class="notas__titulo">Alza CoDi un millón de cuentas; Citibanamex y BBVA lideran operaciones</h1>
+                <h2 class="notas__autor">Raúl Garza</h2>
+                <p class="notas__medio">Diario de finanzas</p>
+                <p class="notas__fecha">19 de enero, 2020</p></a></li>
+            <li class="notas__item"><a href="https://youtu.be/CBMuLEVNdUM" target="_blank">
+                <h1 class="notas__titulo">Atender cáncer de mama cuesta entre 100 mil y 300 mil pesos - Microseguros de salud en Sofipos</h1>
+                <h2 class="notas__autor">Entrevista David Romero Morfín</h2>
+                <p class="notas__medio">Gira tus finanzas</p>
+                <p class="notas__fecha">22 de octubre, 2019</p></a></li>
+            <li class="notas__item"><a href="https://www.eleconomista.com.mx/sectorfinanciero/Sofipos-pioneras-en-implementacion-del-CoDi-20190930-0101.html" target="_blank">
+                <h1 class="notas__titulo">Sofipos, pioneras en la implementación del CoDi</h1>
+                <h2 class="notas__autor">Fernando Gutiérrez</h2>
+                <p class="notas__medio">El Economista</p>
+                <p class="notas__fecha">30 de septiembre, 2019</p></a></li>
+            <li class="notas__item"><a href="https://www.eleconomista.com.mx/sectorfinanciero/Sofipos-grandes-serian-reguladas-como-bancos-adelanta-la-CNBV-20190818-0042.html" target="_blank">
+                <h1 class="notas__titulo">Sofipos grandes serían reguladas como bancos, adelanta la CNBV</h1>
+                <h2 class="notas__autor">Fernando Gutiérrez</h2>
+                <p class="notas__medio">El Economista</p>
+                <p class="notas__fecha">18 de agosto, 2019</p></a></li>
+            <li class="notas__item"><a href="https://www.eleconomista.com.mx/sectorfinanciero/Interes-en-sofipos-se-reactiva-20190808-0089.html" target="_blank">
+                <h1 class="notas__titulo">Interés en Sofipos se reactiva</h1>
+                <h2 class="notas__autor">Fernando Gutiérrez</h2>
+                <p class="notas__medio">El Economista</p>
+                <p class="notas__fecha">08 de agosto, 2019</p></a></li>
+            <li class="notas__item"><a href="https://www.jornada.com.mx/ultimas/economia/2019/08/06/sofipos-ven-como-oportunidad-la-desaceleracion-economica-7170.html" target="_blank">
+                <h1 class="notas__titulo">SOFIPOS ven oportunidad pese a desaceleración económica</h1>
+                <h2 class="notas__autor">Julio Gutiérrez</h2>
+                <p class="notas__medio">La Jornada</p>
+                <p class="notas__fecha">07 de agosto, 2019</p></a></li>
+            <li class="notas__item"><a href="https://www.eleconomista.com.mx/sectorfinanciero/Sofipos-van-por-mas-clientes-con-ayuda-del-CoDi-20190806-0078.html" target="_blank">
+                <h1 class="notas__titulo">SOFIPOS van por más clientes con ayuda del CoDi</h1>
+                <h2 class="notas__autor">Fernando Gutiérrez</h2>
+                <p class="notas__medio">El Economista</p>
+                <p class="notas__fecha">06 de agosto, 2019</p></a></li>
+            <li class="notas__item"><a href="https://www.eleconomista.com.mx/sectorfinanciero/Clientes-de-sofipos-aumentaron-14-20190806-0103.html" target="_blank">
+                <h1 class="notas__titulo">Clientes de SOFIPOS aumentaron un 14%</h1>
+                <h2 class="notas__autor">Fernando Gutiérrez</h2>
+                <p class="notas__medio">El Economista</p>
+                <p class="notas__fecha">06 de agosto, 2019</p></a></li>
+            <li class="notas__item"><a href="https://www.elfinanciero.com.mx/mercados/microfinancieras-se-consolidan-en-mercado-bursatil" target="_blank">
+                <h1 class="notas__titulo">Microfinancieras se consolidan en mercado bursátil</h1>
+                <h2 class="notas__autor">Clara Zepeda</h2>
+                <p class="notas__medio">El Financiero</p>
+                <p class="notas__fecha">02 de agosto, 2019</p></a></li>
+            <li class="notas__item"><a href="https://www.eleconomista.com.mx/sectorfinanciero/Crediclub-la-tercera-sofipo-que-acude-al-mercado-bursatil-20190724-0130.html" target="_blank">
+                <h1 class="notas__titulo">Crediclub, la tercera sofipo que acude al mercado bursátil</h1>
+                <h2 class="notas__autor">Fernando Gutiérrez</h2>
+                <p class="notas__medio">El Economista</p>
+                <p class="notas__fecha">24 de julio, 2019</p></a></li>
+            <li class="notas__item"><a href="https://www.excelsior.com.mx/periodico/flip-dinero/14-05-2019/portada.pdf" target="_blank">
+                <h1 class="notas__titulo">Suma corresponsales a la plataforma CoDi</h1>
+                <h2 class="notas__autor">Carolina Reyes</h2>
+                <p class="notas__medio">Excelsior</p>
+                <p class="notas__fecha">14 de mayo, 2019</p></a></li>
+            <li class="notas__item"><a href="https://www.eleconomista.com.mx/sectorfinanciero/Cuatro-sofipos-mas-en-puerta-para-el-uso-del-CoDi-20190513-0124.html" target="_blank">
+                <h1 class="notas__titulo">Cuatro SOFIPOS más en puerta para el uso del CoDi</h1>
+                <h2 class="notas__autor">Fernando Gutiérrez</h2>
+                <p class="notas__medio">El Economista</p>
+                <p class="notas__fecha">13 de mayo, 2019</p></a></li>
+            <li class="notas__item"><a href="https://www.dineroenimagen.com/alicia-salgado/codi-un-piloto-formal-y-29-en-curso/109836" target="_blank">
+                <h1 class="notas__titulo">CoDi, un piloto formal y 20 en curso</h1>
+                <h2 class="notas__autor"></h2>
+                <p class="notas__medio">Alicia Salgado</p>
+                <p class="notas__fecha">13 de mayo, 2019</p></a></li>
+            <li class="notas__item"><a href="https://www.facebook.com/giratusfinanzas/videos/812095965819781/" target="_blank">
+                <h1 class="notas__titulo">Entrevista a David Romero Morfín, nuevo Presidente AMSOFIPO (minuto 22:51)</h1>
+                <h2 class="notas__autor">Yuridia Torres</h2>
+                <p class="notas__medio">Gira tus finanzas</p>
+                <p class="notas__fecha">03 de abril, 2019</p></a></li>
+            <li class="notas__item"><a href="https://www.capitalmexico.com.mx/economia/financieras-populares-tienen-la-infraestructura-para-apoyar-programas-sociales/" target="_blank">
+                <h1 class="notas__titulo">Financieras Populares tienen la infraestructura para apoyar programas sociales</h1>
+                <h2 class="notas__autor">Pamela Cruz</h2>
+                <p class="notas__medio">Notimex</p>
+                <p class="notas__fecha">03 de abril, 2019</p></a></li>
+            <li class="notas__item"><a href="https://www.jornada.com.mx/2019/04/03/economia/019n3eco" target="_blank">
+                <h1 class="notas__titulo">Las Sofipo buscan sumarse al cobro digital</h1>
+                <h2 class="notas__autor">Dora Villanueva</h2>
+                <p class="notas__medio">La Jornada</p>
+                <p class="notas__fecha">03 de abril, 2019</p></a></li>
+            <li class="notas__item"><a href="https://www.milenio.com/negocios/sofipos-buscan-utilizar-plataforma-codi-banxico" target="_blank">
+                <h1 class="notas__titulo">Sofipos también buscan utilizar plataforma CoDi</h1>
+                <h2 class="notas__autor">Karen Guzmán</h2>
+                <p class="notas__medio">Milenio</p>
+                <p class="notas__fecha">03 de abril, 2019</p></a></li>
+            <li class="notas__item"><a href="https://www.eleconomista.com.mx/sectorfinanciero/Amsofipo-se-suma-a-intencion-de-regulacion-diferenciada-20190402-0146.html" target="_blank">
+                <h1 class="notas__titulo">Amsofipo se suma a intención de regulación diferenciada</h1>
+                <h2 class="notas__autor">Fernando Gutiérrez</h2>
+                <p class="notas__medio">El Economista</p>
+                <p class="notas__fecha">03 de abril, 2019</p></a></li>
+            <li class="notas__item"><a href="https://www.elfinanciero.com.mx/economia/gobierno-de-amlo-presenta-programa-de-impulso-al-sector-financiero" target="_blank">
+                <h1 class="notas__titulo">Estos son los 8 puntos del Programa de Impulso al Sector Financiero del Gobierno de AMLO</h1>
+                <h2 class="notas__autor">Redacción</h2>
+                <p class="notas__medio">El Financiero</p>
+                <p class="notas__fecha">08 de enero, 2019</p></a></li>
+            <li class="notas__item"><a href="https://www.eleconomista.com.mx/sectorfinanciero/El-mercado-es-el-que-regula-las-comisiones-Amsofipo-20181205-0115.html" target="_blank">
+                <h1 class="notas__titulo">El mercado es el que regula las comisiones: Amsofipo</h1>
+                <h2 class="notas__autor">Fernando Gutiérrez</h2>
+                <p class="notas__medio">El Economista</p>
+                <p class="notas__fecha">05 de diciembre, 2018</p></a></li>
+            <li class="notas__item"><a href="https://www.eleconomista.com.mx/sectorfinanciero/Limitar-ahorro-no-es-la-solucion-para-evitar-cierre-de-sofipos-Amsofipo-20181125-0045.html" target="_blank">
+                <h1 class="notas__titulo">Limitar ahorro no es la solución para evitar cierre de sofipos: Amsofipo</h1>
+                <h2 class="notas__autor">Fernando Gutiérrez</h2>
+                <p class="notas__medio">El Economista</p>
+                <p class="notas__fecha">25 de noviembre, 2018</p></a></li>
+            <li class="notas__item"><a href="https://www.eleconomista.com.mx/sectorfinanciero/CNBV-busca-facilitar-cobro-de-seguro-de-ahorro-en-sofipos-20181004-0101.html" target="_blank">
+                <h1 class="notas__titulo">CNBV busca facilitar cobro de seguros de ahorro en Sofipos</h1>
+                <h2 class="notas__autor">Fernando Gutiérrez</h2>
+                <p class="notas__medio">El Economista</p>
+                <p class="notas__fecha">04 de octubre, 2018</p></a></li>
+            <li class="notas__item"><a href="https://www.dineroenimagen.com/alicia-salgado/banca-social-y-cooperativas/103585" target="_blank">
+                <h1 class="notas__titulo">Banca social y cooperativas</h1>
+                <h2 class="notas__autor">Alicia Salgado</h2>
+                <p class="notas__medio">Cuenta Corriente</p>
+                <p class="notas__fecha">01 de octubre, 2018</p></a></li>
+            <li class="notas__item"><a href="https://www.eleconomista.com.mx/sectorfinanciero/Te-Creemos-adquirira-el-100-de-Came-20180312-0034.html" target="_blank">
+                <h1 class="notas__titulo">Te Creemos adquirirá el 100% de Came</h1>
+                <h2 class="notas__autor">Redacción</h2>
+                <p class="notas__medio">El Economista</p>
+                <p class="notas__fecha">12 de marzo, 2018</p></a></li>
+            <li class="notas__item"><a href="https://www.elfinanciero.com.mx/economia/sofipo-te-creemos-duplica-su-tamano" target="_blank">
+                <h1 class="notas__titulo">Sofipo Te Creemos duplicará su tamaño</h1>
+                <h2 class="notas__autor">Jeanette Leyva</h2>
+                <p class="notas__medio">El Financiero</p>
+                <p class="notas__fecha">13 de marzo, 2018</p></a></li>
+            <li class="notas__item"><a href="https://www.eleconomista.com.mx/sectorfinanciero/En-el-2017-cambio-el-sector-de-las-sofipos-20180117-0148.html" target="_blank">
+                <h1 class="notas__titulo">En el 2017 cambió el sector de las Sofipo</h1>
+                <h2 class="notas__autor">Fernando Gutiérrez</h2>
+                <p class="notas__medio">El Economista</p>
+                <p class="notas__fecha">17 de enero, 2018</p></a></li>
+            <li class="notas__item"><a href="../assets/AMSOFIPO_NOTA_11012018_2.pdf" target="_blank">
+                <h1 class="notas__titulo">Cuenta Corriente</h1>
+                <h2 class="notas__autor">Alicia Salgado</h2>
+                <p class="notas__medio">Columna De Fondos a Fondo en Excélsior</p>
+                <p class="notas__fecha">11 de enero, 2018</p></a></li>
+            <li class="notas__item"><a href="../assets/AMSOFIPO_NOTA_11012018_1.pdf" target="_blank">
+                <h1 class="notas__titulo">Te Creemos es reconocida como la mejor sofipo de México en el 2017</h1>
+                <h2 class="notas__autor">Redacción</h2>
+                <p class="notas__medio">El Economista Internet</p>
+                <p class="notas__fecha">11 de enero, 2018</p></a></li>
+            <li class="notas__item"><a href="../assets/AMSOFIPO_NOTA_261017.pdf" target="_blank">
+                <h1 class="notas__titulo">SOFIPOS RECIBEN AVAL DE CNBV PARA DAR PERIODOS DE GRACIA A AFECTADOS</h1>
+                <h2 class="notas__autor">Fernando Gutiérrez</h2>
+                <p class="notas__medio">El Economista</p>
+                <p class="notas__fecha">26 de octubre, 2017</p></a></li>
+            <li class="notas__item"><a href="../assets/AMSOFIPO_NOTA_241017.pdf" target="_blank">
+                <h1 class="notas__titulo">SHCP LANZA ESTRATEGIA EN CONTRA DEL CIBERCRIMEN</h1>
+                <h2 class="notas__autor">Leonor Flores y Antonio Hernández</h2>
+                <p class="notas__medio">El Universal</p>
+                <p class="notas__fecha">24 de octubre, 2017</p></a></li>
+            <li class="notas__item"><a href="../assets/AMSOFIPO_NOTA_231017.pdf" target="_blank">
+                <h1 class="notas__titulo">PRESENTAN LA ESTRATEGIA NACIONAL DE CIBERSEGURIDAD</h1>
+                <h2 class="notas__autor">Notimex</h2>
+                <p class="notas__medio">El Economista</p>
+                <p class="notas__fecha">23 de octubre, 2017</p></a></li>
+            <li class="notas__item"><a href="../assets/AMSOFIPO_NOTA_231017_4.pdf" target="_blank">
+                <h1 class="notas__titulo">FINANCIEROS CONTRA EL CIBERDELITO</h1>
+                <h2 class="notas__autor">Miguel Ramírez</h2>
+                <p class="notas__medio">Dinero, Negocios y Finanzas</p>
+                <p class="notas__fecha">23 de octubre, 2017</p></a></li>
+            <li class="notas__item"><a href="../assets/AMSOFIPO_NOTA_231017_3.pdf" target="_blank">
+                <h1 class="notas__titulo">CREAN FRENTE NACIONAL SOBRE CIBERSEGURIDAD</h1>
+                <h2 class="notas__autor">Edgar Juárez Y Fernando Gutiérrez</h2>
+                <p class="notas__medio">El Economista</p>
+                <p class="notas__fecha">23 de octubre, 2017</p></a></li>
+            <li class="notas__item"><a href="../assets/AMSOFIPO_NOTA_231017_1.pdf" target="_blank">
+                <h1 class="notas__titulo">PRESENTAN ESTRATEGIA CONTRA CIBERATAQUES A SISTEMA FINANCIERO</h1>
+                <h2 class="notas__autor">Sergio Ramírez</h2>
+                <p class="notas__medio">Megalópolis</p>
+                <p class="notas__fecha">23 de octubre, 2017</p></a></li>
+            <li class="notas__item"><a href="../assets/AMSOFIPO_NOTA_191017.pdf" target="_blank">
+                <h1 class="notas__titulo">PREPARAN PLAN DE FINANCIAMIENTO EN APOYO A MIGRANTES REPATRIADOS</h1>
+                <h2 class="notas__autor">Sergio Robles</h2>
+                <p class="notas__medio">Quadratín</p>
+                <p class="notas__fecha">19 de octubre, 2017</p></a></li>
+            <li class="notas__item"><a href="../assets/AMSOFIPO_NOTA_171017.pdf" target="_blank">
+                <h1 class="notas__titulo">CNBV ALISTA REGLAS PARA NO BANCARIOS EN BENEFICIO DE DAMNIFICADOS</h1>
+                <h2 class="notas__autor">Fernando Gutiérrez</h2>
+                <p class="notas__medio">El Economista</p>
+                <p class="notas__fecha">17 de octubre, 2017</p></a></li>
+            <li class="notas__item"><a href="../assets/economista15102017.pdf" target="_blank">
+                <h1 class="notas__titulo">FINANCIERAS NO BANCARIAS ACTÚAN ANTE LA EMERGENCIA POR DESASTRES NATURALES</h1>
+                <h2 class="notas__autor">Fernando Gutiérrez</h2>
+                <p class="notas__medio">El Economista</p>
+                <p class="notas__fecha">15 de octubre, 2017</p></a></li>
+            <li class="notas__item"><a href="../assets/AMSOFIPO_NOTA_031017.pdf" target="_blank">
+                <h1 class="notas__titulo">SANDBOX, PUERTA PARA ENTIDADES REGULADAS AL ECOSISTEMA FINTECH</h1>
+                <h2 class="notas__autor">Fernando Gutiérrez</h2>
+                <p class="notas__medio">El Economista</p>
+                <p class="notas__fecha">03 de octubre, 2017</p></a></li>
+            <li class="notas__item"><a href="../assets/Mayo_SOFIPO_MChavez_01.mp3" target="_blank">
+                <h1 class="notas__titulo">Entrevista Myriam Chávez, Directora General AMSOFIPO</h1>
+                <h2 class="notas__autor">SDyA</h2>
+                <p class="notas__medio">Siempre 88.9</p>
+                <p class="notas__fecha">13 de julio, 2017</p></a></li>
+            <li class="notas__item"><a href="../assets/AMSOFIPO_3CN_Notas_Prensa.pdf" target="_blank">
+                <h1 class="notas__titulo">3ra Convención Nacional AMSOSIPO</h1>
+                <h2 class="notas__autor">Notas de prensa</h2>
+                <p class="notas__medio">AMSOFIPO</p>
+                <p class="notas__fecha">28, 29 y 30 de junio, 2017</p></a></li>
+            <li class="notas__item"><a href="../assets/AMSOFIPO_NOTA_CONV_260617.pdf" target="_blank">
+                <h1 class="notas__titulo">SOCIEDADES FINANCIERAS POPULARES</h1>
+                <h2 class="notas__autor">Alicia Salgado</h2>
+                <p class="notas__medio">Cuenta corriente, Dinero en Imagen</p>
+                <p class="notas__fecha">26 de junio, 2017</p></a></li>
+            <li class="notas__item"><a href="../assets/AMSOFIPO_NOTA_CONV_230617_lajornada.pdf" target="_blank">
+                <h1 class="notas__titulo">SOCIEDADES FINANCIERAS POPULARES BUSCAN OPCIONES DE AYUDA A PEQUEÑOS NEGOCIOS</h1>
+                <h2 class="notas__autor">Roberto González Amador</h2>
+                <p class="notas__medio">La Jornada</p>
+                <p class="notas__fecha">23 de junio, 2017</p></a></li>
+            <li class="notas__item"><a href="../assets/AMSOFIPO_NOTA_CONV_230617_eluniversal.pdf" target="_blank">
+                <h1 class="notas__titulo">PESE A ALZA EN TASAS, CRÉDITO SE MANTIENE</h1>
+                <h2 class="notas__autor">Antonio Hernández</h2>
+                <p class="notas__medio">El Universal</p>
+                <p class="notas__fecha">23 de junio, 2017</p></a></li>
+            <li class="notas__item"><a href="../assets/AMSOFIPO_NOTA_CONV_230617_economista.pdf" target="_blank">
+                <h1 class="notas__titulo">SOFIPOS APROVECHARÍAN EL SANDBOX PARA HACER INNOVACIONES: AMSOFIPO</h1>
+                <h2 class="notas__autor">Fernando Gutiérrez</h2>
+                <p class="notas__medio">El Economista</p>
+                <p class="notas__fecha">23 de junio, 2017</p></a></li>
+            <li class="notas__item"><a href="../assets/Junio_Nota_Convencion.pdf" target="_blank">
+                <h1 class="notas__titulo">EL CONTADOR</h1>
+                <h2 class="notas__autor"></h2>
+                <p class="notas__medio">Excélsior</p>
+                <p class="notas__fecha">15 de junio, 2017</p></a></li>
+            <li class="notas__item"><a href="../assets/Mayo_Convencion_AMSOFIPO.pdf" target="_blank">
+                <h1 class="notas__titulo">EN JUNIO, CONVENCIÓN DE AMSOFIPO</h1>
+                <h2 class="notas__autor">Ángeles Aguilar</h2>
+                <p class="notas__medio">La Razón de México</p>
+                <p class="notas__fecha">24 de mayo, 2017</p></a></li>
+            <li class="notas__item"><a href="#" target="_blank">
+                <h1 class="notas__titulo">SOCIEDADES FINANCIERAS POPULARES (SOFIPOS)</h1>
+                <h2 class="notas__autor">Carmen Muñoz</h2>
+                <p class="notas__medio">IMER</p>
+                <p class="notas__fecha">08 de mayo, 2017</p></a></li>
+            <li class="notas__item"><a href="../assets/Abril_Sofipos_Mas_Rentables.pdf" target="_blank">
+                <h1 class="notas__titulo">SOFIPOS, MÁS RENTABLES QUE BANCOS PEQUEÑOS</h1>
+                <h2 class="notas__autor">Fernando Gutiérrez</h2>
+                <p class="notas__medio">El Economista</p>
+                <p class="notas__fecha">24 de abril, 2017</p></a></li>
+            <li class="notas__item"><a href="../assets/Entrevista_Guillermo_Colin.mp3" target="_blank">
+                <h1 class="notas__titulo">GUILLERMO COLÍN, PRESIDENTE DE LA AMSOFIPO</h1>
+                <h2 class="notas__autor">SDyA</h2>
+                <p class="notas__medio">Siempre 88.9</p>
+                <p class="notas__fecha">20 de abril, 2017</p></a></li>
+            <li class="notas__item"><a href="../assets/Abril_CNBV_Solicita_Mayores_Niveles_Capitalizacion.pdf" target="_blank">
+                <h1 class="notas__titulo">LA CNBV SOLICITARÁ A LAS SOFIPOS MAYORES NIVELES DE CAPITALIZACIÓN</h1>
+                <h2 class="notas__autor">Fernando Gutiérrez</h2>
+                <p class="notas__medio">El Economista</p>
+                <p class="notas__fecha">17 de abril, 2017</p></a></li>
+            <li class="notas__item"><a href="../assets/Abril_Banxico_Seguimiento_SOFIPOS.pdf" target="_blank">
+                <h1 class="notas__titulo">BANXICO, CON SEGUIMIENTO MÁS PUNTUAL A SOFIPOS</h1>
+                <h2 class="notas__autor">Fernando Gutiérrez</h2>
+                <p class="notas__medio">El Economista</p>
+                <p class="notas__fecha">10 de abril, 2017</p></a></li>
+            <li class="notas__item"><a href="../assets/Abril_Sistema_Alertas_Tempranas-CNBV.pdf" target="_blank">
+                <h1 class="notas__titulo">SOFIPOS NO DEBEN QUEDARSE ATRÁS EN TEMAS FINTECH: SHCP</h1>
+                <h2 class="notas__autor">Fernando Gutiérrez</h2>
+                <p class="notas__medio">El Economista</p>
+                <p class="notas__fecha">04 de abril, 2017</p></a></li>
+            <li class="notas__item"><a href="../assets/Abril_Ley_Fintch.pdf" target="_blank">
+                <h1 class="notas__titulo">LEY FINTECH, CON MÁS PARTICIPANTES</h1>
+                <h2 class="notas__autor">Carolina Reyes</h2>
+                <p class="notas__medio">Nombre, Nombres y … nombres vía Milenio</p>
+                <p class="notas__fecha">04 de abril, 2017</p></a></li>
+            <li class="notas__item"><a href="../assets/Abril_Sofipos_Primeras_Linea_Antilavado.pdf" target="_blank">
+                <h1 class="notas__titulo">SOFIPOS, PRIMERAS EN LÍNEA ANTILAVADO</h1>
+                <h2 class="notas__autor">Carolina Reyes</h2>
+                <p class="notas__medio">Excélsior</p>
+                <p class="notas__fecha">04 de abril, 2017</p></a></li>
+            <li class="notas__item"><a href="../assets/Abril_Enfoque_Entiende_Enfoque_Basado_Riesgos.pdf" target="_blank">
+                <h1 class="notas__titulo">MÉXICO ENTIENDE ENFOQUE BASADO EN RIESGOS</h1>
+                <h2 class="notas__autor">Fernando Gutiérrez</h2>
+                <p class="notas__medio">El Economista</p>
+                <p class="notas__fecha">04 de abril, 2017</p></a></li>
+            <li class="notas__item"><a href="../assets/Marzo_Sofipos_junta_anual.pdf" target="_blank">
+                <h1 class="notas__titulo">SOFIPOS JUNTA ANUAL, SOSTENDRÁN DINÁMICA DADA BAJA INCLUSIÓN, POR CORRESPONSALES Y 2 EN TRÁMITE</h1>
+                <h2 class="notas__autor">Alberto Aguilar</h2>
+                <p class="notas__medio">Nombre, Nombres y … nombres vía Milenio</p>
+                <p class="notas__fecha">08 de marzo, 2017</p></a></li>
+            <li class="notas__item"><a href="../assets/Febrero_Ahorro_Sofipo_Terreno_Positivo.pdf" target="_blank">
+                <h1 class="notas__titulo">AHORRO DE LAS SOFIPOS CONTINÚA EN TERRENO POSITIVO</h1>
+                <h2 class="notas__autor">Fernando Gutiérrez</h2>
+                <p class="notas__medio">El Economista</p>
+                <p class="notas__fecha">18 de enero, 2017</p></a></li>
+            <li class="notas__item"><a href="../assets/Febrero_Intermediarios_resienten_alza_tasas.pdf" target="_blank">
+                <h1 class="notas__titulo">INTERMEDIARIOS RESIENTEN ALZA DE TASAS</h1>
+                <h2 class="notas__autor">Jeanette Leyva</h2>
+                <p class="notas__medio">El Financiero</p>
+                <p class="notas__fecha"></p></a></li>
+            <li class="notas__item"><a href="../assets/Cronica_RutaDinero.pdf" target="_blank">
+                <h1 class="notas__titulo">RUTA DEL DINERO</h1>
+                <h2 class="notas__autor">Por Rogelio Varela</h2>
+                <p class="notas__medio"></p>
+                <p class="notas__fecha">06 de julio, 2016</p></a></li>
+            <li class="notas__item"><a href="../assets/nota_amsofipo_jun.pdf" target="_blank">
+                <h1 class="notas__titulo">BUENA CONDUCTA</h1>
+                <h2 class="notas__autor">Por Alberto Barranco</h2>
+                <p class="notas__medio"></p>
+                <p class="notas__fecha">04 de junio, 2016</p></a></li>
+            <li class="notas__item"><a href="../assets/entrevistaAmsofipo.mp3" target="_blank">
+                <h1 class="notas__titulo">(AUDIO) Entrevista Myriam Chávez, Directora General AMSOFIPO y Guillermo Colín, Presidente AMSOFIPO</h1>
+                <h2 class="notas__autor"></h2>
+                <p class="notas__medio"></p>
+                <p class="notas__fecha">30 de mayo, 2016</p></a></li>
+            <li class="notas__item"><a href="../assets/CUMPLEN-CON-MEDIDAS-ANTILAVADO.pdf" target="_blank">
+                <h1 class="notas__titulo">SOFIPOS CRECEN CON CALIDAD CREDITICIA. Están cumpliendo con los requerimientos de la autoridad en materia de</h1>
+                <h2 class="notas__autor"></h2>
+                <p class="notas__medio">Excélcior </p>
+                <p class="notas__fecha">26 de mayo, 2016</p></a></li>
+            <li class="notas__item"><a href="../assets/Economista_18_04_16.pdf" target="_blank">
+                <h1 class="notas__titulo">CNBV APOYA A SOFIPOS EN NUEVOS NEGOCIOS. El crowdfunding es un modelo que se utiliza cada vez más por estos intermediarios</h1>
+                <h2 class="notas__autor"></h2>
+                <p class="notas__medio">El Economista </p>
+                <p class="notas__fecha">18 de abril, 2016</p></a></li>
+            <li class="notas__item"><a href="../assets/economista_05_04_16.pdf" target="_blank">
+                <h1 class="notas__titulo">SE PUEDE MEJORAR REGULACIÓN A SOFIPOS SIN LEY FICREA: CNBV</h1>
+                <h2 class="notas__autor"></h2>
+                <p class="notas__medio">El Economista</p>
+                <p class="notas__fecha">05 de abril, 2016</p></a></li>
+            <li class="notas__item"><a href="../assets/economista_04_04_16.pdf" target="_blank">
+                <h1 class="notas__titulo">SOFIPOS TOMAN MEDIDAS PARA EVITAR FRAUDE</h1>
+                <h2 class="notas__autor"></h2>
+                <p class="notas__medio">El Economista</p>
+                <p class="notas__fecha">04 de abril, 2016</p></a></li>
+            <li class="notas__item"><a href="../assets/financiero_04_04_16.pdf" target="_blank">
+                <h1 class="notas__titulo">REGULAR SOFIPOS SIN APLICAR LEY FICREA, UNA POSIBILIDADES</h1>
+                <h2 class="notas__autor"></h2>
+                <p class="notas__medio">El Financiero</p>
+                <p class="notas__fecha">04 de abril, 2016</p></a></li>
+            <li class="notas__item"><a href="../assets/ElFinanciero3_4_16.pdf" target="_blank">
+                <h1 class="notas__titulo">ADVIERTEN CONSOLIDACIÓN EN SECTOR SOFIPO</h1>
+                <h2 class="notas__autor"></h2>
+                <p class="notas__medio">El Financiero</p>
+                <p class="notas__fecha">03 de abril, 2016</p></a></li>
+            <li class="notas__item"><a href="../assets/Ahorrarentandas.docx" target="_blank">
+                <h1 class="notas__titulo">¿AHORRAR EN TANDAS O EN UN BANCO?</h1>
+                <h2 class="notas__autor"></h2>
+                <p class="notas__medio"></p>
+                <p class="notas__fecha">01 de diciembre, 2015</p></a></li>
+            <li class="notas__item"><a href="../assets/ElEconomistaSept8.pdf" target="_blank">
+                <h1 class="notas__titulo">LAS SOFIPOS MARCAN DIFERENCIA EN HOGARES</h1>
+                <h2 class="notas__autor"></h2>
+                <p class="notas__medio">El Economista</p>
+                <p class="notas__fecha">08 de septiembre, 2015</p></a></li>
+            <li class="notas__item"><a href="../assets/Economista1julio.pdf" target="_blank">
+                <h1 class="notas__titulo">AL CAPTAR SE POTENCIALIZARÁ EL ESQUEMA DE KUBO: FENOLL</h1>
+                <h2 class="notas__autor"></h2>
+                <p class="notas__medio">El Economista </p>
+                <p class="notas__fecha">01 de julio, 2015</p></a></li>
+            <li class="notas__item"><a href="../assets/Excelcior_30junio.pdf" target="_blank">
+                <h1 class="notas__titulo">BUSCAN DAR MAYOR SEGURIDAD A CLIENTES</h1>
+                <h2 class="notas__autor"></h2>
+                <p class="notas__medio">Excélsior </p>
+                <p class="notas__fecha">31 de junio, 2015</p></a></li>
+            <li class="notas__item"><a href="../assets/Sudcaliforniano25jun.pdf" target="_blank">
+                <h1 class="notas__titulo">CELEBRAN EN BCS PRIMER CONGRESO NACIONAL DE ASOCIACIÓN MEXICANA DE SOCIEDADES FINANCIERAS POPULARES</h1>
+                <h2 class="notas__autor"></h2>
+                <p class="notas__medio">Sudcaliforniano</p>
+                <p class="notas__fecha">25 de junio, 2015</p></a></li>
+            <li class="notas__item"><a href="../assets/Financiero25jun.pdf" target="_blank">
+                <h1 class="notas__titulo">FICREA ES UN CASO AISLADO EN EL SECTOR</h1>
+                <h2 class="notas__autor"></h2>
+                <p class="notas__medio">El Financiero</p>
+                <p class="notas__fecha">25 de junio, 2015</p></a></li>
+            <li class="notas__item"><a href="../assets/Economista25jun.pdf" target="_blank">
+                <h1 class="notas__titulo">TERMÓMETRO ECONÓMICO</h1>
+                <h2 class="notas__autor"></h2>
+                <p class="notas__medio">El Economista </p>
+                <p class="notas__fecha">25 de junio, 2015</p></a></li>
+            <li class="notas__item"><a href="../assets/La-Jornada-02.pdf" target="_blank">
+                <h1 class="notas__titulo">FINANCIERAS POPULARES TIENEN GARANTIZADA SU EXISTENCIA A PESAR DE FRAUDES</h1>
+                <h2 class="notas__autor"></h2>
+                <p class="notas__medio">La Jornada</p>
+                <p class="notas__fecha">26 de junio, 2015</p></a></li>
+            <li class="notas__item"><a href="../assets/Economista-2.pdf" target="_blank">
+                <h1 class="notas__titulo">SOFIPOS PELEARÁN CONTRA ALZA EN LAS TASAS DE FONDEO: COINCIDIR</h1>
+                <h2 class="notas__autor"></h2>
+                <p class="notas__medio">El Economista</p>
+                <p class="notas__fecha">26 de junio, 2015</p></a></li>
+            <li class="notas__item"><a href="../assets/Economista.pdf" target="_blank">
+                <h1 class="notas__titulo">SUPERAR CASO DE FICREA, EL RETO DE LAS SOFIPOS: AMSOFIPO</h1>
+                <h2 class="notas__autor"></h2>
+                <p class="notas__medio">El Economista</p>
+                <p class="notas__fecha">26 de junio, 2015</p></a></li>
+            <li class="notas__item"><a href="../assets/Excelsior.pdf" target="_blank">
+                <h1 class="notas__titulo">SOFIPOS PIDEN QUE NO LAS SATANICEN POR CASO FICREA</h1>
+                <h2 class="notas__autor"></h2>
+                <p class="notas__medio">Excélsior</p>
+                <p class="notas__fecha">26 de junio, 2015</p></a></li>
+            <li class="notas__item"><a href="../assets/Financiero.pdf" target="_blank">
+                <h1 class="notas__titulo">FICREA ES UN CASO AISLADO EN EL SECTOR: AMSOFIPO</h1>
+                <h2 class="notas__autor"></h2>
+                <p class="notas__medio">El Financiero</p>
+                <p class="notas__fecha">26 de junio, 2015</p></a></li>
+            <li class="notas__item"><a href="../assets/Milenio27_jun.pdf" target="_blank">
+                <h1 class="notas__titulo">FINANCIERAS POPULARES TIENEN GARANTIZADA SU EXISTENCIA A PESAR DE FRAUDES</h1>
+                <h2 class="notas__autor"></h2>
+                <p class="notas__medio">La Jornada</p>
+                <p class="notas__fecha">26 de junio, 2015</p></a></li>
+            <li class="notas__item"><a href="../assets/La-Razon.pdf" target="_blank">
+                <h1 class="notas__titulo">BANSEFI ALISTA PLAN DE GARANTÍAS PARA SOFIPOS</h1>
+                <h2 class="notas__autor"></h2>
+                <p class="notas__medio">La Razón</p>
+                <p class="notas__fecha">26 de junio, 2015</p></a></li>
+            <li class="notas__item"><a href="../assets/Milenio.pdf" target="_blank">
+                <h1 class="notas__titulo">EXIJEN IVA POR COMIDA PREPARADA A LOS OMISOS</h1>
+                <h2 class="notas__autor"></h2>
+                <p class="notas__medio">Milenio</p>
+                <p class="notas__fecha">26 de junio, 2015</p></a></li>
+            <li class="notas__item"><a href="../assets/Sudcaliforniano-2.pdf" target="_blank">
+                <h1 class="notas__titulo">RECONOCE ISIDRO JORDÁN EL APOYO QUE OTORGAN DONDE NO HAY SERVICIOS BANCARIOS</h1>
+                <h2 class="notas__autor"></h2>
+                <p class="notas__medio">Sudcaliforniano</p>
+                <p class="notas__fecha">26 de junio, 2015</p></a></li>
+            <li class="notas__item"><a href="../assets/Sudcaliforniano.pdf" target="_blank">
+                <h1 class="notas__titulo">FINANCIERAS POPULARES, CELEBRAN CONGRESO NACIONAL</h1>
+                <h2 class="notas__autor"></h2>
+                <p class="notas__medio">Sudcaliforniano</p>
+                <p class="notas__fecha">26 de junio, 2015</p></a></li>
+            <li class="notas__item"><a href="../assets/Excelsior_27jun.pdf" target="_blank">
+                <h1 class="notas__titulo">SOFIPOS PIDEN QUE NO LAS SATANICEN POR CASO FICREA</h1>
+                <h2 class="notas__autor"></h2>
+                <p class="notas__medio">La Razón</p>
+                <p class="notas__fecha">27 de junio, 2015</p></a></li>
+            <li class="notas__item"><a href="../assets/La_Razon_29jun.pdf" target="_blank">
+                <h1 class="notas__titulo">TELECOMM, MÁS BANCOS Y EN JULIO, TARJETA DE DÉBITO</h1>
+                <h2 class="notas__autor"></h2>
+                <p class="notas__medio">La Razón</p>
+                <p class="notas__fecha">29 de junio, 2015</p></a></li>
+            <li class="notas__item"><a href="../assets/Excelcior_30junio.pdf" target="_blank">
+                <h1 class="notas__titulo">BUSCAN DARLE MAYOR SEGURIDAD A CLIENTES</h1>
+                <h2 class="notas__autor"></h2>
+                <p class="notas__medio">Excelsior</p>
+                <p class="notas__fecha">30 de junio, 2015</p></a></li>
+            <li class="notas__item"><a href="http://eleconomista.com.mx/sistema-financiero/2012/12/25/amsofipo-tambien-critica-nueva-prorroga-socaps" target="_blank">
+                <h1 class="notas__titulo">AMSOFIPO TAMBIÉN CRITICA NUEVA PRÓRROGA A SOCAPS </h1>
+                <h2 class="notas__autor"></h2>
+                <p class="notas__medio">El Economista</p>
+                <p class="notas__fecha">25 de diciembre, 2014</p></a></li>
+            <li class="notas__item"><a href="http://eleconomista.com.mx/sistema-financiero/2012/11/11/sociedades-populares-creceran" target="_blank">
+                <h1 class="notas__titulo">SOCIEDADES POPULARES CRECERÁN </h1>
+                <h2 class="notas__autor"></h2>
+                <p class="notas__medio">El Economista</p>
+                <p class="notas__fecha">24 de diciembre, 2014</p></a></li>
+            <li class="notas__item"><a href="../assets/notimex_dic_14.pdf" target="_blank">
+                <h1 class="notas__titulo">ASOCIACIÓN DEFIENDE A SOFIPOS TRAS CASO FICREA </h1>
+                <h2 class="notas__autor"></h2>
+                <p class="notas__medio">El Universal / Notimex</p>
+                <p class="notas__fecha">29 de diciembre, 2014</p></a></li>
+            <li class="notas__item"><a href="../assets/notimex_dic_29.pdf" target="_blank">
+                <h1 class="notas__titulo">SOCIEDADES FINANCIERAS POPULARES, MÁS ALLÁ DEL CASO FICREA </h1>
+                <h2 class="notas__autor"></h2>
+                <p class="notas__medio">NOTIMEX</p>
+                <p class="notas__fecha">29 de diciembre, 2014</p></a></li>
+            <li class="notas__item"><a href="../assets/universal_nohayriesgo.pdf" target="_blank">
+                <h1 class="notas__titulo">NO HAY RIESGO SISTÉMICO POR CASO FICREA, ASEGURA EL SECTOR) </h1>
+                <h2 class="notas__autor"></h2>
+                <p class="notas__medio">EL UNIVERSAL</p>
+                <p class="notas__fecha">28 de diciembre, 2014</p></a></li>
+            <li class="notas__item"><a href="../assets/financiero_temenafectacion.pdf" target="_blank">
+                <h1 class="notas__titulo">TEMEN AFECTACIÓN POR LIQUIDACIÓN DE FICREA</h1>
+                <h2 class="notas__autor"></h2>
+                <p class="notas__medio">El Financiero</p>
+                <p class="notas__fecha">25 de diciembre, 2014</p></a></li>
+            <li class="notas__item"><a href="../assets/eleconomista_sofiposavanzan.pdf" target="_blank">
+                <h1 class="notas__titulo">SOFIPOS AVANZAN EN CUENTAS DE AHORRO. REPRESENTAN 24% DEL TOTAL DE LOS CONTRATOS DEL SECTOR POPULAR.</h1>
+                <h2 class="notas__autor"></h2>
+                <p class="notas__medio">El Economista</p>
+                <p class="notas__fecha">17 de diciembre, 2014</p></a></li>
+            <li class="notas__item"><a href="http://eleconomista.com.mx/sistema-financiero/2013/01/21/sofipos-lanzaran-campana-posicionamiento" target="_blank">
+                <h1 class="notas__titulo">SOFIPOS PIDEN SER INCLUÍDAS EN REFORMA FINANCIERA</h1>
+                <h2 class="notas__autor"></h2>
+                <p class="notas__medio">El Economista</p>
+                <p class="notas__fecha">22 de abril, 2013</p></a></li>
+            <li class="notas__item"><a href="http://eleconomista.com.mx/sistema-financiero/2013/01/21/sofipos-lanzaran-campana-posicionamiento" target="_blank">
+                <h1 class="notas__titulo">SOFIPOS LANZARÁN CAMPAÑA DE POSICIONAMIENTO</h1>
+                <h2 class="notas__autor"></h2>
+                <p class="notas__medio">El Economista</p>
+                <p class="notas__fecha">21 de enero, 2013</p></a></li>
+            <li class="notas__item"><a href="../assets/financiero_temenafectacion.pdf" target="_blank">
+                <h1 class="notas__titulo">SOFIPOS NO MIGRARÁN A BANCO</h1>
+                <h2 class="notas__autor"></h2>
+                <p class="notas__medio">El Economista</p>
+                <p class="notas__fecha">27 de diciembre, 2012</p></a></li>
+            <li class="notas__item"><a href="../assets/financiero_temenafectacion.pdf" target="_blank">
+                <h1 class="notas__titulo">SOFIPOS TIENEN GRAN POTENCIAL</h1>
+                <h2 class="notas__autor"></h2>
+                <p class="notas__medio">El Economista</p>
+                <p class="notas__fecha">04 de diciembre, 2012</p></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="prensa__child tabcontent" id="boletines-de-prensa">   
+        <div class="notas-de-prensa__child">
+          <ul class="notas">
+            <li class="notas__item"><a href="../assets/AMSOFIPO-boletin-COVID19.pdf" target="_blank">
+                <h1 class="notas__titulo">SOFIPOS apoyan a sus clientes, a través de medidas especiales por la contingencia</h1>
+                <p class="notas__fecha">24 de abril, 2020</p></a></li>
+            <li class="notas__item"><a href="../assets/AMSOFIPO-Boletin-SOFIPOS-otorgan-creditos-por-contingencia.pdf" target="_blank">
+                <h1 class="notas__titulo">SOFIPOS otorgan créditos por vía digital para apoyar a pequeños comerciantes afectados por la contingencia de COVID-19</h1>
+                <p class="notas__fecha">2 de abril, 2020</p></a></li>
+            <li class="notas__item"><a href="../assets/210917_Comunicado_No._185.pdf" target="_blank">
+                <h1 class="notas__titulo">Fideicomiso &quot;Fuerza México&quot;</h1>
+                <p class="notas__fecha">Septiembre 2017</p></a></li>
+            <li class="notas__item"><a href="../assets/Estructura_de_Financiamiento_Bursatil_SOFIPOs2207.pdf" target="_blank">
+                <h1 class="notas__titulo">Estructura de Financiamiento Bursátil para SOFIPOS</h1>
+                <p class="notas__fecha">Agosto 2016</p></a></li>
+            <li class="notas__item"><a href="../assets/Programa_ATYC_2016.pdf" target="_blank">
+                <h1 class="notas__titulo">Programas de apoyo BANSEFI</h1>
+                <p class="notas__fecha">Julio 2016</p></a></li>
+            <li class="notas__item"><a href="../assets/Reporte_Inclusion_Financiera7_2015.pdf" target="_blank">
+                <h1 class="notas__titulo">Reporte de Inclusión Financiero 2015</h1>
+                <p class="notas__fecha">Abril 2016</p></a></li>
+            <li class="notas__item"><a href="../assets/AMSOFIPO_NL_Anexo.jpg" target="_blank">
+                <h1 class="notas__titulo">Resolución que modifica las disposiciones de carácter general aplicables a las entidades de ahorro y crédito popular, organismos de integración, sociedades financieras comunitarias y organismos de integración financiera rural, a que se refiere la ley de ahorro y crédito popular</h1>
+                <p class="notas__fecha">Abril 2016</p></a></li>
+            <li class="notas__item"><a href="../assets/Boletin_regulatorio_RECO.pdf" target="_blank">
+                <h1 class="notas__titulo">Boletín Regulatorio, Registro de Comisiones (RECO)</h1>
+                <p class="notas__fecha">Agosto 2015</p></a></li>
+            <li class="notas__item"><a href="../assets/Boletin_DCGEACP_12_Ene_15.pdf" target="_blank">
+                <h1 class="notas__titulo">Boletín Regulatorio, Modificación de la Circular Única de SOFIPOS</h1>
+                <p class="notas__fecha">Enero 2015</p></a></li>
+            <li class="notas__item"><a href="../assets/Informe_gestion_2014.pdf" target="_blank">
+                <h1 class="notas__titulo">Informe de Gestión, Consejo Directivo 2014</h1>
+                <p class="notas__fecha">Diciembre 2014</p></a></li>
+            <li class="notas__item"><a href="../assets/boletin_regulatorio_buro_de_entidades_financieras.pdf" target="_blank">
+                <h1 class="notas__titulo">Boletín Regulatorio, Buró de Entidades Financieras</h1>
+                <p class="notas__fecha">Octubre 2014</p></a></li>
+            <li class="notas__item"><a href="../assets/Boletin_Regulatorio_octubre.pdf" target="_blank">
+                <h1 class="notas__titulo">Boletín Regulatorio, Programas de Autocorrección y UNE</h1>
+                <p class="notas__fecha">Octubre 2014</p></a></li>
+            <li class="notas__item"><a href="../assets/boletin_fiscal_julio_2014.pdf" target="_blank">
+                <h1 class="notas__titulo">Boletín Fiscal, Temas de Impacto para las Sofipos</h1>
+                <p class="notas__fecha">Julio 2014</p></a></li>
+            <li class="notas__item"><a href="../assets/boletin_fiscal_funcionamiento_julio_2014.pdf" target="_blank">
+                <h1 class="notas__titulo">Boletín Regulatorio, Funcionamiento del Buró de Entidades Financieras</h1>
+                <p class="notas__fecha">Julio 2014</p></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script src="../js/prensa.js"></script>
+    <footer class="footer __grid">
+      <div class="footer__child"><img src="../img/logo-amsofipo.svg" alt="amsofipo"/></div>
+      <div class="footer__child">
+        <ul class="footer__socials">
+          <li><a href="https://mx.linkedin.com/company/amsofipo" target="_blank"><img src="../img/icon-linkedin.svg" alt="amsofipo - linkedin"/></a></li>
+          <li><a href="https://www.facebook.com/Amsofipo/" target="_blank"><img src="../img/icon-facebook.svg" alt="amsofipo - facebook"/></a></li>
+          <li><a href="https://twitter.com/amsofipo" target="_blank"><img src="../img/icon-twitter.svg" alt="amsofipo - twitter"/></a></li>
+        </ul>
+      </div>
+      <div class="footer__child">
+        <h3 class="footer__label">Escríbenos</h3>
+        <p class="footer__text mbottom--md">contacto@amsofipo.mx</p>
+        <h3 class="footer__label">Llámanos</h3>
+        <p class="footer__text">55 5001 4851</p>
+      </div>
+      <div class="footer__child">
+        <h3 class="footer__label">Visítanos</h3>
+        <p class="footer__text">Av. Insurgentes Sur #2047<br>Esq. Cracovia Edificio “B”,<br>Colonia San Ángel,<br>Alcaldía Álvaro Obregón<br>C.P. 01000, CDMX</p>
+      </div>
+      <div class="footer__child">
+        <h3 class="footer__label">Sitios de interés</h3>
+        <ul class="footer__sitios-interes">
+          <li><a class="footer__text" href="http://www.shcp.gob.mx/" target="_blank">SHCP</a></li>
+          <li><a class="footer__text" href="https://www.cnbv.gob.mx/" target="_blank">CNBV</a></li>
+          <li><a class="footer__text" href="https://www.condusef.gob.mx/" target="_blank">CONDUSEF</a></li>
+          <li><a class="footer__text" href="https://www.banxico.org.mx/" target="_blank">BANXICO</a></li>
+          <li><a class="footer__text" href="https://www.fira.gob.mx/" target="_blank">FIRA</a></li>
+        </ul>
+      </div>
+      <div class="footer__child">
+        <ul>
+          <li class="footer__small"><a class="footer__small" href="../assets/marco-legal.PPTX" target="_blank">Marco Legal</a></li>
+          <li class="footer__small"><a class="footer__small" href="../assets/aviso-de-privacidad.pdf" target="_blank">Aviso de Privacidad</a></li>
+        </ul>
+        <ul>
+          <li class="footer__small">Asociación Mexicana de Sociedades Financieras Populares</li>
+          <li class="footer__small"><img src="../img/icon-info.svg" alt="información"/></li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+  <script src="../js/menu.js"></script>
+</html>
