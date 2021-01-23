@@ -1,10 +1,10 @@
 include ../config/conf-indicadores
 section.home-indicadores
     .home-indicadores__child
-        h1.heading.bold.title.first.uppercase.center--content indicadores diciembre 2019
+        h1.heading.bold.title.first.uppercase.center--content indicadores marzo 2020
     .home-indicadores__child
         ul.home-indicadores__card
-            each val in INDICADORES__DICIEMBRE__2019
+            each val in INDICADORES_2020
                 li.home-indicadores__item
                     img(src=`${pathImg}${val.icon}`, class="mbottom--sm center--block", alt="icon")
                     h2.text--alt.body.light.mbottom--xs= `${val.indicador}`

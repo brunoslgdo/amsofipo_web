@@ -5,11 +5,14 @@ include ../config/conf-indicadores
         p.body.caption.light.text--alt Conoce aquí los principales indicadores del sector.
     .inclusion-financiera-estadistica__child
         .years.mbottom--md
-            button(class="tablink body normal light text--alt", onclick="openCity('2019', this, 'var(--second)')", id="defaultOpen") 2019
+            button(class="tablink body normal light text--alt", onclick="openCity('2020', this, 'var(--second)')", id="defaultOpen") 2020
+            button(class="tablink body normal light text--alt", onclick="openCity('2019', this, 'var(--second)')") 2019
             button(class="tablink body normal light text--alt", onclick="openCity('2018', this, 'var(--second)')") 2018
             button(class="tablink body normal light text--alt", onclick="openCity('2017', this, 'var(--second)')") 2017
             button(class="tablink body normal light text--alt", onclick="openCity('2016', this, 'var(--second)')") 2016
             button(class="tablink body normal light text--alt", onclick="openCity('2015', this, 'var(--second)')") 2015
+        .tabcontent#2020
+            include ../components/indicadores-2020
         .tabcontent#2019
             include ../components/indicadores-2019
         .tabcontent#2018

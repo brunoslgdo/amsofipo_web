@@ -1,103 +1,137 @@
 -
     const ASOCIADOS = [
+        //- ok
         {
             logo: 'logo-asp-integra-opciones.svg',
             href: 'https://www.aspintegraopciones.com/',
         },
+        //- ok
         {
             logo: 'logo-auxi.svg',
             href: 'http://v2.auxi.mx/Inicio',
         },
+        //- ok
         {
             logo: 'logo-came.svg',
             href: 'https://www.came.org.mx/',
         },
+        //- ok
         {
             logo: 'logo-capital-activo.svg',
             href: 'https://capitalactivo.com.mx/',
         },
+        //- ok
         {
             logo: 'logo-finamigo.svg',
             href: 'https://www.finamigo.com.mx/',
         },
+        //- ok
         {
             logo: 'logo-fincomun.svg',
             href: 'https://www.fincomun.com.mx/',
         },
+        //- ok
         {
             logo: 'logo-financiera-tamazula.jpg',
             href: 'https://financieratamazula.com.mx/#/home',
         },
+        //- quitar
+        //- {
+        //-     logo: 'logo-ictineo.svg',
+        //-     href: 'www.ictineoplataforma.com',
+        //- },
+        //- ok
         {
-            logo: 'logo-ictineo.svg',
-            href: 'www.ictineoplataforma.com',
-        },
-        {
-            logo: 'logo-jpsofiexpress.svg',
+            logo: 'logo-sofiexpress.svg',
             href: 'http://sofiexpress.com.mx/',
         },
+        //- ok
         {
-            logo: 'logo-kubo.svg',
+            logo: 'logo-kubo-financiero.svg',
             href: 'https://www.kubofinanciero.com/Kubo/Portal/index.xhtml',
         },
+        //- ok
         {
             logo: 'logo-monte-de-piedad.svg',
             href: 'https://www.montepiedad.com.mx/',
         },
+        //- ok
         {
-            logo: 'logo-multiplica.svg',
+            logo: 'logo-multiplica-mexico.svg',
             href: 'https://www.multiplicamexico.com/',
         },
+        //- ok
         {
             logo: 'logo-paso-seguro.svg',
             href: 'http://www.pasoseguro.com.mx/pasoseguro/',
         },
+        //- ok
         {
-            logo: 'logo-porvenir.svg',
+            logo: 'logo-porvenir-sofipo.svg',
             href: 'http://www.porvenirsofipo.mx/',
         },
+
+        //- ok
         {
             logo: 'logo-resuelve-tus-finanzas.svg',
             href: 'http://www.resuelvetusfinanzas.com/',
         },
+        //- ok
         {
             logo: 'logo-sefia.svg',
             href: 'http://www.sefia.com.mx/',
         },
+        //- ok
         {
             logo: 'logo-te-creemos.svg',
             href: 'https://tecreemos.com/',
         },
+        //- quitar
+        //- {
+        //-     logo: 'logo-real-financiera.png',
+        //-     href: 'http://realfinanciera.com/',
+        //- },
+        //- ok
         {
-            logo: 'logo-real-financiera.png',
-            href: 'http://realfinanciera.com/',
-        },
-        {
-            logo: 'logo-bienestar.png',
+            logo: 'logo-bienestar-prestamos-y-ahorros.png',
             href: 'https://www.ahorrosbienestar.com/',
         },
+        //- ok
         {
             logo: 'logo-cofia.png',
             href: 'http://cofia.mx/',
         },
+        //- ok
         {
-            logo: 'logo-crediclub.png',
+            logo: 'logo-credi-club.png',
             href: 'https://crediclub.com/',
         },
+        //- ok
         {
             logo: 'logo-sumate.png',
             href: 'http://www.financierasumate.com.mx/',
         },
+        //- quitar
+        //- {
+        //-     logo: 'logo-impulso.png',
+        //-     href: 'https://impulsocrediticio.com/',
+        //- },
+        //- ok
         {
-            logo: 'logo-impulso.png',
-            href: 'https://impulsocrediticio.com/',
-        },
-        {
-            logo: 'logo-broxel.png',
+            logo: 'logo-bxl.svg',
             href: 'https://broxel.com/',
         },
+        //- ok
         {
-            logo: 'logo-credicapital.png',
+            logo: 'logo-credi-capital.png',
             href: 'https://credicapital.com.mx/',
         },
+        //- ok
+        {
+            logo: 'logo-impulso-mexico.svg',
+            href: 'https://www.impulsomexico.net/',
+        },
     ]
+
+    const arrAsociados = ASOCIADOS
+    arrAsociados.sort((asociadoUno, asociadoDos) => asociadoUno.logo.localeCompare(asociadoDos.logo))
