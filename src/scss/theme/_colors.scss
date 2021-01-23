@@ -1,28 +1,16 @@
 $colors: (
-    first: #195852,
-    second: #43B6BF,
-    text: #383838,
-    text--alt: #ffffff,
-    bg: #fdf5fa,
-    pink: #FF9966,
+    first: #4AAF9C,
+    first-dark: #005243,
+    first-light: #9DD4CA,
+    second: #FFCC00,
+    text: #030303,
+    text-light: #2e2e2e,
+    text-alt: #FFFFFF
 );
 
 :root {
 
-    @each $colors-key, $colors-value in $colors {
-        --#{$colors-key}: #{$colors-value};
-    }
-
-}
-
-@each $colors-key, $colors-value in $colors {
-    .#{$colors-key} {
-        color: #{$colors-value};
-    }
-}
-
-@each $colors-key, $colors-value in $colors {
-    .bg--#{$colors-key} {
-        background-color: #{$colors-value};
+    @each $key, $color in $colors {
+        --#{$key}: #{$color};
     }
 }

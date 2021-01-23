@@ -1,18 +1,10 @@
-$font-family: (
-    heading: 'Montserrat',
-    emphasis: 'Raleway',
-    body: 'Prompt',
-);
-    
 $font-size: (
-    display: 6.4rem,
-    display--alt: 4.6rem,
-    title: 4rem,
-    subtitle: 3.2rem,
-    caption: 2.4rem,
-    normal: 1.6rem,
-    normal--alt: 1.4rem,
-    small: 1.2rem,
+   display: toRem(50.52px),
+   title: toRem(37.90px),
+   subtitle: toRem(28.43px),
+   caption: toRem(21.33px),
+   body: toRem(16px),
+   small: toRem(12px)
 );
 
 $font-weight: (
@@ -24,34 +16,12 @@ $font-weight: (
 );
 
 :root {
-
-    @each $key, $val in $font-family {
-        --#{$key}: "#{$val}";
+    
+    @each $key, $size in $font-size {
+        --#{$key}: #{$size};
     }
     
-    @each $key, $val in $font-size {
-        --#{$key}: #{$val};
-    }
-    
-    @each $key, $val in $font-weight {
-        --#{$key}: #{$val};
-    }
-}
-
-@each $key, $val in $font-family {
-    .#{$key} { 
-        font-family: "#{$val}";
-    }
-}
-
-@each $key, $val in $font-size {
-    .#{$key} {
-        font-size: #{$val};
-    }
-}
-
-@each $key, $val in $font-weight {
-    .#{$key} { 
-        font-weight: #{$val};
+    @each $key, $weight in $font-weight {
+        --#{$key}: #{$weight};
     }
 }
