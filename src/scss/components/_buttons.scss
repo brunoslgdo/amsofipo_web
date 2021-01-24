@@ -1,9 +1,13 @@
 .button {
-    @extend %button;
-    background-color: var(--first);
-    color: var(--white);
-    font-family: var(--title);
-    font-size: 1.2rem;
-    font-weight: 600;
-    text-transform: uppercase;
+    display: inline-flex;
+    color: var(--text-alt);
+    font-size: var(--caption);
+    font-weight: var(--medium);
+    border-radius: toEm(4px);
+    background-color: var(--first-dark);
+    padding: toEm(8px) toEm(32px);
+    
+    &--info {
+        background-color: var(--second);
+    }
 }

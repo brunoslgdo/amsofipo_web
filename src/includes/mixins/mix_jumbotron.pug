@@ -1,0 +1,8 @@
+include ../config/conf_jumbotron
+
+mixin jumbotron_main(imgHero, textDisplay, textButton)
+    .jumbotron
+        img(src=`${pathImg}${imgHero}`, class="hero-image", alt="")
+        .jumbotron__content
+            h1.jumbotron__display !{`${textDisplay}`}
+            a(href=``, class="button button--info") !{`${textButton}`}
