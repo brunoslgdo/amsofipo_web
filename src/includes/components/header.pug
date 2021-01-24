@@ -1,7 +1,13 @@
+include ../config/conf_menu
 header.header
-    .header__child
-        .header__item
-            a(href="index.html"): img(src=`${pathImg}logo-amsofipo.svg`, class="header__logo", alt="amsofipo")
-        .header__item
-            include icon-hamburguer
-            include menu
+    .header__wrap
+        .home
+            a(href=`${pathUrl}index.html`): img(src=`${pathImg}logo-amsofipo.svg`, class="home__logo", alt="amsofipo")
+        nav.nav
+            ul.menu
+                each item in MENU
+                    li.menu__item: a(href=`${pathUrl}${item.url}`, class="header__item menu__link") !{`${item.itemName}`}
+        .contact
+            a(href="", class="header__item contact__link") 
+                img(src=`${pathImg}arrow-next.svg`, class="contact__arrow", alt="")
+                | Contáctanos
