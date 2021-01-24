@@ -69,7 +69,7 @@ img {
 .subcontainer--lg, .header__wrap {
   max-width: 80rem;
 }
-.subcontainer--md {
+.subcontainer--md, .jumbotron__display {
   max-width: 64rem;
 }
 .subcontainer--sm {
@@ -122,4 +122,43 @@ img {
   margin-right: var(--su-8);
 }
 
-/*# sourceMappingURL=styles.css.map */
+.jumbotron {
+  display: flex;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.2);
+  height: 32.5rem;
+  overflow: hidden;
+}
+.jumbotron__content {
+  border: 0.125rem solid var(--first);
+  border-radius: var(--su-8);
+  text-align: center;
+  padding: var(--su-32);
+  margin: auto;
+}
+.jumbotron__display {
+  color: var(--text-alt);
+  font-size: var(--display);
+  font-weight: var(--medium);
+  margin-bottom: var(--su-32);
+}
+.jumbotron .hero-image {
+  object-fit: cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.button {
+  display: inline-flex;
+  color: var(--text-alt);
+  font-size: var(--caption);
+  font-weight: var(--medium);
+  border-radius: 0.25em;
+  background-color: var(--first-dark);
+  padding: 0.5em 2em;
+}
+.button--info {
+  background-color: var(--second);
+}
