@@ -1,15 +1,8 @@
 extends ../templates/pages
 
-//- block carousel
-    //- include ../components/carousel
-
-//- block sections
-    //- .__wrap.bg-home-amsofipo
-    //-     include ../sections/home-amsofipo
-    //- .__wrap.bg-home-indicadores
-    //-     include ../sections/home-indicadores
-    //- .__wrap.bg-home-sofipo
-    //-     include ../sections/home-sofipo
-    //- include ../sections/home-mosaicos
-    //- .__wrap.bg-home-contacto
-    //-     include ../sections/home-contacto
+block main
+    +jumbotron_main(
+        'jumbotron-main.jpg',
+        'Fomentamos el sano desarrollo del Sector de Ahorro Popular dentro del Sistema Financiero Mexicano',
+        'Conoce más'
+    )
