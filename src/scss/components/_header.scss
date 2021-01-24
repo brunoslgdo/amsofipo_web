@@ -1,17 +1,68 @@
-.header {
-    box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 0.3);
-    padding-top: var(--sm);
-    padding-bottom: var(--sm);
-    @extend .__grid;
+%flex-absolute-center {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
 
-    &__child {
+.header {
+    @extend .container;
+    box-shadow: 0 toRem(-6px) toRem(12px);
+
+    // grid container
+    &__wrap {
+        --column-width: #{toRem(140px)}; 
+        @extend .subcontainer;
+        @extend .subcontainer--lg;
+        display: grid;
+        grid-template-columns: var(--column-width) 1fr var(--column-width);
+        column-gap: var(--su-32);
+        padding-top: var(--su-16);
+        padding-bottom: var(--su-16);
+    }
+
+    &__item {
+        font-size: var(--body);
+    }
+}
+
+// grid item
+.home {
+    
+    &__logo {
+        height: var(--su-40);
+    }
+}
+
+// grid item
+.nav {
+    @extend %flex-absolute-center;
+}
+
+.menu {
+    display: inline-flex;
+    
+    &__item {
+        margin-right: var(--su-16);
+        margin-left: var(--su-16);
+    }
+    
+    &__link {
+        color: var(--first-dark);
+        font-weight: var(--light);
+    }
+}
+
+// grid item
+.contact {
+    @extend %flex-absolute-center;
+    
+    &__link {
         display: flex;
-        justify-content: space-between;
-        align-items: center;
-        
-        @media only screen and (min-width: 1024px) {
-            grid-column-start: 2;        
-            grid-column-end: 12;        
-        }
+        color: var(--text);
+        font-weight: var(--sbold);
+    }
+
+    &__arrow {
+        margin-right: var(--su-8); 
     }
 }
