@@ -1,5 +1,5 @@
 // functions
-@import 'functions/toRem'
+@import 'functions/toRem';
 
 // placeholders
 @import 'placeholders/place-fonts';
@@ -9,12 +9,13 @@
 @import 'placeholders/place-underline';
 
 // theme
-    @import 'theme/colors';
-    @import 'theme/typography';
+@import 'theme/colors';
+@import 'theme/typography';
 
 // layout
-    @import 'layout/reset';
-    @import 'layout/box-model';
+@import 'layout/reset';
+@import 'layout/spacing_units';
+@import 'layout/box_model';
 
 // components
     @import 'components/classes';
@@ -30,6 +31,7 @@
     @import 'components/productos';
     @import 'components/beneficios';
     @import 'components/naturaleza-juridica';
+    
     // @import 'components/informacion-estadistica';
     @import 'components/carousel';
     @import 'components/form';
