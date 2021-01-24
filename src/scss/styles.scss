@@ -2,11 +2,11 @@
 @import 'functions/toRem';
 
 // placeholders
-@import 'placeholders/place-fonts';
-@import 'placeholders/place-buttons';
-@import 'placeholders/place-lists';
-@import 'placeholders/place-backgrounds';
-@import 'placeholders/place-underline';
+// @import 'placeholders/place-fonts';
+// @import 'placeholders/place-buttons';
+// @import 'placeholders/place-lists';
+// @import 'placeholders/place-backgrounds';
+// @import 'placeholders/place-underline';
 
 // theme
 @import 'theme/colors';
@@ -18,46 +18,46 @@
 @import 'layout/box_model';
 
 // components
-    @import 'components/classes';
-    @import 'components/header-section';
-    @import 'components/header-caption';
-    @import 'components/header';
-    @import 'components/menu';
-    @import 'components/icon-hamburguer';
-    @import 'components/jumbo';
-    @import 'components/featured';
-    @import 'components/asociados';
-    @import 'components/casos-exito';
-    @import 'components/productos';
-    @import 'components/beneficios';
-    @import 'components/naturaleza-juridica';
+@import 'components/header';
+//     @import 'components/classes';
+//     @import 'components/header-section';
+//     @import 'components/header-caption';
+//     @import 'components/menu';
+//     @import 'components/icon-hamburguer';
+//     @import 'components/jumbo';
+//     @import 'components/featured';
+//     @import 'components/asociados';
+//     @import 'components/casos-exito';
+//     @import 'components/productos';
+//     @import 'components/beneficios';
+//     @import 'components/naturaleza-juridica';
     
-    // @import 'components/informacion-estadistica';
-    @import 'components/carousel';
-    @import 'components/form';
-    @import 'components/footer';
-    @import 'components/buttons';
-    @import 'components/indicadores';
-    @import 'components/notas';
-    @import 'components/hero';
-    @import 'components/entry';
-    @import 'components/prensa';
+//     // @import 'components/informacion-estadistica';
+//     @import 'components/carousel';
+//     @import 'components/form';
+//     @import 'components/footer';
+//     @import 'components/buttons';
+//     @import 'components/indicadores';
+//     @import 'components/notas';
+//     @import 'components/hero';
+//     @import 'components/entry';
+//     @import 'components/prensa';
 
-// sections
+// // sections
 
-    @import 'sections/home-amsofipo';
-    @import 'sections/home-indicadores';
-    @import 'sections/home-sofipo';
-    @import 'sections/home-mosaicos';
-    @import 'sections/home-contacto';
+//     @import 'sections/home-amsofipo';
+//     @import 'sections/home-indicadores';
+//     @import 'sections/home-sofipo';
+//     @import 'sections/home-mosaicos';
+//     @import 'sections/home-contacto';
     
-    @import 'sections/amsofipo-asociados';
+//     @import 'sections/amsofipo-asociados';
 
-    @import 'sections/sofipo-casos-exito';
-    @import 'sections/sofipo-portafolio';
-    @import 'sections/sofipo-beneficios';
+//     @import 'sections/sofipo-casos-exito';
+//     @import 'sections/sofipo-portafolio';
+//     @import 'sections/sofipo-beneficios';
 
-    @import 'sections/inclusion-financiera-estadistica';
+//     @import 'sections/inclusion-financiera-estadistica';
 
-// pages
-    @import 'pages/finanzas-personales';
+// // pages
+//     @import 'pages/finanzas-personales';
