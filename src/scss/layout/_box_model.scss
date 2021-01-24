@@ -1,0 +1,22 @@
+.container {
+    min-width: 100vh;
+    padding-right: var(--su-32);
+    padding-left: var(--su-32);
+}
+
+.subcontainer {
+    margin-right: auto;
+    margin-left: auto;
+    
+    &--lg {
+        max-width: toRem(1280px);
+    }
+    
+    &--md {
+        max-width: toRem(1024px);
+    }
+    
+    &--sm {
+        max-width: toRem(880px);
+    }
+}

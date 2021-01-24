@@ -1,0 +1,15 @@
+$spacing-units: (
+    su-48: toRem(48px),
+    su-40: toRem(40px),
+    su-32: toRem(32px),
+    su-24: toRem(24px),
+    su-16: toRem(16px),
+    su-8: toRem(8px)
+);
+
+:root {
+
+    @each $key, $unit in $spacing-units {
+        --#{$key}: #{$unit};
+    }
+}
