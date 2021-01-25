@@ -49,7 +49,9 @@
     }
 
     &__info {
-        border-top: toRem(1px) solid var(--first-light);
+        @extend .subcontainer;
+        @extend .subcontainer--lg;
+        border-top: toRem(1px) solid var(--first);
         margin-top: var(--su-40);
         padding-top: var(--su-16);
     }
