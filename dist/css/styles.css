@@ -63,11 +63,11 @@ img {
   padding-left: var(--su-32);
 }
 
-.subcontainer, .footer__content, .header__content {
+.subcontainer, .footer__info, .footer__content, .header__content {
   margin-right: auto;
   margin-left: auto;
 }
-.subcontainer--lg, .footer__content, .header__content {
+.subcontainer--lg, .footer__info, .footer__content, .header__content {
   max-width: 80rem;
 }
 .subcontainer--md, .jumbotron__display {
@@ -201,7 +201,7 @@ img {
   grid-area: legal;
 }
 .footer__info {
-  border-top: 0.0625rem solid var(--first-light);
+  border-top: 0.0625rem solid var(--first);
   margin-top: var(--su-40);
   padding-top: var(--su-16);
 }
