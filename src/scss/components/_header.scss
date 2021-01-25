@@ -9,7 +9,7 @@
     box-shadow: 0 toRem(-6px) toRem(12px);
 
     // grid container
-    &__wrap {
+    &__content {
         --column-width: #{toRem(140px)}; 
         @extend .subcontainer;
         @extend .subcontainer--lg;
