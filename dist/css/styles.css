@@ -20,6 +20,7 @@
   --medium: 500;
   --regular: 400;
   --light: 300;
+  --elight: 200;
 }
 
 html {
@@ -56,17 +57,17 @@ img {
   --su-8: 0.5rem;
 }
 
-.container, .header {
+.container, .footer, .header {
   min-width: 100vh;
   padding-right: var(--su-32);
   padding-left: var(--su-32);
 }
 
-.subcontainer, .header__wrap {
+.subcontainer, .footer__content, .header__content {
   margin-right: auto;
   margin-left: auto;
 }
-.subcontainer--lg, .header__wrap {
+.subcontainer--lg, .footer__content, .header__content {
   max-width: 80rem;
 }
 .subcontainer--md, .jumbotron__display {
@@ -85,7 +86,7 @@ img {
 .header {
   box-shadow: 0 -0.375rem 0.75rem;
 }
-.header__wrap {
+.header__content {
   --column-width: 8.75rem;
   display: grid;
   grid-template-columns: var(--column-width) 1fr var(--column-width);
@@ -161,4 +162,81 @@ img {
 }
 .button--info {
   background-color: var(--second);
+}
+
+.footer {
+  background-color: var(--first-dark);
+  padding-top: var(--su-40);
+  padding-bottom: var(--su-40);
+}
+.footer * {
+  color: var(--first-light);
+}
+.footer__content {
+  display: grid;
+  gap: var(--su-32);
+  grid-template: repeat(2, auto)/repeat(4, 1fr);
+  grid-template-areas: "home home socials socials" "legal visit-us contact interest";
+}
+.footer__home {
+  grid-area: home;
+}
+.footer__logo {
+  mix-blend-mode: screen;
+}
+.footer__socials {
+  grid-area: socials;
+  display: grid;
+}
+.footer__contact {
+  grid-area: contact;
+}
+.footer__visit-us {
+  grid-area: visit-us;
+}
+.footer__interest {
+  grid-area: interest;
+}
+.footer__legal {
+  grid-area: legal;
+}
+.footer__info {
+  border-top: 0.0625rem solid var(--first-light);
+  margin-top: var(--su-40);
+  padding-top: var(--su-16);
+}
+.footer__label {
+  font-size: var(--small);
+  font-weight: var(--regular);
+}
+.footer__text {
+  font-size: var(--body);
+  font-weight: var(--elight);
+}
+
+.socials {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.socials__item {
+  margin-left: var(--su-32);
+}
+
+.write-us {
+  margin-bottom: var(--su-32);
+}
+
+.legal .footer__text {
+  font-weight: var(--regular);
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.info .footer__label {
+  order: 1;
+  font-weight: var(--elight);
 }
