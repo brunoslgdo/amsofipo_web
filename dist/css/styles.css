@@ -34,7 +34,7 @@ html {
   padding: 0;
 }
 
-ol, ul {
+ol, ul, li {
   list-style: none;
 }
 
@@ -75,6 +75,11 @@ img {
 }
 .subcontainer--sm {
   max-width: 55rem;
+}
+
+.section-content {
+  padding-right: var(--su-32);
+  padding-left: var(--su-32);
 }
 
 .contact, .nav {
@@ -156,12 +161,25 @@ img {
   color: var(--text-alt);
   font-size: var(--caption);
   font-weight: var(--medium);
-  border-radius: 0.25em;
+  border-radius: calc(var(--su-8) / 2);
   background-color: var(--first-dark);
-  padding: 0.5em 2em;
+  padding: var(--su-8) var(--su-32);
 }
 .button--info {
   background-color: var(--second);
+}
+
+.section__title {
+  color: var(--text);
+  font-size: var(--title);
+  font-weight: var(--sbold);
+  margin-bottom: var(--su-32);
+}
+.section__text {
+  color: var(--text-light);
+  font-size: var(--subtitle);
+  font-weight: var(--elight);
+  margin-bottom: var(--su-24);
 }
 
 .footer {
@@ -240,3 +258,5 @@ img {
   order: 1;
   font-weight: var(--elight);
 }
+
+/*# sourceMappingURL=styles.css.map */

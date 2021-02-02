@@ -1,8 +1,40 @@
 extends ../templates/pages
-
 block main
     +jumbotron_main(
         'jumbotron-main.jpg',
         'Fomentamos el sano desarrollo del Sector de Ahorro Popular dentro del Sistema Financiero Mexicano',
         'Conoce más'
     )
+    //- sección ¿qué es una sofipo?
+    .container
+        .subcontainer.subcontainer--md
+            +section_title(
+                '¿Qué es una SOFIPO?'
+            )
+            .section-content
+                +section_content_button(
+                    'Son entidades autorizadas y reguladas por Comisión Nacional Bancaria y de Valores  (CNBV)',
+                    'Conoce más'
+                )
+    //- sección indicadores
+    .container
+        .subcontainer.subcontainer--md
+            +section_title(
+                'Indicadores Marzo 2020'
+            )
+            .section-content.indicator
+                .indicator__child
+                    ul.indicator-list
+                    include ../config/conf_indicators
+                        each indicator in INDICATORS_2020
+                            each item in indicator.indicators
+                                li.indicator-list__item
+                                    img(src=`${pathImg}${item.icon}`, class="indicator-list__icon", alt=`${item.label}`)
+                                    .indicator-list__wrap
+                                        h3.indicator-list__number= `${item.number}`
+                                        p.indicator-list_label= `${item.label}`
+                .indicator__child
+                    +section_content_button(
+                        'Conoce aquí los principales indicadores del sector',
+                        'Conoce más'
+                    )

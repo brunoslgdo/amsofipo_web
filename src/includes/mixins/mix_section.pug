@@ -1,0 +1,8 @@
+mixin section_title(textSectionTitle)
+    h2.section__title !{`${textSectionTitle}`}
+
+mixin section_content_button(textDescription, textButton)
+    p.section__text !{`${textDescription}`}
+    a(href=``, class="button") !{`${textButton}`}
+
+//- mixin section_content_image()
