@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #9dd4ca;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <g id="indicadores-numero-sucursales" transform="translate(10371 -1617)">
+    <path id="Trazado_4961" data-name="Trazado 4961" class="cls-1" d="M4,0H76a4,4,0,0,1,4,4V76a4,4,0,0,1-4,4H4a4,4,0,0,1-4-4V4A4,4,0,0,1,4,0Z" transform="translate(-10371 1617)"/>
+    <g id="Grupo_3568" data-name="Grupo 3568" transform="translate(-11201 -155)">
+      <path id="Trazado_3418" data-name="Trazado 3418" class="cls-2" d="M48,42V37.714H40.258V35.143h1.548V30.857H36.387V28.286h1.548V24H10.065v4.286h1.548v2.571H6.194v4.286H7.742v2.571H0V42H1.548V70.286H0V72H48V70.286H46.452V42Zm-1.548-2.571v.857H40.258v-.857Zm-6.194-6.857v.857H36.387v-.857ZM11.613,25.714H36.387v.857H11.613Zm1.548,2.571H34.839V54.857H13.161V28.286ZM7.742,32.571h3.871v.857H7.742ZM1.548,39.429H7.742v.857H1.548ZM3.1,42H7.742V70.286H3.1ZM9.29,70.286V35.143h2.323V70.286Zm22.452,0H24.774V60h6.968Zm-8.516,0H16.258V60h6.968Zm10.065,0v-12H14.71v12H13.161V56.571H34.839V70.286Zm3.1-35.143H38.71V70.286H36.387ZM44.9,70.286H40.258V42H44.9Z" transform="translate(846 1764)"/>
+      <rect id="Rectángulo_2858" data-name="Rectángulo 2858" class="cls-2" width="12.387" height="1.714" transform="translate(863.806 1800.857)"/>
+      <rect id="Rectángulo_2859" data-name="Rectángulo 2859" class="cls-2" width="1.548" height="1.714" transform="translate(874.645 1804.285)"/>
+      <rect id="Rectángulo_2860" data-name="Rectángulo 2860" class="cls-2" width="9.29" height="1.714" transform="translate(863.806 1804.285)"/>
+      <rect id="Rectángulo_2861" data-name="Rectángulo 2861" class="cls-2" width="1.548" height="4.286" transform="translate(866.903 1826.571)"/>
+      <rect id="Rectángulo_2862" data-name="Rectángulo 2862" class="cls-2" width="1.548" height="4.286" transform="translate(871.548 1826.571)"/>
+    </g>
+  </g>
+</svg>

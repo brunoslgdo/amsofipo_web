@@ -1,0 +1,31 @@
+:root {
+    
+    // colors
+
+    @each $key, $color in $colors {
+        --#{$key}: #{$color};
+    }
+
+    // font
+
+    @each $key, $size in $font-size {
+        --#{$key}: #{$size};
+    }
+    
+    @each $key, $weight in $font-weight {
+        --#{$key}: #{$weight};
+    }
+    
+    @each $key, $height in $line-height {
+        --#{$key}: #{$height};
+    }
+
+    // spacing units
+    @each $key, $unit in $spacing-units {
+        --#{$key}: #{$unit};
+    }
+
+    @each $key, $unit in $spacing-units-text {
+        --#{$key}: #{$unit};
+    }
+}

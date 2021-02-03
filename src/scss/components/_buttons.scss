@@ -3,9 +3,10 @@
     color: var(--text-alt);
     font-size: var(--caption);
     font-weight: var(--medium);
-    border-radius: calc(var(--su-8) / 2);
+    line-height: var(--lh-caption);
+    border-radius: calc(var(--su-4));
     background-color: var(--first-dark);
-    padding: var(--su-8) var(--su-32);
+    padding: var(--su-7) var(--su-27);
     
     &--info {
         background-color: var(--second);

@@ -9,20 +9,29 @@
 // @import 'placeholders/place-backgrounds';
 // @import 'placeholders/place-underline';
 
-// theme
+// theme and layout (only maps)
 @import 'theme/colors';
 @import 'theme/typography';
+@import 'layout/spacing_units';
+
+// custom properties
+@import 'config/custom_properties';
 
 // layout
 @import 'layout/reset';
-@import 'layout/spacing_units';
 @import 'layout/box_model';
+
+// utilities
+@import 'config/utilities';
+
 
 // components
 @import 'components/header';
 @import 'components/jumbotron';
 @import 'components/buttons';
 @import 'components/section';
+@import 'components/home_indicadores';
+@import 'components/home_mosaicos';
 @import 'components/footer';
 //     @import 'components/classes';
 //     @import 'components/header-section';

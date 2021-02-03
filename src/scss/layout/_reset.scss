@@ -1,20 +1,25 @@
 html {
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    line-height: var(--lh-body);
 }
 
-*, *::after, *::before {
+*,
+*::after, 
+*::before {
     box-sizing: inherit;
     margin: 0;
     padding: 0;
 }
 
-ol, ul, li {
-    list-style: none;
-}
-
 a {
     text-decoration: none;
+}
+
+ol, 
+ul, 
+li {
+    list-style: none;
 }
 
 img {

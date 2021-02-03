@@ -1,0 +1,7 @@
+// font size and line height
+@each $key, $val in $font-size {
+    .#{$key} {
+        font-size: var(--#{$key});
+        line-height: var(--lh-#{$key});
+    }
+}

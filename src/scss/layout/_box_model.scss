@@ -1,7 +1,17 @@
 .container {
     min-width: 100vh;
-    padding-right: var(--su-32);
-    padding-left: var(--su-32);
+    padding-right: var(--su-16);
+    padding-left: var(--su-16);
+
+    @media only screen and (min-width: 768px) {
+        padding-right: var(--su-32);
+        padding-left: var(--su-32);
+    }
+}
+
+.container--padding {
+    padding-top: var(--su-64);
+    padding-bottom: var(--su-64);
 }
 
 .subcontainer {

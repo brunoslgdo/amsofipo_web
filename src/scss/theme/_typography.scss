@@ -1,10 +1,10 @@
 $font-size: (
-   display: toRem(50.52px),
-   title: toRem(37.90px),
-   subtitle: toRem(28.43px),
-   caption: toRem(21.33px),
+   display: toRem(42px),
+   title: toRem(33px),
+   subtitle: toRem(26px),
+   caption: toRem(20px),
    body: toRem(16px),
-   small: toRem(12px)
+   small: toRem(13px)
 );
 
 $font-weight: (
@@ -16,13 +16,11 @@ $font-weight: (
     elight: 200
 );
 
-:root {
-    
-    @each $key, $size in $font-size {
-        --#{$key}: #{$size};
-    }
-    
-    @each $key, $weight in $font-weight {
-        --#{$key}: #{$weight};
-    }
-}
+$line-height: ( 
+    lh-display: 1.571,
+    lh-title: 1.606,
+    lh-subtitle: 1.615,
+    lh-caption: 1.65,
+    lh-body: 1.688,
+    lh-small: 1.769
+);

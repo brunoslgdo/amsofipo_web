@@ -6,14 +6,14 @@
     
     @extend .container;
     background-color: var(--first-dark);
-    padding-top: var(--su-40);
-    padding-bottom: var(--su-40);
+    padding-top: var(--su-44);
+    padding-bottom: var(--su-44);
 
     &__content {
         @extend .subcontainer;
         @extend .subcontainer--lg;
         display: grid;
-        gap: var(--su-32);
+        gap: var(--su-27);
         grid-template: repeat(2, auto) / repeat(4, 1fr);
         grid-template-areas: 'home home socials socials'
                              'legal visit-us contact interest';
@@ -52,18 +52,20 @@
         @extend .subcontainer;
         @extend .subcontainer--lg;
         border-top: toRem(1px) solid var(--first);
-        margin-top: var(--su-40);
-        padding-top: var(--su-16);
+        margin-top: var(--su-44);
+        padding-top: var(--su-17);
     }
 
     &__label {
         font-size: var(--small);
         font-weight: var(--regular);
+        line-height: var(--lh-small);
     }
 
     &__text {
         font-size: var(--body);
         font-weight: var(--elight);
+        line-height: var(--lh-body);
     }
 }
 
@@ -73,12 +75,12 @@
     align-items: center;
 
     &__item {
-        margin-left: var(--su-32);
+        margin-left: var(--su-27);
     }
 }
 
 .write-us {
-    margin-bottom: var(--su-32);
+    margin-bottom: var(--su-27);
 }
 
 .legal {

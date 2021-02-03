@@ -4,13 +4,15 @@
         color: var(--text);
         font-size: var(--title);
         font-weight: var(--sbold);
-        margin-bottom: var(--su-32);
+        line-height: var(--lh-title);
+        margin-bottom: var(--su-27);
     }
 
     &__text {
         color: var(--text-light);
         font-size: var(--subtitle);
         font-weight: var(--elight);
-        margin-bottom: var(--su-24);
+        line-height: var(--lh-subtitle);
+        margin-bottom: var(--su-17);
     }
 }

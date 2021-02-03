@@ -7,10 +7,3 @@ $colors: (
     text-light: #2e2e2e,
     text-alt: #FFFFFF
 );
-
-:root {
-
-    @each $key, $color in $colors {
-        --#{$key}: #{$color};
-    }
-}

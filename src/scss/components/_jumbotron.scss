@@ -7,18 +7,22 @@
     
     &__content {
         border: toRem(2px) solid var(--first);
-        border-radius: var(--su-8);
+        border-radius: var(--su-7);
         text-align: center;
-        padding: var(--su-32);
         margin: auto;
+        padding-top: var(--su-27);
+        padding-bottom: var(--su-27);
     }
-
+    
     &__display {
         @extend .subcontainer--md;
         color: var(--text-alt);
         font-size: var(--display);
         font-weight: var(--medium);
-        margin-bottom: var(--su-32);
+        line-height: (--lh-display);
+        margin-bottom: var(--su-27);
+        padding-right: var(--su-27);
+        padding-left: var(--su-27);
     }
 
     .hero-image {

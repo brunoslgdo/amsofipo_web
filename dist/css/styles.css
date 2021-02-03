@@ -6,40 +6,61 @@
   --text: #030303;
   --text-light: #2e2e2e;
   --text-alt: #FFFFFF;
-}
-
-:root {
-  --display: 3.1575rem;
-  --title: 2.36875rem;
-  --subtitle: 1.776875rem;
-  --caption: 1.333125rem;
+  --display: 2.625rem;
+  --title: 2.0625rem;
+  --subtitle: 1.625rem;
+  --caption: 1.25rem;
   --body: 1rem;
-  --small: 0.75rem;
+  --small: 0.8125rem;
   --bold: 700;
   --sbold: 600;
   --medium: 500;
   --regular: 400;
   --light: 300;
   --elight: 200;
+  --lh-display: 1.571;
+  --lh-title: 1.606;
+  --lh-subtitle: 1.615;
+  --lh-caption: 1.65;
+  --lh-body: 1.688;
+  --lh-small: 1.769;
+  --su-64: 4rem;
+  --su-40: 2.5rem;
+  --su-32: 2rem;
+  --su-24: 1.5rem;
+  --su-16: 1rem;
+  --su-8: 0.5rem;
+  --su-4: 0.25rem;
+  --sut-44: 2.75rem;
+  --sut-27: 1.6875rem;
+  --sut-17: 1.0625rem;
+  --sut-11: 0.6875rem;
+  --sut-7: 0.4375rem;
+  --sut-4: 0.25rem;
 }
 
 html {
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+  line-height: var(--lh-body);
 }
 
-*, *::after, *::before {
+*,
+*::after,
+*::before {
   box-sizing: inherit;
   margin: 0;
   padding: 0;
 }
 
-ol, ul, li {
-  list-style: none;
-}
-
 a {
   text-decoration: none;
+}
+
+ol,
+ul,
+li {
+  list-style: none;
 }
 
 img {
@@ -48,26 +69,28 @@ img {
   height: auto;
 }
 
-:root {
-  --su-48: 3rem;
-  --su-40: 2.5rem;
-  --su-32: 2rem;
-  --su-24: 1.5rem;
-  --su-16: 1rem;
-  --su-8: 0.5rem;
-}
-
 .container, .footer, .header {
   min-width: 100vh;
-  padding-right: var(--su-32);
-  padding-left: var(--su-32);
+  padding-right: var(--su-16);
+  padding-left: var(--su-16);
+}
+@media only screen and (min-width: 768px) {
+  .container, .footer, .header {
+    padding-right: var(--su-32);
+    padding-left: var(--su-32);
+  }
 }
 
-.subcontainer, .footer__info, .footer__content, .header__content {
+.container--padding {
+  padding-top: var(--su-64);
+  padding-bottom: var(--su-64);
+}
+
+.subcontainer, .footer__info, .footer__content {
   margin-right: auto;
   margin-left: auto;
 }
-.subcontainer--lg, .footer__info, .footer__content, .header__content {
+.subcontainer--lg, .footer__info, .footer__content {
   max-width: 80rem;
 }
 .subcontainer--md, .jumbotron__display {
@@ -82,6 +105,36 @@ img {
   padding-left: var(--su-32);
 }
 
+.display {
+  font-size: var(--display);
+  line-height: var(--lh-display);
+}
+
+.title {
+  font-size: var(--title);
+  line-height: var(--lh-title);
+}
+
+.subtitle {
+  font-size: var(--subtitle);
+  line-height: var(--lh-subtitle);
+}
+
+.caption {
+  font-size: var(--caption);
+  line-height: var(--lh-caption);
+}
+
+.body {
+  font-size: var(--body);
+  line-height: var(--lh-body);
+}
+
+.small {
+  font-size: var(--small);
+  line-height: var(--lh-small);
+}
+
 .contact, .nav {
   display: inline-flex;
   justify-content: center;
@@ -89,30 +142,28 @@ img {
 }
 
 .header {
-  box-shadow: 0 -0.375rem 0.75rem;
-}
-.header__content {
-  --column-width: 8.75rem;
-  display: grid;
-  grid-template-columns: var(--column-width) 1fr var(--column-width);
-  column-gap: var(--su-32);
-  padding-top: var(--su-16);
-  padding-bottom: var(--su-16);
-}
-.header__item {
-  font-size: var(--body);
+  box-shadow: 0.375rem 0 0.75rem;
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
 }
 
-.home__logo {
+.nav__home .logo {
   height: var(--su-40);
+}
+.nav__menu {
+  position: fixed;
+}
+.home__logo {
+  height: var(--su-44);
 }
 
 .menu {
   display: inline-flex;
 }
 .menu__item {
-  margin-right: var(--su-16);
-  margin-left: var(--su-16);
+  margin-right: var(--su-17);
+  margin-left: var(--su-17);
 }
 .menu__link {
   color: var(--first-dark);
@@ -125,7 +176,7 @@ img {
   font-weight: var(--sbold);
 }
 .contact__arrow {
-  margin-right: var(--su-8);
+  margin-right: var(--su-7);
 }
 
 .jumbotron {
@@ -137,16 +188,20 @@ img {
 }
 .jumbotron__content {
   border: 0.125rem solid var(--first);
-  border-radius: var(--su-8);
+  border-radius: var(--su-7);
   text-align: center;
-  padding: var(--su-32);
   margin: auto;
+  padding-top: var(--su-27);
+  padding-bottom: var(--su-27);
 }
 .jumbotron__display {
   color: var(--text-alt);
   font-size: var(--display);
   font-weight: var(--medium);
-  margin-bottom: var(--su-32);
+  line-height: --lh-display;
+  margin-bottom: var(--su-27);
+  padding-right: var(--su-27);
+  padding-left: var(--su-27);
 }
 .jumbotron .hero-image {
   object-fit: cover;
@@ -161,9 +216,10 @@ img {
   color: var(--text-alt);
   font-size: var(--caption);
   font-weight: var(--medium);
-  border-radius: calc(var(--su-8) / 2);
+  line-height: var(--lh-caption);
+  border-radius: calc(var(--su-4));
   background-color: var(--first-dark);
-  padding: var(--su-8) var(--su-32);
+  padding: var(--su-7) var(--su-27);
 }
 .button--info {
   background-color: var(--second);
@@ -173,26 +229,121 @@ img {
   color: var(--text);
   font-size: var(--title);
   font-weight: var(--sbold);
-  margin-bottom: var(--su-32);
+  line-height: var(--lh-title);
+  margin-bottom: var(--su-27);
 }
 .section__text {
   color: var(--text-light);
   font-size: var(--subtitle);
   font-weight: var(--elight);
-  margin-bottom: var(--su-24);
+  line-height: var(--lh-subtitle);
+  margin-bottom: var(--su-17);
+}
+
+.home-indicadores {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--su-27);
+}
+.home-indicadores-list {
+  display: grid;
+  gap: var(--su-27);
+}
+.home-indicadores-list__item {
+  display: flex;
+  align-items: center;
+}
+.home-indicadores-list__wrap {
+  margin-left: var(--su-17);
+}
+.home-indicadores-list__number {
+  color: var(--first-dark);
+  font-size: var(--subtitle);
+  font-weight: var(--sbold);
+  line-height: var(--lh-subtitle);
+}
+.home-indicadores-list__label {
+  font-size: var(--body);
+  font-weight: var(--light);
+  line-height: var(--lh-body);
+}
+
+.home-mosaicos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas: "productos educa educa" "productos casos finanzas";
+  gap: var(--su-27);
+  color: var(--text-alt);
+  height: 36.25rem;
+}
+.home-mosaicos__child {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.home-mosaicos__hero-image {
+  object-fit: cover;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+.home-mosaicos__wrap {
+  padding: var(--su-27);
+}
+.home-mosaicos__wrap::before {
+  content: "";
+  background-image: linear-gradient(#FFF, #007F6E);
+  mix-blend-mode: multiply;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+.home-mosaicos__title {
+  font-size: var(--subtitle);
+  font-weight: var(--sbold);
+  line-height: var(--lh-subtitle);
+  margin-bottom: var(--su-17);
+}
+.home-mosaicos__caption {
+  font-size: var(--caption);
+  font-weight: var(--elight);
+  line-height: var(--lh-caption);
+}
+
+.productos {
+  grid-area: productos;
+}
+
+.educa {
+  grid-area: educa;
+}
+
+.casos {
+  grid-area: casos;
+}
+
+.finanzas {
+  grid-area: finanzas;
 }
 
 .footer {
   background-color: var(--first-dark);
-  padding-top: var(--su-40);
-  padding-bottom: var(--su-40);
+  padding-top: var(--su-44);
+  padding-bottom: var(--su-44);
 }
 .footer * {
   color: var(--first-light);
 }
 .footer__content {
   display: grid;
-  gap: var(--su-32);
+  gap: var(--su-27);
   grid-template: repeat(2, auto)/repeat(4, 1fr);
   grid-template-areas: "home home socials socials" "legal visit-us contact interest";
 }
@@ -220,16 +371,18 @@ img {
 }
 .footer__info {
   border-top: 0.0625rem solid var(--first);
-  margin-top: var(--su-40);
-  padding-top: var(--su-16);
+  margin-top: var(--su-44);
+  padding-top: var(--su-17);
 }
 .footer__label {
   font-size: var(--small);
   font-weight: var(--regular);
+  line-height: var(--lh-small);
 }
 .footer__text {
   font-size: var(--body);
   font-weight: var(--elight);
+  line-height: var(--lh-body);
 }
 
 .socials {
@@ -238,11 +391,11 @@ img {
   align-items: center;
 }
 .socials__item {
-  margin-left: var(--su-32);
+  margin-left: var(--su-27);
 }
 
 .write-us {
-  margin-bottom: var(--su-32);
+  margin-bottom: var(--su-27);
 }
 
 .legal .footer__text {

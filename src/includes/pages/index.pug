@@ -1,12 +1,12 @@
 extends ../templates/pages
-block main
+//- block main
     +jumbotron_main(
         'jumbotron-main.jpg',
         'Fomentamos el sano desarrollo del Sector de Ahorro Popular dentro del Sistema Financiero Mexicano',
         'Conoce más'
     )
     //- sección ¿qué es una sofipo?
-    .container
+    .container.container--padding
         .subcontainer.subcontainer--md
             +section_title(
                 '¿Qué es una SOFIPO?'
@@ -17,24 +17,45 @@ block main
                     'Conoce más'
                 )
     //- sección indicadores
-    .container
+    .container.container--padding
         .subcontainer.subcontainer--md
             +section_title(
                 'Indicadores Marzo 2020'
             )
-            .section-content.indicator
-                .indicator__child
-                    ul.indicator-list
-                    include ../config/conf_indicators
+            .section-content.home-indicadores
+                .home-indicator__child
+                    ul.home-indicadores-list
+                        include ../config/conf_indicators
                         each indicator in INDICATORS_2020
                             each item in indicator.indicators
-                                li.indicator-list__item
-                                    img(src=`${pathImg}${item.icon}`, class="indicator-list__icon", alt=`${item.label}`)
-                                    .indicator-list__wrap
-                                        h3.indicator-list__number= `${item.number}`
-                                        p.indicator-list_label= `${item.label}`
-                .indicator__child
+                                li.home-indicadores-list__item
+                                    img(src=`${pathImg}${item.icon}`, class="home-indicadores-list__icon", alt=`${item.label}`)
+                                    .home-indicadores-list__wrap
+                                        h3.home-indicadores-list__number= `${item.number}`
+                                        p.home-indicadores-list__label= `${item.label}`
+                .home-indicator__child
+                    img(src=`${pathImg}home-indicadores-thumbnail.jpg`, alt="")
                     +section_content_button(
                         'Conoce aquí los principales indicadores del sector',
                         'Conoce más'
                     )
+    //- sección mosaicos
+    .container.container--padding
+        .home-mosaicos
+            .home-mosaicos__child.educa
+            .home-mosaicos__child.productos
+                img(src=`${pathImg}mosaicos-desktop-productos.png`, class="home-mosaicos__hero-image", alt="")
+                .home-mosaicos__wrap
+                    h2.home-mosaicos__title Portafolio de Productos y Servicios
+                    p.home-mosaicos__caption Conoce más de todo lo que tenemos para ti.
+            .home-mosaicos__child.casos
+                img(src=`${pathImg}mosaicos-tablet-casos-exito.png`, class="home-mosaicos__hero-image", alt="")
+                .home-mosaicos__wrap
+                    h2.home-mosaicos__title Casos de Éxito
+                    p.home-mosaicos__caption Inspírate con las historias de quienes han alcanzado sus sueños.
+            .home-mosaicos__child.finanzas
+                img(src=`${pathImg}mosaicos-tablet-finanzas-personales.png`, class="home-mosaicos__hero-image", alt="")
+                .home-mosaicos__wrap
+                    h2.home-mosaicos__title Finanzas Personales
+                    p.home-mosaicos__caption Útiles sugerencias para emprender, ahorrar y planificar tus gastos
+        //- seccion formulario

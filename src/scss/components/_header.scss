@@ -6,22 +6,44 @@
 
 .header {
     @extend .container;
-    box-shadow: 0 toRem(-6px) toRem(12px);
+    box-shadow: toRem(6px) 0 toRem(12px);
+    // box-shadow: 0 toRem(-6px) toRem(12px);
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
 
     // grid container
-    &__content {
-        --column-width: #{toRem(140px)}; 
-        @extend .subcontainer;
-        @extend .subcontainer--lg;
-        display: grid;
-        grid-template-columns: var(--column-width) 1fr var(--column-width);
-        column-gap: var(--su-32);
-        padding-top: var(--su-16);
-        padding-bottom: var(--su-16);
+    // &__content {
+    //     --column-width: #{toRem(148px)}; 
+    //     @extend .subcontainer;
+    //     @extend .subcontainer--lg;
+    //     display: grid;
+    //     grid-template-columns: var(--column-width) 1fr var(--column-width);
+    //     column-gap: var(--su-27);
+    //     padding-top: var(--su-11);
+    //     padding-bottom: var(--su-11);
+    // }
+
+    // &__item {
+    //     font-size: var(--body);
+    // }
+}
+
+.nav {
+
+    &__home {
+
+        .logo {
+            height: var(--su-40);
+        }
     }
 
-    &__item {
-        font-size: var(--body);
+    &__menu {
+        position: fixed;
+    }
+
+    &__contact {
+
     }
 }
 
@@ -29,7 +51,7 @@
 .home {
     
     &__logo {
-        height: var(--su-40);
+        height: var(--su-44);
     }
 }
 
@@ -42,8 +64,8 @@
     display: inline-flex;
     
     &__item {
-        margin-right: var(--su-16);
-        margin-left: var(--su-16);
+        margin-right: var(--su-17);
+        margin-left: var(--su-17);
     }
     
     &__link {
@@ -63,6 +85,6 @@
     }
 
     &__arrow {
-        margin-right: var(--su-8); 
+        margin-right: var(--su-7); 
     }
 }

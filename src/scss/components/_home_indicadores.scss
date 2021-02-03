@@ -1,0 +1,40 @@
+.home-indicadores {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--su-27);
+
+    &__child {
+
+    }
+}
+
+.home-indicadores-list {
+    display: grid;
+    gap: var(--su-27);
+
+    &__item {
+        display: flex;
+        align-items: center;
+    }
+
+    &__icon {
+
+    }
+
+    &__wrap {
+        margin-left: var(--su-17);
+    }
+
+    &__number {
+        color: var(--first-dark);
+        font-size: var(--subtitle);
+        font-weight: var(--sbold);
+        line-height: var(--lh-subtitle);
+    }
+    
+    &__label {
+        font-size: var(--body);
+        font-weight: var(--light);
+        line-height: var(--lh-body);
+    }
+}
