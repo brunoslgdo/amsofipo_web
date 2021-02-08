@@ -1,18 +1,19 @@
-.section {
-
-    &__title {
-        color: var(--text);
-        font-size: var(--title);
-        font-weight: var(--sbold);
-        line-height: var(--lh-title);
-        margin-bottom: var(--su-27);
+.section-heading {
+    
+    .title {
+        color: var(--text-dark);
+        margin-bottom: var(--su-text-44);
     }
 
-    &__text {
-        color: var(--text-light);
-        font-size: var(--subtitle);
-        font-weight: var(--elight);
-        line-height: var(--lh-subtitle);
-        margin-bottom: var(--su-17);
+    &--with-subtitle {
+        text-align: center;
+
+        .title {
+            margin-bottom: var(--su-text-17);
+        }
+
+        .subtitle {
+            margin-bottom: var(--su-text-44);
+        }
     }
 }

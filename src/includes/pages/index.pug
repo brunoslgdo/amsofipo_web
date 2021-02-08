@@ -1,61 +1,73 @@
 extends ../templates/pages
-//- block main
-    +jumbotron_main(
-        'jumbotron-main.jpg',
-        'Fomentamos el sano desarrollo del Sector de Ahorro Popular dentro del Sistema Financiero Mexicano',
-        'Conoce más'
-    )
-    //- sección ¿qué es una sofipo?
-    .container.container--padding
-        .subcontainer.subcontainer--md
-            +section_title(
-                '¿Qué es una SOFIPO?'
-            )
-            .section-content
-                +section_content_button(
-                    'Son entidades autorizadas y reguladas por Comisión Nacional Bancaria y de Valores  (CNBV)',
-                    'Conoce más'
-                )
-    //- sección indicadores
-    .container.container--padding
-        .subcontainer.subcontainer--md
-            +section_title(
-                'Indicadores Marzo 2020'
-            )
-            .section-content.home-indicadores
-                .home-indicator__child
-                    ul.home-indicadores-list
-                        include ../config/conf_indicators
-                        each indicator in INDICATORS_2020
-                            each item in indicator.indicators
-                                li.home-indicadores-list__item
-                                    img(src=`${pathImg}${item.icon}`, class="home-indicadores-list__icon", alt=`${item.label}`)
-                                    .home-indicadores-list__wrap
-                                        h3.home-indicadores-list__number= `${item.number}`
-                                        p.home-indicadores-list__label= `${item.label}`
-                .home-indicator__child
-                    img(src=`${pathImg}home-indicadores-thumbnail.jpg`, alt="")
-                    +section_content_button(
-                        'Conoce aquí los principales indicadores del sector',
-                        'Conoce más'
-                    )
-    //- sección mosaicos
-    .container.container--padding
-        .home-mosaicos
-            .home-mosaicos__child.educa
-            .home-mosaicos__child.productos
-                img(src=`${pathImg}mosaicos-desktop-productos.png`, class="home-mosaicos__hero-image", alt="")
-                .home-mosaicos__wrap
-                    h2.home-mosaicos__title Portafolio de Productos y Servicios
-                    p.home-mosaicos__caption Conoce más de todo lo que tenemos para ti.
-            .home-mosaicos__child.casos
-                img(src=`${pathImg}mosaicos-tablet-casos-exito.png`, class="home-mosaicos__hero-image", alt="")
-                .home-mosaicos__wrap
-                    h2.home-mosaicos__title Casos de Éxito
-                    p.home-mosaicos__caption Inspírate con las historias de quienes han alcanzado sus sueños.
-            .home-mosaicos__child.finanzas
-                img(src=`${pathImg}mosaicos-tablet-finanzas-personales.png`, class="home-mosaicos__hero-image", alt="")
-                .home-mosaicos__wrap
-                    h2.home-mosaicos__title Finanzas Personales
-                    p.home-mosaicos__caption Útiles sugerencias para emprender, ahorrar y planificar tus gastos
-        //- seccion formulario
+block main
+    .section-heading
+        h2.title ¿Qué es una SOFIPO?
+    .section-heading.section-heading--with-subtitle
+        h2.title Nuestros asociados
+        h3.subtitle Conoce a las SOFIPO que están cerca de ti
+
+
+    h1.display Hola AMSOFIPO
+    h4.caption Hola AMSOFIPO
+    h5.body Hola AMSOFIPO
+    h6.small Hola AMSOFIPO
+    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem laboriosam rerum reprehenderit, laborum nobis aspernatur eum aliquid tempora voluptas? Non molestiae nostrum ut sed reprehenderit delectus quidem earum facilis nemo.
+    //- +jumbotron_main(
+    //-     'jumbotron-main.jpg',
+    //-     'Fomentamos el sano desarrollo del Sector de Ahorro Popular dentro del Sistema Financiero Mexicano',
+    //-     'Conoce más'
+    //- )
+    //- //- sección ¿qué es una sofipo?
+    //- .container.container--padding
+    //-     .subcontainer.subcontainer--md
+    //-         +section_title(
+    //-             '¿Qué es una SOFIPO?'
+    //-         )
+    //-         .section-content
+    //-             +section_content_button(
+    //-                 'Son entidades autorizadas y reguladas por Comisión Nacional Bancaria y de Valores  (CNBV)',
+    //-                 'Conoce más'
+    //-             )
+    //- //- sección indicadores
+    //- .container.container--padding
+    //-     .subcontainer.subcontainer--md
+    //-         +section_title(
+    //-             'Indicadores Marzo 2020'
+    //-         )
+    //-         .section-content.home-indicadores
+    //-             .home-indicator__child
+    //-                 ul.home-indicadores-list
+    //-                     include ../config/conf_indicators
+    //-                     each indicator in INDICATORS_2020
+    //-                         each item in indicator.indicators
+    //-                             li.home-indicadores-list__item
+    //-                                 img(src=`${pathImg}${item.icon}`, class="home-indicadores-list__icon", alt=`${item.label}`)
+    //-                                 .home-indicadores-list__wrap
+    //-                                     h3.home-indicadores-list__number= `${item.number}`
+    //-                                     p.home-indicadores-list__label= `${item.label}`
+    //-             .home-indicator__child
+    //-                 img(src=`${pathImg}home-indicadores-thumbnail.jpg`, alt="")
+    //-                 +section_content_button(
+    //-                     'Conoce aquí los principales indicadores del sector',
+    //-                     'Conoce más'
+    //-                 )
+    //- //- sección mosaicos
+    //- .container.container--padding
+    //-     .home-mosaicos
+    //-         .home-mosaicos__child.educa
+    //-         .home-mosaicos__child.productos
+    //-             img(src=`${pathImg}mosaicos-desktop-productos.png`, class="home-mosaicos__hero-image", alt="")
+    //-             .home-mosaicos__wrap
+    //-                 h2.home-mosaicos__title Portafolio de Productos y Servicios
+    //-                 p.home-mosaicos__caption Conoce más de todo lo que tenemos para ti.
+    //-         .home-mosaicos__child.casos
+    //-             img(src=`${pathImg}mosaicos-tablet-casos-exito.png`, class="home-mosaicos__hero-image", alt="")
+    //-             .home-mosaicos__wrap
+    //-                 h2.home-mosaicos__title Casos de Éxito
+    //-                 p.home-mosaicos__caption Inspírate con las historias de quienes han alcanzado sus sueños.
+    //-         .home-mosaicos__child.finanzas
+    //-             img(src=`${pathImg}mosaicos-tablet-finanzas-personales.png`, class="home-mosaicos__hero-image", alt="")
+    //-             .home-mosaicos__wrap
+    //-                 h2.home-mosaicos__title Finanzas Personales
+    //-                 p.home-mosaicos__caption Útiles sugerencias para emprender, ahorrar y planificar tus gastos
+    //-     //- seccion formulario

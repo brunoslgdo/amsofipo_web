@@ -1,7 +1,5 @@
 html {
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-    line-height: var(--lh-body);
 }
 
 *,
@@ -10,6 +8,14 @@ html {
     box-sizing: inherit;
     margin: 0;
     padding: 0;
+}
+
+body {
+    color: var(--text-light);
+    font-family: 'Poppins', sans-serif;
+    font-size: var(--h5);
+    font-weight: var(--light);
+    line-height: var(--h5-line-height);
 }
 
 a {

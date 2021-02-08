@@ -3,27 +3,28 @@
   --first-dark: #005243;
   --first-light: #9DD4CA;
   --second: #FFCC00;
-  --text: #030303;
-  --text-light: #2e2e2e;
+  --text: #4F5251;
+  --text-light: #7B7E7D;
+  --text-dark: #272A29;
   --text-alt: #FFFFFF;
-  --display: 2.625rem;
-  --title: 2.0625rem;
-  --subtitle: 1.625rem;
-  --caption: 1.25rem;
+  --display: 2.645rem;
+  --title: 2.040625rem;
+  --subtitle: 1.574375rem;
+  --caption: 1.29625rem;
   --body: 1rem;
-  --small: 0.8125rem;
+  --small: 0.823125rem;
   --bold: 700;
-  --sbold: 600;
+  --semi-bold: 600;
   --medium: 500;
   --regular: 400;
   --light: 300;
-  --elight: 200;
-  --lh-display: 1.571;
-  --lh-title: 1.606;
-  --lh-subtitle: 1.615;
-  --lh-caption: 1.65;
-  --lh-body: 1.688;
-  --lh-small: 1.769;
+  --extra-light: 200;
+  --display-line-height: 1.571;
+  --title-line-height: 1.606;
+  --subtitle-line-height: 1.615;
+  --caption-line-height: 1.65;
+  --body-line-height: 1.688;
+  --small-line-height: 1.769;
   --su-64: 4rem;
   --su-40: 2.5rem;
   --su-32: 2rem;
@@ -31,18 +32,15 @@
   --su-16: 1rem;
   --su-8: 0.5rem;
   --su-4: 0.25rem;
-  --sut-44: 2.75rem;
-  --sut-27: 1.6875rem;
-  --sut-17: 1.0625rem;
-  --sut-11: 0.6875rem;
-  --sut-7: 0.4375rem;
-  --sut-4: 0.25rem;
+  --su-text-44: 2.75rem;
+  --su-text-27: 1.6875rem;
+  --su-text-17: 1.0625rem;
+  --su-text-11: 0.6875rem;
+  --su-text-7: 0.4375rem;
 }
 
 html {
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-  line-height: var(--lh-body);
 }
 
 *,
@@ -51,6 +49,14 @@ html {
   box-sizing: inherit;
   margin: 0;
   padding: 0;
+}
+
+body {
+  color: var(--text-light);
+  font-family: "Poppins", sans-serif;
+  font-size: var(--h5);
+  font-weight: var(--light);
+  line-height: var(--h5-line-height);
 }
 
 a {
@@ -107,32 +113,56 @@ img {
 
 .display {
   font-size: var(--display);
-  line-height: var(--lh-display);
+  line-height: var(--display-line-height);
 }
 
 .title {
   font-size: var(--title);
-  line-height: var(--lh-title);
+  line-height: var(--title-line-height);
 }
 
 .subtitle {
   font-size: var(--subtitle);
-  line-height: var(--lh-subtitle);
+  line-height: var(--subtitle-line-height);
 }
 
 .caption {
   font-size: var(--caption);
-  line-height: var(--lh-caption);
+  line-height: var(--caption-line-height);
 }
 
 .body {
   font-size: var(--body);
-  line-height: var(--lh-body);
+  line-height: var(--body-line-height);
 }
 
 .small {
   font-size: var(--small);
-  line-height: var(--lh-small);
+  line-height: var(--small-line-height);
+}
+
+.bold, .display {
+  font-weight: var(--bold);
+}
+
+.semi-bold, .small, .title {
+  font-weight: var(--semi-bold);
+}
+
+.medium {
+  font-weight: var(--medium);
+}
+
+.regular, .caption, .subtitle {
+  font-weight: var(--regular);
+}
+
+.light {
+  font-weight: var(--light);
+}
+
+.extra-light, .body {
+  font-weight: var(--extra-light);
 }
 
 .contact, .nav {
@@ -225,19 +255,18 @@ img {
   background-color: var(--second);
 }
 
-.section__title {
-  color: var(--text);
-  font-size: var(--title);
-  font-weight: var(--sbold);
-  line-height: var(--lh-title);
-  margin-bottom: var(--su-27);
+.section-heading .title {
+  color: var(--text-dark);
+  margin-bottom: var(--su-text-44);
 }
-.section__text {
-  color: var(--text-light);
-  font-size: var(--subtitle);
-  font-weight: var(--elight);
-  line-height: var(--lh-subtitle);
-  margin-bottom: var(--su-17);
+.section-heading--with-subtitle {
+  text-align: center;
+}
+.section-heading--with-subtitle .title {
+  margin-bottom: var(--su-text-17);
+}
+.section-heading--with-subtitle .subtitle {
+  margin-bottom: var(--su-text-44);
 }
 
 .home-indicadores {

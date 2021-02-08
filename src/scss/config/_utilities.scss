@@ -1,7 +1,41 @@
-// font size and line height
-@each $key, $val in $font-size {
+// typography
+
+@each $key, $size in $font-size {
+
     .#{$key} {
         font-size: var(--#{$key});
-        line-height: var(--lh-#{$key});
+        line-height: var(--#{$key}-line-height);
     }
+}
+
+
+@each $key, $weight in $font-weight {
+
+    .#{$key} {
+        font-weight: var(--#{$key});
+    }
+}
+
+.display { 
+    @extend .bold;
+}
+
+.title {  
+    @extend .semi-bold;
+}
+
+.subtitle {
+    @extend .regular;
+}
+
+.caption { 
+    @extend .regular;
+}
+
+.body { 
+    @extend .extra-light;
+}
+
+.small { 
+    @extend .semi-bold;
 }
