@@ -1,0 +1,5 @@
+mixin button(textCta, url)
+    a(href=`${pathUrl}${url}`, class="button")=  textCta
+
+mixin button_ghost(textCta, url)
+    a(href=`${pathUrl}${url}`, class="button button--ghost")=  textCta

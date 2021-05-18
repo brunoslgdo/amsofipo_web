@@ -1,10 +1,17 @@
-$font-size: (
+$font-size-movil: (
+   display: toRem(25.63px),
+   title: toRem(22.78px),
+   subtitle: toRem(20.25px),
+   caption: toRem(18px),
+   body: toRem(16px),
+   small: toRem(13.17px)
+);
+
+$font-size-desktop: (
    display: toRem(42.32px),
    title: toRem(32.65px),
    subtitle: toRem(25.19px),
-   caption: toRem(20.74px),
-   body: toRem(16px),
-   small: toRem(13.17px)
+   caption: toRem(20.74px)
 );
 
 $font-weight: (
@@ -14,13 +21,4 @@ $font-weight: (
     regular: 400,
     light: 300,
     extra-light: 200
-);
-
-$line-height: ( 
-    display-line-height: 1.571,
-    title-line-height: 1.606,
-    subtitle-line-height: 1.615,
-    caption-line-height: 1.65,
-    body-line-height: 1.688,
-    small-line-height: 1.769
 );

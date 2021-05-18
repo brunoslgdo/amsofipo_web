@@ -1,5 +1,4 @@
 .container {
-    min-width: 100vh;
     padding-right: var(--su-16);
     padding-left: var(--su-16);
 
@@ -29,9 +28,4 @@
     &--sm {
         max-width: toRem(880px);
     }
-}
-
-.section-content {
-    padding-right: var(--su-32);
-    padding-left: var(--su-32);
 }

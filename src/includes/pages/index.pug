@@ -1,17 +1,26 @@
 extends ../templates/pages
 block main
-    .section-heading
-        h2.title ¿Qué es una SOFIPO?
-    .section-heading.section-heading--with-subtitle
-        h2.title Nuestros asociados
-        h3.subtitle Conoce a las SOFIPO que están cerca de ti
+    +jumbotron(
+        '',
+        'Fomentamos el sano desarrollo del Sector de Ahorro Popular dentro del Sistema Financiero Mexicano',
+        'Conoce más',
+        '#'
+    )
+    //- section.section
+    //-     +section_heading('¿Qué es una SOFIPO?')
+    //-     +section_caption(
+    //-         'Son entidades autorizadas y reguladas por Comisión Nacional Bancaria y de Valores  (CNBV)',
+    //-         'Conoce más',
+    //-         '#'
+    //-     )
+    //- +section_heading_with_subtitle(
+    //-     'Nuestros asociados',
+    //-     'Conoce a las SOFIPO que están cerca de ti'
+    //- )
+    //- +section_content(
+    //-     'Promover el desarrollo ordenado y sano del Sector de Ahorro y Crédito Popular en México, siendo un interlocutor destacado y reconocido ante cualquier organismo gubernamental o privado, con la finalidad de interactuar en el desarrollo de nuevas regulaciones, en la utilización y canalización adecuada de fondeo y recursos gubernamentales, en el alineamiento de la política pública para el sector, contribuyendo así con el fortalecimiento institucional de sus asociados, y en la promoción de la educación financiera dentro del segmento de los Servicios Financieros Populares.'
+    //- )
 
-
-    h1.display Hola AMSOFIPO
-    h4.caption Hola AMSOFIPO
-    h5.body Hola AMSOFIPO
-    h6.small Hola AMSOFIPO
-    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem laboriosam rerum reprehenderit, laborum nobis aspernatur eum aliquid tempora voluptas? Non molestiae nostrum ut sed reprehenderit delectus quidem earum facilis nemo.
     //- +jumbotron_main(
     //-     'jumbotron-main.jpg',
     //-     'Fomentamos el sano desarrollo del Sector de Ahorro Popular dentro del Sistema Financiero Mexicano',

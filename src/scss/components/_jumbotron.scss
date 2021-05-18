@@ -1,28 +1,26 @@
 .jumbotron {
+    @extend .container;
+    background-color: var(--first-light);
     display: flex;
+    padding-top: var(--su-16);
+    padding-bottom: var(--su-16);
     position: relative;
-    background-color: rgba(0, 0, 0, .2);
-    height: toRem(520px);
+    // height: toRem(554px);
     overflow: hidden;
     
-    &__content {
+    &__caption {
         border: toRem(2px) solid var(--first);
-        border-radius: var(--su-7);
+        border-radius: var(--su-8);
         text-align: center;
         margin: auto;
-        padding-top: var(--su-27);
-        padding-bottom: var(--su-27);
+        // padding: var(--su-32) toRem(104px);
+        padding: var(--su-32);
+        max-width: toRem(986px);
     }
     
-    &__display {
-        @extend .subcontainer--md;
-        color: var(--text-alt);
-        font-size: var(--display);
-        font-weight: var(--medium);
-        line-height: (--lh-display);
-        margin-bottom: var(--su-27);
-        padding-right: var(--su-27);
-        padding-left: var(--su-27);
+    .display {
+        text-shadow: 0 toRem(2px) var(--su-4) hsla(0, 0, 0, .8);
+        margin-bottom: var(--su-24);
     }
 
     .hero-image {

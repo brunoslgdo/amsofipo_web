@@ -1,14 +1,16 @@
 .button {
     display: inline-flex;
+    background-color: var(--first-dark);
+    border: toRem(1px) solid var(--first-dark);
+    border-radius: calc(var(--su-4));
     color: var(--text-alt);
     font-size: var(--caption);
-    font-weight: var(--medium);
-    line-height: var(--lh-caption);
-    border-radius: calc(var(--su-4));
-    background-color: var(--first-dark);
-    padding: var(--su-7) var(--su-27);
+    font-weight: var(--light);
+    line-height: 1;
+    padding: var(--su-16) var(--su-32);
     
-    &--info {
-        background-color: var(--second);
+    &--ghost {
+        background-color: transparent;
+        color: var(--first-dark);
     }
 }

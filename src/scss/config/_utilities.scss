@@ -1,41 +1,41 @@
+// colors
+
+    @each $key, $color in $colors {
+        
+        .#{$key} {
+            color: var(--#{$key});
+        }
+    }
+
 // typography
 
-@each $key, $size in $font-size {
-
-    .#{$key} {
-        font-size: var(--#{$key});
-        line-height: var(--#{$key}-line-height);
+    .display {
+        font-size: var(--display); 
+        font-weight: var(--bold);
     }
-}
 
-
-@each $key, $weight in $font-weight {
-
-    .#{$key} {
-        font-weight: var(--#{$key});
+    .title {
+        color: var(--text-dark);
+        font-size: var(--title);  
+        font-weight: var(--semi-bold);
     }
-}
 
-.display { 
-    @extend .bold;
-}
+    .subtitle {
+        font-size: var(--subtitle);
+        font-weight: var(--regular);
+    }
 
-.title {  
-    @extend .semi-bold;
-}
+    .caption {
+        font-size: var(--caption); 
+        font-weight: var(--sbold);
+    }
 
-.subtitle {
-    @extend .regular;
-}
+    .body {
+        font-size: var(--body); 
+        font-weight: var(--light);
+    }
 
-.caption { 
-    @extend .regular;
-}
-
-.body { 
-    @extend .extra-light;
-}
-
-.small { 
-    @extend .semi-bold;
-}
+    .small {
+        font-size: var(--small); 
+        font-weight: var(--semi-bold);
+    }

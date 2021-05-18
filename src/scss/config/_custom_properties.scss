@@ -8,16 +8,12 @@
 
     // font
 
-    @each $key, $size in $font-size {
+    @each $key, $size in $font-size-movil {
         --#{$key}: #{$size};
     }
     
     @each $key, $weight in $font-weight {
         --#{$key}: #{$weight};
-    }
-    
-    @each $key, $height in $line-height {
-        --#{$key}: #{$height};
     }
 
     // spacing units
@@ -25,7 +21,10 @@
         --#{$key}: #{$unit};
     }
 
-    @each $key, $unit in $spacing-units-text {
-        --#{$key}: #{$unit};
+    @media only screen and (min-width: 768px) {
+        
+        @each $key, $size in $font-size-desktop {
+            --#{$key}: #{$size};
+        }
     }
 }

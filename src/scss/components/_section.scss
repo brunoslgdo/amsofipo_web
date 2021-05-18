@@ -1,19 +1,39 @@
+.section {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: var(--su-96);
+    padding-bottom: var(--su-96);
+    max-width: toRem(880px);
+}
+
 .section-heading {
     
     .title {
-        color: var(--text-dark);
-        margin-bottom: var(--su-text-44);
+        margin-bottom: var(--su-40);
     }
 
     &--with-subtitle {
         text-align: center;
 
         .title {
-            margin-bottom: var(--su-text-17);
+            margin-bottom: var(--su-16);
         }
 
         .subtitle {
-            margin-bottom: var(--su-text-44);
+            margin-bottom: var(--su-40);
         }
+    }
+}
+
+.section-caption,
+.section-content {
+    padding-right: var(--su-32);
+    padding-left: var(--su-32);
+}
+
+.section-caption {
+
+    .caption {
+        margin-bottom: var(--su-24);
     }
 }

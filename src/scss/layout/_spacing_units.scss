@@ -1,4 +1,5 @@
 $spacing-units: (
+    su-96: toRem(96px),
     su-64: toRem(64px),
     su-40: toRem(40px),
     su-32: toRem(32px),
@@ -6,12 +7,4 @@ $spacing-units: (
     su-16: toRem(16px),
     su-8: toRem(8px),
     su-4: toRem(4px)
-);
-
-$spacing-units-text: (
-    su-text-44: toRem(44px),
-    su-text-27: toRem(27px),
-    su-text-17: toRem(17px),
-    su-text-11: toRem(11px),
-    su-text-7: toRem(7px)
 );
