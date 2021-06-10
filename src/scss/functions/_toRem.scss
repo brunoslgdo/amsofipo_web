@@ -1,3 +1,13 @@
 @function toRem($px) {
     @return ($px / 16px) * 1rem;
 }
+
+@function toRemfontSize($px) {
+    
+    $base: 14px;
+    $ratio: 1.25;
+
+    $newFontSize: $base * $ratio;
+    
+
+}
