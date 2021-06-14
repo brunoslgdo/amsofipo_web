@@ -1,74 +1,16 @@
+// math lib
+@use "sass:math";
+
 // functions
 @import 'functions/toRem';
-@import 'functions/toEm';
 
-// placeholders
-// @import 'placeholders/place-fonts';
-// @import 'placeholders/place-buttons';
-// @import 'placeholders/place-lists';
-// @import 'placeholders/place-backgrounds';
-// @import 'placeholders/place-underline';
-
-// theme and layout (only maps)
+// theme and layout
 @import 'theme/colors';
 @import 'theme/typography';
 @import 'layout/spacing_units';
-
-// custom properties
-@import 'config/custom_properties';
+@import 'layout/custom_properties';
 
 // layout
 @import 'layout/reset';
 @import 'layout/box_model';
-
-// utilities
-@import 'config/utilities';
-
-
-// components
-@import 'components/buttons';
-@import 'components/jumbotron';
-@import 'components/section';
-// @import 'components/header';
-// @import 'components/home_indicadores';
-// @import 'components/home_mosaicos';
-// @import 'components/footer';
-//     @import 'components/classes';
-//     @import 'components/header-section';
-//     @import 'components/header-caption';
-//     @import 'components/menu';
-//     @import 'components/icon-hamburguer';
-//     @import 'components/featured';
-//     @import 'components/asociados';
-//     @import 'components/casos-exito';
-//     @import 'components/productos';
-//     @import 'components/beneficios';
-//     @import 'components/naturaleza-juridica';
-    
-//     // @import 'components/informacion-estadistica';
-//     @import 'components/carousel';
-//     @import 'components/form';
-//     @import 'components/indicadores';
-//     @import 'components/notas';
-//     @import 'components/hero';
-//     @import 'components/entry';
-//     @import 'components/prensa';
-
-// // sections
-
-//     @import 'sections/home-amsofipo';
-//     @import 'sections/home-indicadores';
-//     @import 'sections/home-sofipo';
-//     @import 'sections/home-mosaicos';
-//     @import 'sections/home-contacto';
-    
-//     @import 'sections/amsofipo-asociados';
-
-//     @import 'sections/sofipo-casos-exito';
-//     @import 'sections/sofipo-portafolio';
-//     @import 'sections/sofipo-beneficios';
-
-//     @import 'sections/inclusion-financiera-estadistica';
-
-// // pages
-//     @import 'pages/finanzas-personales';
+@import 'layout/utilities';

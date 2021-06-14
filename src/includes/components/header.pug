@@ -1,12 +1,1 @@
-include ../config/conf_menu
-header.header
-    nav.nav
-        .nav__home
-            a(href=`${pathUrl}index.html`): img(src=`${pathImg}logo-amsofipo.svg`, class="logo", alt="amsofipo")
-            .icon__menu
-        .nav__menu
-            each item in MENU
-                a(href=`${pathUrl}${item.url}`, class="menu__link") !{`${item.itemName}`}
-            a(href="", class="header__item contact__link") 
-                img(src=`${pathImg}arrow-next.svg`, class="contact__arrow", alt="")
-                | Contáctanos
+header#header.header

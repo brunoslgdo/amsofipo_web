@@ -1,0 +1,18 @@
+:root {
+
+    @each $val, $key in $colors {
+        --#{$val}: #{$key};
+    }
+    
+    @each $val, $key in $font-size {
+        --#{$val}: #{$key};
+    }
+    
+    @each $val, $key in $font-weight {
+        --#{$val}: #{$key};
+    }
+    
+    @each $val, $key in $spacing-units {
+        --#{$val}: #{$key};
+    }
+}

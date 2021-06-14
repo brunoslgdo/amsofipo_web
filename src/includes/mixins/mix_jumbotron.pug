@@ -1,7 +1,0 @@
-include ../config/conf_jumbotron
-mixin jumbotron(imgHero, textDisplay, buttonCta, buttonLink)
-    .jumbotron
-        img(src=`${pathImg}${imgHero}`, class="hero-image")
-        .jumbotron__caption
-            h1.display.text-alt= textDisplay
-            a(href=`${pathUrl}${buttonLink}`, class="button")=  buttonCta

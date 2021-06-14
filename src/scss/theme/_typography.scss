@@ -1,24 +1,20 @@
-$font-size-movil: (
-   display: toRem(25.63px),
-   title: toRem(22.78px),
-   subtitle: toRem(20.25px),
-   caption: toRem(18px),
+$font-size: (
+   heading: toRem(39.06px),
+   title: toRem(31.25px),
+   subtitle: toRem(25px),
+   caption: toRem(20px),
    body: toRem(16px),
-   small: toRem(13.17px)
-);
-
-$font-size-desktop: (
-   display: toRem(42.32px),
-   title: toRem(32.65px),
-   subtitle: toRem(25.19px),
-   caption: toRem(20.74px)
+   small: toRem(12.80px)
 );
 
 $font-weight: (
-    bold: 700,
-    semi-bold: 600,
-    medium: 500,
-    regular: 400,
-    light: 300,
-    extra-light: 200
+   black: 900,
+   ebold: 800,
+   bold: 700,
+   sbold: 600,
+   medium: 500,
+   regular: 400,
+   light: 300,
+   elight: 200,
+   thin: 100
 );

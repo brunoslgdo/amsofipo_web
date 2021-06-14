@@ -1,9 +1,0 @@
-.quieres-saber-mas 
-    h1.quieres-saber-mas__title= `${quieresSaberMas.title}`
-    p.quieres-saber-mas__text= `${quieresSaberMas.caption}`
-    ul
-        each item in quieresSaberMas.items
-            li
-                div
-                    h2.quieres-saber-mas__item-title= `${item.title}`
-                    a(href=`../assets/${item.href}`, target="_blank", style="aspectos-generales__item-link")= `${item.link}`
