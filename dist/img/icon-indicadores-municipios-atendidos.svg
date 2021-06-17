@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="41.272" height="50" viewBox="0 0 41.272 50">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #FFFFFF;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="icon-indicadores-municipios-atendidos" transform="translate(11982.637 2584)">
+    <g id="Icon_feather-map-pin" data-name="Icon feather-map-pin" transform="translate(-11986.137 -2584.5)">
+      <path id="Trazado_4941" data-name="Trazado 4941" class="cls-1" d="M43.773,21.136c0,15.273-19.636,28.364-19.636,28.364S4.5,36.409,4.5,21.136a19.636,19.636,0,0,1,39.273,0Z" transform="translate(0 0)"/>
+      <path id="Trazado_4942" data-name="Trazado 4942" class="cls-1" d="M26.591,17.045A6.545,6.545,0,1,1,20.045,10.5,6.545,6.545,0,0,1,26.591,17.045Z" transform="translate(4.091 4.091)"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="50.411" height="48" viewBox="0 0 50.411 48">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #FFFFFF;
+        stroke-linecap: round;
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="icon-indicadores-sofipos-enoperacion" transform="translate(11986.999 2791)">
+    <g id="Grupo_719" data-name="Grupo 719" transform="translate(-11986 -2790)">
+      <path id="Trazado_1758" data-name="Trazado 1758" class="cls-1" d="M4674.167,1584.091l12.551,12.215,27.373-24.431" transform="translate(-4666.091 -1563.65)"/>
+      <path id="Trazado_1759" data-name="Trazado 1759" class="cls-1" d="M4714.542,1589.028a23.025,23.025,0,1,1-7.031-16.538" transform="translate(-4668.438 -1566.028)"/>
+    </g>
+  </g>
+</svg>
