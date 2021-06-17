@@ -1,31 +1,28 @@
-.container {
-    padding-right: var(--su-16);
-    padding-left: var(--su-16);
-
-    @media only screen and (min-width: 768px) {
-        padding-right: var(--su-32);
-        padding-left: var(--su-32);
-    }
-}
-
-.container--padding {
-    padding-top: var(--su-64);
-    padding-bottom: var(--su-64);
-}
-
-.subcontainer {
-    margin-right: auto;
-    margin-left: auto;
+.wrap {
+    margin-top: var(--su-64);
+    margin-bottom: var(--su-64);
     
-    &--lg {
-        max-width: toRem(1280px);
+    &__inner {
+        margin-right: auto;
+        margin-left: auto;
     }
     
-    &--md {
-        max-width: toRem(1024px);
+    &__inner--1280 {
+        width: var(--wrap-1280);
     }
     
-    &--sm {
-        max-width: toRem(880px);
+    &__inner--1024 {
+        width: var(--wrap-1024);
+    }
+    
+    &__inner--880 {
+        width: var(--wrap-880);
+    }
+    
+    &--alt {
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-top: var(--su-64);
+        padding-bottom: var(--su-64);
     }
 }

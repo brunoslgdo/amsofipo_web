@@ -1,0 +1,185 @@
+.home-amsofipo {
+    background-color: var(--first-dark);
+    color: var(--alt);
+    position: relative;
+    height: toRem(520px);
+    padding-top: toRem(136px);
+    padding-bottom: var(--su-64);
+    overflow: hidden;
+    
+    &::after {
+        content: '';
+        display: block;
+        background-image: linear-gradient(rgba(74, 175, 156, .4), rgb(0, 82, 67, .8));
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 50%;
+        height: inherit;
+        clip-path: polygon(toRem(160px) 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    &__hero {
+        object-fit: cover;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        opacity: .1;
+    }
+
+    &__inner{
+        @extend .wrap__inner;
+        @extend .wrap__inner--1280;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        gap: var(--su-32);
+        position: relative;
+        z-index: 1;
+    }
+
+    &__child {
+        height: toRem(320px);
+        position: relative;
+    }
+
+    &__thumbnail {
+        
+        img {
+            border-radius: var(--su-4);
+            object-fit: cover;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &__caption {
+        padding-top: var(--su-32);
+        padding-bottom: var(--su-32);
+
+        h1, p {
+            margin-top: 0;
+        }
+
+        h1 {
+            font-size: calc(var(--heading) * 1.414);
+        }
+
+        p {
+            font-weight: var(--elight);
+        }
+    }
+
+}
+
+.que-es-una-sofipo {
+    text-align: center;
+
+    h2, p {
+        margin-top: 0;
+    }
+}
+
+.home-indicadores {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: var(--su-24);
+
+    &__item {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        background-color: var(--alt);
+        border-radius: var(--su-4);
+        box-shadow: 0 0 var(--su-4) rgba(0, 0, 0, .6);
+        // margin-right: auto;
+        // margin-left: auto;
+    }
+    
+    &__icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--first-dark);
+        border-top-left-radius: var(--su-4);
+        border-bottom-left-radius: var(--su-4);
+        width: var(--su-80);
+        height: var(--su-80);
+    }
+
+    &__content {
+        padding-left: var(--su-16);
+    }
+    
+    &__cifra {
+        // font-weight: var(--r);
+        margin-top: auto;
+        margin-bottom: 0;
+        padding-right: var(--su-16);
+    }
+    
+    &__label {
+        margin-bottom: 0;
+        padding-right: var(--su-16);
+    }
+}
+
+.mosaicos {
+    
+    &__nav {
+        display: grid;
+        gap: var(--su-32);
+    }
+
+    &__child {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        gap: var(--su-64);
+        
+        h2 {
+            font-weight: var(--sbold);
+            margin-top: 0;
+        }
+        
+        p {
+            font-size: var(--caption);
+        }
+    }
+    
+    &__thumbnail {
+        border-radius: 50%;
+        box-shadow: 0 0 var(--su-8) rgba(0, 0, 0, .6);
+        position: relative;
+        width: calc(var(--su-80) * 4);
+        height: calc(var(--su-80) * 4);
+        overflow: hidden;
+        
+        img {
+            object-fit: cover;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+    }
+    
+    &__casos {
+        grid-template-areas: 'content thumbnail';
+        
+        .mosaicos__content{
+            grid-area: content;
+        }
+       
+        .mosaicos__thumbnail {
+            grid-area: thumbnail;
+        }
+    }
+
+    &__content {
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+}

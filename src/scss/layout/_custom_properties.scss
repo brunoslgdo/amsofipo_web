@@ -15,4 +15,17 @@
     @each $val, $key in $spacing-units {
         --#{$val}: #{$key};
     }
+    
+    @each $val, $key in $wrap-max-width {
+        --#{$val}: #{$key};
+    }
+}
+
+@each $val, $key in $font-weight {
+    .#{$val} {
+        font-weight: #{$key};
+    }
+}
+.bg {
+    background-color: var(--bg);
 }

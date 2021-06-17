@@ -11,3 +11,9 @@ $spacing-units: (
     su-8: toRem(8px),
     su-4: toRem(4px)
 );
+
+$wrap-max-width: (
+    wrap-1280: toRem(1280px),
+    wrap-1024: toRem(1024px),
+    wrap-880: toRem(880px)
+)

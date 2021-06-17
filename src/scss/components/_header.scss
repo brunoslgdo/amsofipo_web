@@ -1,0 +1,47 @@
+.header {
+    background-color: var(--alt);
+    box-shadow: 0 0 var(--su-4) rgba(0, 0, 0, .3);
+    padding-top: var(--su-16);
+    padding-bottom: var(--su-16);    
+    position: absolute;
+    right: 0;
+    left: 0;
+    z-index: 100;
+    
+    &__nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-right: auto;
+        margin-left: auto;
+        max-width: var(--wrap-1280);
+        position: relative;
+        height: var(--su-40);
+    }
+
+    &__menu {
+        --margin-items: #{toRem(20px)};
+        display: flex;
+
+        li {
+            margin-right: var(--margin-items);
+            margin-left: var(--margin-items);
+        }
+
+        a {
+            color: var(--alt);
+            color: var(--first);
+        }
+    }
+
+    &__contact {
+        color: var(--alt);
+        color: var(--text);
+        font-weight: var(--sbold);
+        
+        &::before {
+            content: url("../img/forward.svg");
+            margin-right: var(--su-8);
+        }
+    }
+}

@@ -11,19 +11,51 @@ html {
 }
 
 body {
-    color: var(--text-light);
+    color: var(--text);
     font-family: 'Poppins', sans-serif;
+    font-size: var(--body);
     font-weight: var(--light);
-    line-height: 1.618;
+    line-height: 1.75;
 }
 
-a {
-    text-decoration: none;
+p { margin-bottom: 1rem; }
+
+h1, .heading, 
+h2, .title,
+h3, .subtitle,
+h4, .caption,
+h5, .body {
+  margin: 3rem 0 1rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  line-height: 1.333;
 }
 
-ol, 
-ul, 
-li {
+h1, .heading {
+  margin-top: 0;
+  font-size: var(--heading);
+}
+
+h2, .title {
+    font-size: var(--title);
+}
+
+h3, .subtitle {
+    font-size: var(--subtitle);
+}
+
+h4, .caption {
+    font-size: var(--caption);
+}
+
+h5, .body {
+    font-size: var(--body);}
+
+h6, small, .small {
+    font-size: 0.8rem;
+}
+
+ol, ul {
     list-style: none;
 }
 
@@ -31,4 +63,8 @@ img {
     display: block;
     max-width: 100%;
     height: auto;
+}
+
+a {
+    text-decoration: none;
 }

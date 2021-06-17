@@ -1,0 +1,57 @@
+.footer {
+    background-color: var(--first-dark);
+    color: var(--alt);
+    padding-top: var(--su-64);
+    padding-bottom: var(--su-64);
+
+    h5 {
+        font-weight: var(--sbold);
+        margin-top: 0;
+        margin-bottom: var(--su-8);
+    }
+
+    a {
+        color: inherit;
+        font-weight: var(--light);
+    }
+
+    &__child {
+        margin-right: auto;
+        margin-left: auto;
+    }
+    
+    &__nav {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas: 'legales direccion comunicate sitios';
+        gap: var(--su-64);
+        margin-right: auto;
+        margin-left: auto;
+        max-width: var(--wrap-1280);
+        position: relative;
+    }
+
+    &__comunicate {
+        grid-area: comunicate;
+    }
+    
+    &__direccion {
+        grid-area: direccion;
+    }
+    
+    &__sitios {
+        grid-area: sitios;
+    }
+    
+    &__legales {
+        grid-area: legales;
+    }
+
+    &__menu {
+        border-left: var(--su-4) solid rgba(255, 255, 255, .3);
+        border-top-left-radius: var(--su-4);
+        border-bottom-left-radius: var(--su-4);
+        padding-left: var(--su-16);
+    }
+}
