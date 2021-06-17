@@ -13,10 +13,13 @@ html(lang="es")
     body
 
         include ../components/header
+        //- include ../components/socials
         
         block main
-
+        
         include ../components/footer
 
-        script(src=`${pathJs}menu.js`)
-        script(src=`${pathJs}footer.js`)
+        block scripts
+            script(src=`${pathJs}header.js`)
+            script(src=`${pathJs}footer.js`)
+            script(src=`${pathJs}socials.js`)

@@ -1,3 +1,56 @@
 extends ../templates/main_pages
 block main
-    h1 AMSFIPO
+
+    //- main
+    .home-amsofipo
+        img(src=`${pathImg}home-amsofipo-back.png`, class="home-amsofipo__hero",  alt="")
+        .home-amsofipo__inner
+            .home-amsofipo__child.home-amsofipo__thumbnail
+                img(src=`${pathImg}home-amsofipo-front.png`, alt="")
+            .home-amsofipo__child.home-amsofipo__caption
+                h1 AMSOFIPO
+                p.subtitle Fomentamos el sano desarrollo del Sector de Ahorro Popular dentro del Sistema Financiero Mexicano
+
+
+    //- que es una sofipo
+    .wrap.wrap--alt.que-es-una-sofipo.bg
+        .wrap__inner.wrap__inner--880.que-es-una-sofipo__inner
+            h2.sbold ¿Qué es una SOFIPO?
+            p.caption Son entidades autorizadas y reguladas por Comisión Nacional Bancaria y de Valores  (CNBV)
+            a(href=``, class="button") Conoce más
+    
+    //- que es una sofipo
+    .wrap.indicadores
+        .wrap__inner.wrap__inner--880.indicadores__inner
+            h2.sbold Indicadores marzo 2020
+            ul#home-indicadores.home-indicadores
+            p.caption Conoce aquí los principales indicadores del sector.
+            a(href=``, class="button") Conoce más
+
+
+    //- mosaicos
+    .wrap.mosaicos
+        .wrap__inner.wrap__inner--880.mosaicos__nav
+            .mosaicos__child.mosaicos__portafolio
+                .mosaicos__thumbnail: img(src=`${pathImg}mosaicos-portafolio-de-productos-y-servicios.png`, alt="")
+                .mosaicos__content
+                    h2 Productos y Servicios
+                    p Conoce más de todo lo que tenemos para ti.
+                    a(href=``, class="button") Conoce más 
+            .mosaicos__child.mosaicos__casos
+                .mosaicos__thumbnail: img(src=`${pathImg}mosaicos-casos-de-exito.png`, alt="")
+                .mosaicos__content
+                    h2 Casos de Éxito
+                    p Inspírate con las historias de quienes han alcanzado sus sueños.
+                    a(href=``, class="button") Conoce más 
+            .mosaicos__child.mosaicos__finanzas
+                .mosaicos__thumbnail: img(src=`${pathImg}mosaicos-finanzas-personales.png`, alt="")
+                .mosaicos__content
+                    h2 Finanzas Personales
+                    p Útiles sugerencias para emprender, ahorrar y planificar tus finanzas.
+                    a(href=``, class="button") Conoce más 
+            //- .mosaicos__educa
+            //-     img(src=`${pathImg}mosaicos-educa-tu-cartera.png`, alt="")
+
+append scripts
+    script(src=`${pathJs}home-indicadores.js`)
